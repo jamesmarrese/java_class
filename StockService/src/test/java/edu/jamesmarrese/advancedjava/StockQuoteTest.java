@@ -1,7 +1,8 @@
 package edu.jamesmarrese.advancedjava;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -9,7 +10,7 @@ import java.util.Date;
 public class StockQuoteTest {
 
     @Test
-    public void TestGetStockSymbolShouldReturnTrue () {
+    public void testGetStockSymbolShouldReturnTrue () {
 
         //Create a date object for use in the StockQuote
         DateFormat dateFormat = new SimpleDateFormat("2019/09/13 11:34:34");
@@ -24,7 +25,7 @@ public class StockQuoteTest {
     }
 
     @Test
-    public void TestGetStockSymbolShouldReturnFalse () {
+    public void testGetStockSymbolShouldReturnFalse () {
 
         //Create a date object for use in the StockQuote
         DateFormat dateFormat = new SimpleDateFormat("2019/09/13 11:34:34");
@@ -39,7 +40,7 @@ public class StockQuoteTest {
     }
 
     @Test
-    public void TestGetStockPriceShouldReturnTrue () {
+    public void testGetStockPriceShouldReturnTrue () {
 
         //Create a date object for use in the StockQuote
         DateFormat dateFormat = new SimpleDateFormat("2019/09/13 11:34:34");
@@ -57,7 +58,7 @@ public class StockQuoteTest {
     }
 
     @Test
-    public void TestGetStockPriceShouldReturnFalse () {
+    public void testGetStockPriceShouldReturnFalse () {
 
         //Create a date object for use in the StockQuote
         DateFormat dateFormat = new SimpleDateFormat("2019/09/13 11:34:34");

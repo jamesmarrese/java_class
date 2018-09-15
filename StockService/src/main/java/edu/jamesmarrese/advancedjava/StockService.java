@@ -1,5 +1,12 @@
 package edu.jamesmarrese.advancedjava;
 
+/**
+ * This StockService interface provides the interface for the StockQuote and
+ * BasicStockService classes.
+ *
+ * @author  James Marrese
+ */
+
 public interface StockService {
     /**
      * Return the current price for a share of stock for the given symbol

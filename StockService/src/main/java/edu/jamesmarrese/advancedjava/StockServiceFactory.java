@@ -1,14 +1,12 @@
+package edu.jamesmarrese.advancedjava;
+
 /**
  * This StockServiceFactory class implements the StockService interface
  * and returns StockQuote instances. StockQuote instances consist of a
  * stock symbol (String), stock price (double), and date (Date).
  *
  * @author  James Marrese
- * @version 1.0
- * @since   2018-09-13
  */
-
-package edu.jamesmarrese.advancedjava;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

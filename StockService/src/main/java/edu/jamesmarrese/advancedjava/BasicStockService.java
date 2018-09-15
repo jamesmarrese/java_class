@@ -1,14 +1,12 @@
+package edu.jamesmarrese.advancedjava;
+
 /**
  * This BasicStockService class implements the StockService interface and
  * creates and returns a hard-coded StockQuote instance consisting of
  * a stockSymbol (String), stockPrice (double), and date (Date).
  *
  * @author  James Marrese
- * @version 1.0
- * @since   2018-09-13
  */
-
-package edu.jamesmarrese.advancedjava;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

@@ -1,13 +1,11 @@
+package edu.jamesmarrese.advancedjava;
+
 /**
  * This StockQuote class creates StockQuote objects consisting of
  * a stockSymbol (String), stockPrice (double), and date (Date).
  *
  * @author  James Marrese
- * @version 1.0
- * @since   2018-09-13
  */
-
-package edu.jamesmarrese.advancedjava;
 
 import java.util.Date;
 
