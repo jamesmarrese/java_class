@@ -1,13 +1,13 @@
 package edu.jamesmarrese.advancedjava;
 
+import java.util.Date;
+
 /**
- * This StockQuote class creates StockQuote objects consisting of
+ * This StockQuote class creates StockQuote instances consisting of
  * a stockSymbol (String), stockPrice (double), and date (Date).
  *
  * @author  James Marrese
  */
-
-import java.util.Date;
 
 public class StockQuote {
 
@@ -16,17 +16,16 @@ public class StockQuote {
     private Date dateRecorded;
 
     /**
-     * Create a new  StockQuote instance
+     * Create a new StockQuote instance
      * @param stockSymbol the stock symbol, e.g. AMZN for Amazon
      * @param stockPrice the price of the stock for the provided date
      * @param dateRecorded  the date the stock info was recorded
      */
 
-    //Constructor
-    public StockQuote (String stockSymbol, double stockPrice, Date dateRecorded) {
-        this.stockSymbol = stockSymbol;
-        this.stockPrice = stockPrice;
-        this.dateRecorded = dateRecorded;
+    public StockQuote (String stockName, double stockValue, Date date) {
+        this.stockSymbol = stockName;
+        this.stockPrice = stockValue;
+        this.dateRecorded = date;
     }
 
     /**

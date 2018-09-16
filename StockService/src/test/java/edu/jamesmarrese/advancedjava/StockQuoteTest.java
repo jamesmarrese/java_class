@@ -3,11 +3,24 @@ package edu.jamesmarrese.advancedjava;
 import org.junit.Test;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * This StockQuoteTest class tests StockQuote instances. This
+ * class tests stockSymbol (String) and stockPrice (double).
+ *
+ * @author James Marrese
+ */
+
 public class StockQuoteTest {
+
+    /**
+     * Tests StockQuote instances according to their symbols
+     * and verifies that the correct symbols are returned.
+     */
 
     @Test
     public void testGetStockSymbolShouldReturnTrue () {
@@ -24,6 +37,11 @@ public class StockQuoteTest {
                 stockQuote.getStockSymbol().equals(stockQuoteTwo.getStockSymbol()) );
     }
 
+    /**
+     * Tests StockQuote instances according to their symbols
+     * and verifies that the correct symbols are returned.
+     */
+
     @Test
     public void testGetStockSymbolShouldReturnFalse () {
 
@@ -39,6 +57,11 @@ public class StockQuoteTest {
                 stockQuote.getStockSymbol().equals(stockQuoteTwo.getStockSymbol()) );
     }
 
+    /**
+     * Tests StockQuote instances according to their prices
+     * and verifies that the correct prices are returned.
+     */
+
     @Test
     public void testGetStockPriceShouldReturnTrue () {
 
@@ -53,9 +76,14 @@ public class StockQuoteTest {
         double stockQuoteAmazon = stockQuote.getStockPrice();
         double stockQuoteApple  = stockQuoteTwo.getStockPrice();
 
-        assertTrue( "The two stock prices are equal",
+        assertTrue( "The stock prices are the same",
                 stockQuoteAmazon == stockQuoteApple);
     }
+
+    /**
+     * Tests StockQuote instances according to their prices
+     * and verifies that the correct prices are returned.
+     */
 
     @Test
     public void testGetStockPriceShouldReturnFalse () {
@@ -71,7 +99,7 @@ public class StockQuoteTest {
         double stockQuoteAmazon = stockQuote.getStockPrice();
         double stockQuoteApple  = stockQuoteTwo.getStockPrice();
 
-        assertFalse( "The two stock prices are different",
+        assertFalse( "The stock prices are different",
                 stockQuoteAmazon == stockQuoteApple);
     }
 

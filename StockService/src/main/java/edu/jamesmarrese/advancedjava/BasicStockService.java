@@ -1,5 +1,9 @@
 package edu.jamesmarrese.advancedjava;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * This BasicStockService class implements the StockService interface and
  * creates and returns a hard-coded StockQuote instance consisting of
@@ -7,10 +11,6 @@ package edu.jamesmarrese.advancedjava;
  *
  * @author  James Marrese
  */
-
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class BasicStockService implements StockService {
 
@@ -31,6 +31,6 @@ public class BasicStockService implements StockService {
         Date date = new Date();
         dateFormat.format(date);
 
-        return new StockQuote ("APPL", 100.43, date);
+        return new StockQuote ("APPL", 100.25, date);
     }
 }
