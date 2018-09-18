@@ -39,7 +39,6 @@ public class StockServiceFactory implements StockService {
             return new StockQuote("AMZN", 150.75, date);
         if (symbol.equals("NFLX"))
             return new StockQuote("NFLX", 201.54, date);
-        return null;
     }
 
 }
