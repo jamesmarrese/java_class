@@ -10,14 +10,14 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
 
 /**
- * This BasicStockServiceTest class tests BasicStockService instances.
+ * This TestBasicStockService class tests BasicStockService instances.
  * This class tests stockSymbol (String) and stockPrice (double). Both
  * variables are hard-coded in the BasicStockService class (APPL 100.25).
  *
  * @author James Marrese
  */
 
-public class BasicStockServiceTest {
+public class TestBasicStockService {
 
     /**
      * Tests BasicStockService instances according to their symbols

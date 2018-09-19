@@ -9,13 +9,13 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * This StockQuoteTest class tests StockQuote instances. This
+ * This TestStockQuote class tests StockQuote instances. This
  * class tests stockSymbol (String) and stockPrice (double).
  *
  * @author James Marrese
  */
 
-public class StockQuoteTest {
+public class TestStockQuote {
 
     /**
      * Tests StockQuote instances according to their symbols

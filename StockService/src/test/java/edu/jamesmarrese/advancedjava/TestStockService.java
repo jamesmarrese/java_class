@@ -14,14 +14,14 @@ import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.when;
 
 /**
- * This StockServiceTest class creates StockQuote objects that are created
+ * This TestStockService class creates StockQuote objects that are created
  * from using the StockService interface. This test class uses mocks to test
  * the stockSymbol (String) and stockPrice (double) fields.
  *
  * @author  James Marrese
  */
 
-public class StockServiceTest {
+public class TestStockService {
 
     /**
      * Tests StockQuote instances using mocking to verify that the
