@@ -17,9 +17,9 @@ public class StockQuote {
 
     /**
      * Create a new StockQuote instance
-     * @param stockSymbol the stock symbol, e.g. AMZN for Amazon
-     * @param stockPrice the price of the stock for the provided date
-     * @param dateRecorded  the date the stock info was recorded
+     * @param stockName the stock symbol, e.g. AMZN for Amazon
+     * @param stockValue the price of the stock for the provided date
+     * @param date  the date the stock info was recorded
      */
 
     public StockQuote (String stockName, double stockValue, Date date) {
@@ -28,6 +28,7 @@ public class StockQuote {
         this.dateRecorded = date;
     }
 
+    //test comment to see if code will push to branch assignment_three on github.com
     /**
      * @return the symbol that represents the company whose stock this is.
      * e.g. AMZN for Amazon
