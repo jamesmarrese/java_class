@@ -28,7 +28,6 @@ public class StockQuote {
         this.dateRecorded = date;
     }
 
-    //test comment to see if code will push to branch assignment_three on github.com
     /**
      * @return the symbol that represents the company whose stock this is.
      * e.g. AMZN for Amazon
