@@ -9,7 +9,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
 
 /**
  * This StockQuoteApplication class instantiates a StockServiceFactory
@@ -42,6 +41,7 @@ public class StockQuoteApplication {
         long dateDifference = stopDate.getTime() - beginDate.getTime();
 
         /*Convert the difference from long to int
+          Also convert from milliseconds to days
           long variable is currently expressed in milliseconds
           1,000 milliseconds in a second
           60 seconds in a minute
@@ -57,7 +57,7 @@ public class StockQuoteApplication {
 
         List<StockQuote> stockList = new ArrayList<>();
 
-        stockList = applicationTest.getQuote("APPL", startDate, endDate);
+        stockList = applicationTest.getQuote(symbol, startDate, endDate);
 
         /**
          * @throws NullPointerException

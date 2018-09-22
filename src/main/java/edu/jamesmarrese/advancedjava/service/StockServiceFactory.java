@@ -59,11 +59,12 @@ public class StockServiceFactory implements StockService {
 
         List<StockQuote> stockQuoteList = new ArrayList<>();
 
+        String stockSymbol = symbol;
         Calendar beginDate = from;
         Calendar stopDate  = until;
 
         while (beginDate.before(stopDate)) {
-            StockQuote dummyQuote = getQuote("APPL");
+            StockQuote dummyQuote = getQuote(stockSymbol);
             stockQuoteList.add(dummyQuote);
             beginDate.add(Calendar.DAY_OF_YEAR, 1);
         }
