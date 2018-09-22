@@ -1,12 +1,18 @@
 package edu.jamesmarrese.advancedjava;
 
+import edu.jamesmarrese.advancedjava.model.StockQuote;
+import edu.jamesmarrese.advancedjava.service.BasicStockService;
 import org.junit.Test;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertFalse;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
+
+import static junit.framework.Assert.assertNotNull;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 /**
  * This TestStockQuote class tests StockQuote instances. This
@@ -15,7 +21,7 @@ import java.util.Date;
  * @author James Marrese
  */
 
-public class TestStockQuote {
+public class TestStockQuoteTwo {
 
     /**
      * Tests StockQuote instances according to their symbols
@@ -26,7 +32,7 @@ public class TestStockQuote {
     public void testGetStockSymbolShouldReturnTrue () {
 
         //Create a date object for use in the StockQuote
-        DateFormat dateFormat = new SimpleDateFormat("2019/09/13 11:34:34");
+        DateFormat dateFormat = new SimpleDateFormat("2019/09/13");
         Date date = new Date();
         dateFormat.format(date);
 
@@ -46,7 +52,7 @@ public class TestStockQuote {
     public void testGetStockSymbolShouldReturnFalse () {
 
         //Create a date object for use in the StockQuote
-        DateFormat dateFormat = new SimpleDateFormat("2019/09/13 11:34:34");
+        DateFormat dateFormat = new SimpleDateFormat("2019/09/13");
         Date date = new Date();
         dateFormat.format(date);
 
@@ -66,7 +72,7 @@ public class TestStockQuote {
     public void testGetStockPriceShouldReturnTrue () {
 
         //Create a date object for use in the StockQuote
-        DateFormat dateFormat = new SimpleDateFormat("2019/09/13 11:34:34");
+        DateFormat dateFormat = new SimpleDateFormat("2019/09/13");
         Date date = new Date();
         dateFormat.format(date);
 
@@ -89,7 +95,7 @@ public class TestStockQuote {
     public void testGetStockPriceShouldReturnFalse () {
 
         //Create a date object for use in the StockQuote
-        DateFormat dateFormat = new SimpleDateFormat("2019/09/13 11:34:34");
+        DateFormat dateFormat = new SimpleDateFormat("2019/09/13");
         Date date = new Date();
         dateFormat.format(date);
 
@@ -101,6 +107,36 @@ public class TestStockQuote {
 
         assertFalse( "The stock prices are different",
                 stockQuoteAmazon == stockQuoteApple);
+    }
+
+    @Test
+    public void testGetStockDate () {
+
+        StockQuote stockQuote = new StockQuote("AMZN", 100.25, Calendar.getInstance().getTime());
+
+        Date testDate = stockQuote.getDateRecorded();
+
+        assertNotNull("The date object is not null", testDate);
+    }
+
+    @Test
+    public void testGetStockObject () {
+
+        StockQuote stockQuote = new StockQuote("AMZN", 100.25, Calendar.getInstance().getTime());
+
+        assertNotNull("The stock object is not null", stockQuote);
+    }
+
+    @Test
+    public void testStockToString () {
+
+        BasicStockService testStock = new BasicStockService();
+        StockQuote populatedStock = testStock.getQuote("APPL");
+
+        String stockString = populatedStock.toString();
+
+        assertNotNull("The stock string should not be null", stockString);
+
     }
 
 }

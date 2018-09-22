@@ -1,5 +1,6 @@
-package edu.jamesmarrese.advancedjava;
+package edu.jamesmarrese.advancedjava.model;
 
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -48,5 +49,13 @@ public class StockQuote {
      */
     public Date getDateRecorded() {
         return dateRecorded;
+    }
+
+    @Override
+    /**
+     * @return the StockQuote object as a readable String
+     */
+    public String toString () {
+        return getStockSymbol() + " " + getStockPrice() + " " + getDateRecorded();
     }
 }
