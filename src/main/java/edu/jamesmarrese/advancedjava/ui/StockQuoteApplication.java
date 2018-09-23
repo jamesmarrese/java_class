@@ -35,6 +35,11 @@ public class StockQuoteApplication {
         Calendar endDate = Calendar.getInstance();
         endDate.setTime(stopDate);
 
+        //Check if end date is earlier than begin date
+        if (endDate.before(startDate)) {
+            throw new AssertionError("The end date is before the start date");
+        }
+
         /*Get the difference between the begin date and
           the end date for the stock quote list
          */

@@ -4,8 +4,6 @@ import edu.jamesmarrese.advancedjava.ui.StockQuoteApplication;
 import org.junit.Test;
 
 import java.text.ParseException;
-import java.util.Calendar;
-import java.util.Date;
 
 /**
  * This TestStockQuoteApplication class performs tests on the
