@@ -20,7 +20,7 @@ import static org.junit.Assert.assertTrue;
  * @author James Marrese
  */
 
-public class TestBasicStockServiceTwo {
+public class TestBasicStockService {
 
     /**
      * Tests BasicStockService instances according to their symbols
@@ -103,7 +103,7 @@ public class TestBasicStockServiceTwo {
 
     /**
      * Tests StockQuote instances to verify that the date
-     * returned in not null.
+     * returned is not null.
      */
 
     @Test
@@ -115,6 +115,11 @@ public class TestBasicStockServiceTwo {
 
         assertNotNull("The date object is not null", testDate);
     }
+
+    /**
+     * Tests that method getStockQuote returns a list of StockQuote objects
+     * by testing the symbols returned by the list.
+     */
 
     @Test
     public void testGetListOfStockQuotesShouldReturnTrue () {

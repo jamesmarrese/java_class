@@ -8,7 +8,6 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
 
 import static junit.framework.Assert.assertNotNull;
 import static org.junit.Assert.assertFalse;
@@ -21,7 +20,7 @@ import static org.junit.Assert.assertTrue;
  * @author James Marrese
  */
 
-public class TestStockQuoteTwo {
+public class TestStockQuote {
 
     /**
      * Tests StockQuote instances according to their symbols
@@ -109,6 +108,11 @@ public class TestStockQuoteTwo {
                 stockQuoteAmazon == stockQuoteApple);
     }
 
+    /**
+     * Tests StockQuote instances to verify that the date
+     * returned is not null.
+     */
+
     @Test
     public void testGetStockDate () {
 
@@ -119,6 +123,11 @@ public class TestStockQuoteTwo {
         assertNotNull("The date object is not null", testDate);
     }
 
+    /**
+     * Tests StockQuote instances to verify that the object
+     * returned is not null.
+     */
+
     @Test
     public void testGetStockObject () {
 
@@ -126,6 +135,10 @@ public class TestStockQuoteTwo {
 
         assertNotNull("The stock object is not null", stockQuote);
     }
+
+    /**
+     * Test that a returned StockQuote object is not null.
+     */
 
     @Test
     public void testStockToString () {

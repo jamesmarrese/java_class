@@ -12,7 +12,8 @@ import java.util.ArrayList;
 
 /**
  * This StockQuoteApplication class instantiates a StockServiceFactory
- * class and calls
+ * class and calls the two getStockQuote methods in the class titled
+ * StockServiceFactory.
  */
 
 public class StockQuoteApplication {
@@ -21,21 +22,24 @@ public class StockQuoteApplication {
 
         StockServiceFactory applicationTest = new StockServiceFactory();
 
+        //The stock symbol
         String symbol = args[0];
 
         SimpleDateFormat format = new SimpleDateFormat("MM/dd/yyyy");
 
-        //Set the begin date for the list of stock quote
+        //Set the begin date for the list of stock quotes
         Date beginDate = format.parse(args[1]);
         Calendar startDate = Calendar.getInstance();
         startDate.setTime(beginDate);
 
-        //Set the end date for the list of stock quote
+        //Set the end date for the list of stock quotes
         Date stopDate = format.parse(args[2]);
         Calendar endDate = Calendar.getInstance();
         endDate.setTime(stopDate);
 
-        //Check if end date is earlier than begin date
+        /**
+         * @throws AssertionError if endDate is before startDate
+         */
         if (endDate.before(startDate)) {
             throw new AssertionError("The end date is before the start date");
         }
@@ -65,7 +69,7 @@ public class StockQuoteApplication {
         stockList = applicationTest.getQuote(symbol, startDate, endDate);
 
         /**
-         * @throws NullPointerException
+         * @throws NullPointerException if startDate or endDate are null
          */
         if (startDate == null  ||  endDate == null) {
             throw new NullPointerException();

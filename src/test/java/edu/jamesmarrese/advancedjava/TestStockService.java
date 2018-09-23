@@ -1,23 +1,16 @@
 package edu.jamesmarrese.advancedjava;
 
 import edu.jamesmarrese.advancedjava.model.StockQuote;
-import edu.jamesmarrese.advancedjava.service.StockService;
 import edu.jamesmarrese.advancedjava.service.StockServiceFactory;
 import org.junit.Test;
-import org.mockito.Mockito;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
 
 import static junit.framework.Assert.assertNotNull;
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Matchers.any;
-import static org.mockito.Mockito.when;
 
 /**
  * This TestStockService class creates StockQuote objects that are created
@@ -27,10 +20,10 @@ import static org.mockito.Mockito.when;
  * @author  James Marrese
  */
 
-public class TestStockServiceTwo {
+public class TestStockService {
 
     /**
-     * Tests StockQuote instances using mocking to verify that the
+     * Tests StockQuote instances to verify that the
      * correct stock symbols are returned.
      */
 
@@ -53,7 +46,7 @@ public class TestStockServiceTwo {
 
     /**
      * Tests StockQuote instances to verify that the date
-     * returned in not null.
+     * returned is not null.
      */
 
     @Test

@@ -19,7 +19,7 @@ import static org.junit.Assert.assertTrue;
  * @author James Marrese
  */
 
-public class TestStockServiceFactoryTwo {
+public class TestStockServiceFactory {
 
     /**
      * Tests StockServiceFactory instances according to their symbols
@@ -123,6 +123,11 @@ public class TestStockServiceFactoryTwo {
 
         assertNotNull("The date object is not null", testDate);
     }
+
+    /**
+     * Tests that method getStockQuote returns a list of StockQuote objects
+     * by testing the symbols returned by the list.
+     */
 
     @Test
     public void testGetListOfStockQuotesShouldReturnTrue () {
