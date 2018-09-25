@@ -4,6 +4,7 @@ import edu.jamesmarrese.advancedjava.model.StockQuote;
 import edu.jamesmarrese.advancedjava.service.StockServiceFactory;
 import org.junit.Test;
 
+import java.math.BigDecimal;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -52,7 +53,7 @@ public class TestStockService {
     @Test
     public void testGetStockDate () {
 
-        StockQuote stockQuote = new StockQuote("AMZN", 100.25, Calendar.getInstance().getTime());
+        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), Calendar.getInstance().getTime());
 
         Date testDate = stockQuote.getDateRecorded();
 

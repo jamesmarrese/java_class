@@ -4,6 +4,7 @@ import edu.jamesmarrese.advancedjava.model.StockQuote;
 import edu.jamesmarrese.advancedjava.service.StockServiceFactory;
 import org.junit.Test;
 
+import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -37,7 +38,7 @@ public class TestStockServiceFactory {
         StockServiceFactory fakeStock = new StockServiceFactory();
         StockQuote populatedStock = fakeStock.getQuote("APPL");
 
-        StockQuote stockQuote = new StockQuote("APPL", 100.25, date);
+        StockQuote stockQuote = new StockQuote("APPL", new BigDecimal(100.25), date);
 
         assertTrue("The stock symbols are the same",
                 populatedStock.getStockSymbol().equals(stockQuote.getStockSymbol()) ) ;
@@ -59,7 +60,7 @@ public class TestStockServiceFactory {
         StockServiceFactory fakeStock = new StockServiceFactory();
         StockQuote populatedStock = fakeStock.getQuote("APPL");
 
-        StockQuote stockQuote = new StockQuote("AMZN", 100.25, date);
+        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), date);
 
         assertFalse("The stock symbols are different",
                 populatedStock.getStockSymbol().equals(stockQuote.getStockSymbol()) ) ;
@@ -81,10 +82,10 @@ public class TestStockServiceFactory {
         StockServiceFactory fakeStock = new StockServiceFactory();
         StockQuote populatedStock = fakeStock.getQuote("APPL");
 
-        StockQuote stockQuote = new StockQuote("APPL", 100.25, date);
+        StockQuote stockQuote = new StockQuote("APPL", new BigDecimal(100.25), date);
 
         assertTrue("The stock prices are the same",
-                populatedStock.getStockPrice() == stockQuote.getStockPrice() ) ;
+                populatedStock.getStockPrice().equals(stockQuote.getStockPrice()) ) ;
     }
 
     /**
@@ -103,10 +104,10 @@ public class TestStockServiceFactory {
         StockServiceFactory fakeStock = new StockServiceFactory();
         StockQuote populatedStock = fakeStock.getQuote("APPL");
 
-        StockQuote stockQuote = new StockQuote("AMZN", 367.31, date);
+        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(367.31), date);
 
         assertFalse("The stock prices are different",
-                populatedStock.getStockPrice() == stockQuote.getStockPrice() ) ;
+                populatedStock.getStockPrice().equals(stockQuote.getStockPrice()) ) ;
     }
 
     /**
@@ -117,7 +118,7 @@ public class TestStockServiceFactory {
     @Test
     public void testGetStockDate () {
 
-        StockQuote stockQuote = new StockQuote("AMZN", 100.25, Calendar.getInstance().getTime());
+        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), Calendar.getInstance().getTime());
 
         Date testDate = stockQuote.getDateRecorded();
 

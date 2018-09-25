@@ -2,6 +2,7 @@ package edu.jamesmarrese.advancedjava.service;
 
 import edu.jamesmarrese.advancedjava.model.StockQuote;
 
+import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -36,13 +37,13 @@ public class StockServiceFactory implements StockService {
         if (symbol == null)
             throw new NullPointerException();
         if (symbol.equals("APPL"))
-            return new StockQuote("APPL", 100.25, date);
+            return new StockQuote("APPL", new BigDecimal(100.25), date);
         if (symbol.equals("AMZN"))
-            return new StockQuote("AMZN", 150.75, date);
+            return new StockQuote("AMZN", new BigDecimal(150.75), date);
         if (symbol.equals("NFLX"))
-            return new StockQuote("NFLX", 201.54, date);
+            return new StockQuote("NFLX", new BigDecimal(201.54), date);
 
-        else return new StockQuote("DMMY", 123.45, date);
+        else return new StockQuote("DMMY", new BigDecimal(123.45), date);
     }
 
     /**
@@ -70,7 +71,32 @@ public class StockServiceFactory implements StockService {
         }
 
         return stockQuoteList;
+    }
 
+    public List<StockQuote> getQuote (String symbol, Calendar from, Calendar until, Interval interval) {
+
+        List<StockQuote> stockQuoteList = new ArrayList<>();
+
+        String stockSymbol = symbol;
+        Calendar beginDate = from;
+        Calendar stopDate  = until;
+        Interval chosenInterval = interval;
+
+        if (chosenInterval == Interval.HOURLY) {
+
+        } else if (chosenInterval == Interval.DAILY) {
+
+        } else if (chosenInterval == Interval.WEEKLY) {
+
+        }
+
+        while (beginDate.before(stopDate)) {
+            StockQuote dummyQuote = getQuote(stockSymbol);
+            stockQuoteList.add(dummyQuote);
+            beginDate.add(Calendar.DAY_OF_YEAR, 1);
+        }
+
+        return stockQuoteList;
     }
 
 }

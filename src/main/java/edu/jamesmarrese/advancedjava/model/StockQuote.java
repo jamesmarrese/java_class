@@ -1,6 +1,8 @@
 package edu.jamesmarrese.advancedjava.model;
 
-import java.util.Calendar;
+import jdk.nashorn.internal.ir.annotations.Immutable;
+
+import java.math.BigDecimal;
 import java.util.Date;
 
 /**
@@ -10,10 +12,11 @@ import java.util.Date;
  * @author  James Marrese
  */
 
+@Immutable
 public class StockQuote {
 
     private String stockSymbol;
-    private double stockPrice;
+    private BigDecimal stockPrice;
     private Date dateRecorded;
 
     /**
@@ -23,7 +26,7 @@ public class StockQuote {
      * @param date  the date the stock info was recorded
      */
 
-    public StockQuote (String stockName, double stockValue, Date date) {
+    public StockQuote (String stockName, BigDecimal stockValue, Date date) {
         this.stockSymbol = stockName;
         this.stockPrice = stockValue;
         this.dateRecorded = date;
@@ -40,7 +43,7 @@ public class StockQuote {
     /**
      * @return The price of one share of stock.
      */
-    public double getStockPrice() {
+    public BigDecimal getStockPrice() {
         return stockPrice;
     }
 

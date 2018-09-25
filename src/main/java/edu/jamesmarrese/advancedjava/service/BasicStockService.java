@@ -2,6 +2,7 @@ package edu.jamesmarrese.advancedjava.service;
 
 import edu.jamesmarrese.advancedjava.model.StockQuote;
 
+import java.math.BigDecimal;
 import java.util.*;
 
 /**
@@ -26,7 +27,7 @@ public class BasicStockService implements StockService {
 
     public StockQuote getQuote(String symbol) {
 
-        return new StockQuote ("APPL", 100.25, Calendar.getInstance().getTime());
+        return new StockQuote ("APPL", new BigDecimal(100.25), Calendar.getInstance().getTime());
     }
 
     /**
@@ -53,6 +54,31 @@ public class BasicStockService implements StockService {
             }
 
             return stockQuoteList;
+    }
 
+    public List<StockQuote> getQuote (String symbol, Calendar from, Calendar until, Interval interval) {
+
+        List<StockQuote> stockQuoteList = new ArrayList<>();
+
+        String stockSymbol = symbol;
+        Calendar beginDate = from;
+        Calendar stopDate  = until;
+        Interval chosenInterval = interval;
+
+        if (chosenInterval == Interval.HOURLY) {
+
+        } else if (chosenInterval == Interval.DAILY) {
+
+        } else if (chosenInterval == Interval.WEEKLY) {
+
+        }
+
+        while (beginDate.before(stopDate)) {
+            StockQuote dummyQuote = getQuote(stockSymbol);
+            stockQuoteList.add(dummyQuote);
+            beginDate.add(Calendar.DAY_OF_YEAR, 1);
+        }
+
+        return stockQuoteList;
     }
 }
