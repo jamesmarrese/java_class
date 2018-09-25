@@ -35,4 +35,23 @@ public interface StockService {
      *         one for each day in the range specified
      */
     List<StockQuote> getQuote (String symbol, Calendar from, Calendar until);
+
+    /**
+     * Get a historical list of stock quotes for the provided symbol
+     * This method will return one StockQuote per 24 hour period
+     * If you wish more or fewer StockQuotes returned, you can specify
+     * the Interval yourself using the Interval parameter
+     *
+     * @param symbol   the stock symbol to search for
+     * @param from     the date of the first stock quote
+     * @param until    the date of the last stock quote
+     * @param interval the number of StockQuotes to get. E.g., if
+     *                 Interval.DAILY is specified, then one StockQuote
+     *                 per day will be returned
+     *
+     * @return a list of StockQuote instances, one for each interval specified
+     */
+
+    List<StockQuote> getQuote (String symbol, Calendar from, Calendar until, Interval interval);
+
 }
