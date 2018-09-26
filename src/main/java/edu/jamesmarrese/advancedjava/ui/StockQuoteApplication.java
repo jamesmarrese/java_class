@@ -1,6 +1,7 @@
 package edu.jamesmarrese.advancedjava.ui;
 
 import edu.jamesmarrese.advancedjava.model.StockQuote;
+import edu.jamesmarrese.advancedjava.service.IntervalEnum;
 import edu.jamesmarrese.advancedjava.service.StockServiceFactory;
 
 import java.text.ParseException;
@@ -37,6 +38,8 @@ public class StockQuoteApplication {
         Calendar endDate = Calendar.getInstance();
         endDate.setTime(stopDate);
 
+        IntervalEnum chosenInterval = IntervalEnum.DAILY;
+
         /**
          * @throws AssertionError if endDate is before startDate
          */
@@ -59,10 +62,13 @@ public class StockQuoteApplication {
          */
         int  numberOfDays = (int) dateDifference / 1000 / 60 / 60 / 24;
 
-        StockQuote populatedStock = applicationTest.getQuote(symbol);
+        StockQuote populatedStock = applicationTest.getQuote(symbol, startDate);
 
+
+        //Print out one StockQuote
         System.out.println("Result of call to get a Stock Quote: "
                 + populatedStock.toString());
+
 
         List<StockQuote> stockList = new ArrayList<>();
 
@@ -75,11 +81,31 @@ public class StockQuoteApplication {
             throw new NullPointerException();
         }
 
+        //Print out a list of StockQuotes within the specified date range
         System.out.println();
         System.out.println("Result of call to get a list of Stock Quotes: ");
 
         for (int i = 0; i < numberOfDays; ++i) {
             System.out.println(stockList.get(i).toString());
+        }
+
+
+        List<StockQuote> stockListWithInterval = new ArrayList<>();
+
+        stockListWithInterval = applicationTest.getQuote(symbol, startDate, endDate, chosenInterval);
+
+        if (startDate == null  ||  endDate == null) {
+            throw new NullPointerException();
+        }
+
+        /*Print out a list of StockQuotes within the specified date range
+          and according to the specified interval
+         */
+        System.out.println();
+        System.out.println("Result of call to get a list of Stock Quotes with specified interval: ");
+
+        for (int i = 0; i < numberOfDays; ++i) {
+            System.out.println(stockListWithInterval.get(i).toString());
         }
 
     }

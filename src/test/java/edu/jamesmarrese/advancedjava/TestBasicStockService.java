@@ -15,8 +15,10 @@ import static org.junit.Assert.assertTrue;
 
 /**
  * This TestBasicStockService class tests BasicStockService instances.
- * This class tests stockSymbol (String) and stockPrice (double). Both
+ * This class tests stockSymbol (String) and stockPrice (BigDecimal). Both
  * variables are hard-coded in the BasicStockService class (APPL 100.25).
+ * The date returned by the getQuote method, which is a Calendar object,
+ * is also tested for @notNull.
  *
  * @author James Marrese
  */
@@ -34,9 +36,16 @@ public class TestBasicStockService {
     @Test
     public void testBasicStockServiceStockSymbolShouldReturnTrue () {
 
-        StockQuote newStock = new BasicStockService().getQuote("A");
+        //Create a calendar object for use in the StockQuote
+        DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
+        Date date = new Date();
+        dateFormat.format(date);
+        Calendar testCalendar = Calendar.getInstance();
+        testCalendar.setTime(date);
 
-        StockQuote anotherStock = new BasicStockService().getQuote("B");
+        StockQuote newStock = new BasicStockService().getQuote("A", testCalendar);
+
+        StockQuote anotherStock = new BasicStockService().getQuote("B", testCalendar);
 
         assertTrue("The stock symbols are the same",
                 newStock.getStockSymbol().equals(anotherStock.getStockSymbol()) );
@@ -49,14 +58,16 @@ public class TestBasicStockService {
     @Test
     public void testBasicStockServiceStockSymbolShouldReturnFalse () {
 
-        //Create a date object for use in the StockQuote
-        DateFormat dateFormat = new SimpleDateFormat("2019/09/13");
+        //Create a calendar object for use in the StockQuote
+        DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
         Date date = new Date();
         dateFormat.format(date);
+        Calendar testCalendar = Calendar.getInstance();
+        testCalendar.setTime(date);
 
-        StockQuote newStock = new BasicStockService().getQuote("A");
+        StockQuote newStock = new BasicStockService().getQuote("A", testCalendar);
 
-        StockQuote fakeStock = new StockQuote("AMZN", new BigDecimal(45.44), date);
+        StockQuote fakeStock = new StockQuote("AMZN", new BigDecimal(45.44), testCalendar);
 
         assertFalse("The stocks symbols are different",
                 newStock.getStockSymbol() == fakeStock.getStockSymbol() );
@@ -72,9 +83,16 @@ public class TestBasicStockService {
     @Test
     public void testBasicStockServiceStockPriceShouldReturnTrue () {
 
-        StockQuote newStock = new BasicStockService().getQuote("A");
+        //Create a calendar object for use in the StockQuote
+        DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
+        Date date = new Date();
+        dateFormat.format(date);
+        Calendar testCalendar = Calendar.getInstance();
+        testCalendar.setTime(date);
 
-        StockQuote anotherStock = new BasicStockService().getQuote("B");
+        StockQuote newStock = new BasicStockService().getQuote("A", testCalendar);
+
+        StockQuote anotherStock = new BasicStockService().getQuote("B", testCalendar);
 
         assertTrue("The stock prices are the same",
                 newStock.getStockPrice().equals(anotherStock.getStockPrice()) );
@@ -89,14 +107,16 @@ public class TestBasicStockService {
     @Test
     public void testBasicStockServiceStockPriceShouldReturnFalse () {
 
-        //Create a date object for use in the StockQuote
-        DateFormat dateFormat = new SimpleDateFormat("2019/09/13");
+        //Create a calendar object for use in the StockQuote
+        DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
         Date date = new Date();
         dateFormat.format(date);
+        Calendar testCalendar = Calendar.getInstance();
+        testCalendar.setTime(date);
 
-        StockQuote newStock = new BasicStockService().getQuote("A");
+        StockQuote newStock = new BasicStockService().getQuote("A", testCalendar);
 
-        StockQuote fakeStock = new StockQuote("AMZN", new BigDecimal(45.44), date);
+        StockQuote fakeStock = new StockQuote("AMZN", new BigDecimal(45.44), testCalendar);
 
         assertFalse("The stock prices are different",
                 newStock.getStockPrice().equals(fakeStock.getStockPrice()) );
@@ -110,9 +130,16 @@ public class TestBasicStockService {
     @Test
     public void testGetStockDate () {
 
-        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), Calendar.getInstance().getTime());
+        //Create a calendar object for use in the StockQuote
+        DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
+        Date date = new Date();
+        dateFormat.format(date);
+        Calendar testCalendar = Calendar.getInstance();
+        testCalendar.setTime(date);
 
-        Date testDate = stockQuote.getDateRecorded();
+        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), testCalendar);
+
+        Calendar testDate = stockQuote.getDateRecorded();
 
         assertNotNull("The date object is not null", testDate);
     }

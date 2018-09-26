@@ -5,6 +5,8 @@ import edu.jamesmarrese.advancedjava.service.StockServiceFactory;
 import org.junit.Test;
 
 import java.math.BigDecimal;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -16,7 +18,7 @@ import static org.junit.Assert.assertTrue;
 /**
  * This TestStockService class creates StockQuote objects that are created
  * from using the StockService interface. This test class uses mocks to test
- * the stockSymbol (String) and stockPrice (double) fields.
+ * the stockSymbol (String) and stockPrice (BigDecimal) fields.
  *
  * @author  James Marrese
  */
@@ -53,9 +55,16 @@ public class TestStockService {
     @Test
     public void testGetStockDate () {
 
-        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), Calendar.getInstance().getTime());
+        //Create a calendar object for use in the StockQuote
+        DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
+        Date date = new Date();
+        dateFormat.format(date);
+        Calendar testCalendar = Calendar.getInstance();
+        testCalendar.setTime(date);
 
-        Date testDate = stockQuote.getDateRecorded();
+        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), testCalendar);
+
+        Calendar testDate = stockQuote.getDateRecorded();
 
         assertNotNull("The date object is not null", testDate);
     }

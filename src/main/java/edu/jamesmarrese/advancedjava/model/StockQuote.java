@@ -2,12 +2,13 @@ package edu.jamesmarrese.advancedjava.model;
 
 import jdk.nashorn.internal.ir.annotations.Immutable;
 
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
-import java.util.Date;
+import java.util.Calendar;
 
 /**
  * This StockQuote class creates StockQuote instances consisting of
- * a stockSymbol (String), stockPrice (double), and date (Date).
+ * a stockSymbol (String), stockPrice (double), and date (Calendar).
  *
  * @author  James Marrese
  */
@@ -17,7 +18,7 @@ public class StockQuote {
 
     private String stockSymbol;
     private BigDecimal stockPrice;
-    private Date dateRecorded;
+    private Calendar dateRecorded;
 
     /**
      * Create a new StockQuote instance
@@ -26,7 +27,8 @@ public class StockQuote {
      * @param date  the date the stock info was recorded
      */
 
-    public StockQuote (String stockName, BigDecimal stockValue, Date date) {
+    @NotNull
+    public StockQuote (String stockName, BigDecimal stockValue, Calendar date) {
         this.stockSymbol = stockName;
         this.stockPrice = stockValue;
         this.dateRecorded = date;
@@ -36,6 +38,7 @@ public class StockQuote {
      * @return the symbol that represents the company whose stock this is.
      * e.g. AMZN for Amazon
      */
+    @NotNull
     public String getStockSymbol() {
         return stockSymbol;
     }
@@ -43,6 +46,7 @@ public class StockQuote {
     /**
      * @return The price of one share of stock.
      */
+    @NotNull
     public BigDecimal getStockPrice() {
         return stockPrice;
     }
@@ -50,7 +54,8 @@ public class StockQuote {
     /**
      * @return the date of the stock price.
      */
-    public Date getDateRecorded() {
+    @NotNull
+    public Calendar getDateRecorded() {
         return dateRecorded;
     }
 

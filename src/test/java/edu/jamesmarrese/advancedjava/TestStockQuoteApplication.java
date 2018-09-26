@@ -39,4 +39,20 @@ public class TestStockQuoteApplication {
         StockQuoteApplication.main(argString);
     }
 
+    /**
+     * Tests whether main method returns expected output when
+     * passed valid args, this time with an Interval enum value.
+     */
+    @Test
+    public void testMainShouldReturnValidResultTestingIntervalEnum () throws ParseException {
+
+        String[] argString = new String [4];
+        argString[0] = "APPL";
+        argString[1] = "09/21/2018";
+        argString[2] = "09/26/2018";
+        argString[3] = "DAILY";
+
+        StockQuoteApplication.main(argString);
+    }
+
 }
