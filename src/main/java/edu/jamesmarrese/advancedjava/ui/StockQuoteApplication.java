@@ -38,7 +38,17 @@ public class StockQuoteApplication {
         Calendar endDate = Calendar.getInstance();
         endDate.setTime(stopDate);
 
-        IntervalEnum chosenInterval = IntervalEnum.DAILY;
+        IntervalEnum chosenInterval = null;
+
+        String intervalString = args[3];
+
+        if (intervalString.startsWith("DAILY")) {
+            chosenInterval = IntervalEnum.DAILY;
+        } else if (intervalString.startsWith("WEEKLY")) {
+            chosenInterval = IntervalEnum.WEEKLY;
+        } else if (intervalString.startsWith("MONTHLY")) {
+            chosenInterval = IntervalEnum.MONTHLY;
+        }
 
         /**
          * @throws AssertionError if endDate is before startDate
@@ -62,12 +72,16 @@ public class StockQuoteApplication {
          */
         int  numberOfDays = (int) dateDifference / 1000 / 60 / 60 / 24;
 
-        StockQuote populatedStock = applicationTest.getQuote(symbol, startDate);
+        StockQuote populatedStock = applicationTest.getQuote(symbol, beginDate);
 
+        Calendar fakeDate = Calendar.getInstance();
+        fakeDate.setTime(populatedStock.getDateRecorded());
 
         //Print out one StockQuote
-        System.out.println("Result of call to get a Stock Quote: "
-                + populatedStock.toString());
+        System.out.println("Result of call to get a Stock Quote: ");
+        System.out.println(populatedStock.getStockSymbol()  + " " +
+                populatedStock.getStockPrice().toString() + " " +
+                fakeDate.getTime().toString());
 
 
         List<StockQuote> stockList = new ArrayList<>();
@@ -85,12 +99,25 @@ public class StockQuoteApplication {
         System.out.println();
         System.out.println("Result of call to get a list of Stock Quotes: ");
 
-        for (int i = 0; i < numberOfDays; ++i) {
-            System.out.println(stockList.get(i).toString());
+        for (int i = 0; i <= numberOfDays; ++i) {
+            Calendar secondFakeDate = Calendar.getInstance();
+            secondFakeDate.setTime(stockList.get(i).getDateRecorded());
+
+            System.out.println(stockList.get(i).getStockSymbol() + " " +
+                    stockList.get(i).getStockPrice().toString() + " " +
+                    secondFakeDate.getTime().toString());
         }
 
 
         List<StockQuote> stockListWithInterval = new ArrayList<>();
+
+        startDate.clear();;
+        startDate = Calendar.getInstance();
+        startDate.setTime(beginDate);
+
+        endDate.clear();;
+        endDate = Calendar.getInstance();
+        endDate.setTime(stopDate);
 
         stockListWithInterval = applicationTest.getQuote(symbol, startDate, endDate, chosenInterval);
 
@@ -104,8 +131,13 @@ public class StockQuoteApplication {
         System.out.println();
         System.out.println("Result of call to get a list of Stock Quotes with specified interval: ");
 
-        for (int i = 0; i < numberOfDays; ++i) {
-            System.out.println(stockListWithInterval.get(i).toString());
+        for (int i = 0; i <= numberOfDays; ++i) {
+            Calendar thirdFakeDate = Calendar.getInstance();
+            thirdFakeDate.setTime(stockList.get(i).getDateRecorded());
+
+            System.out.println(stockListWithInterval.get(i).getStockSymbol() + " " +
+                    stockListWithInterval.get(i).getStockPrice().toString() + " " +
+                    thirdFakeDate.getTime().toString() );
         }
 
     }

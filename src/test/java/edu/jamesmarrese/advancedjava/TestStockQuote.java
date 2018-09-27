@@ -37,11 +37,9 @@ public class TestStockQuote {
         DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
         Date date = new Date();
         dateFormat.format(date);
-        Calendar testCalendar = Calendar.getInstance();
-        testCalendar.setTime(date);
 
-        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), testCalendar);
-        StockQuote stockQuoteTwo = new StockQuote("AMZN", new BigDecimal(100.25), testCalendar);
+        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), date);
+        StockQuote stockQuoteTwo = new StockQuote("AMZN", new BigDecimal(100.25), date);
 
         assertTrue( "The two stock symbols are the same",
                 stockQuote.getStockSymbol().equals(stockQuoteTwo.getStockSymbol()) );
@@ -59,11 +57,9 @@ public class TestStockQuote {
         DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
         Date date = new Date();
         dateFormat.format(date);
-        Calendar testCalendar = Calendar.getInstance();
-        testCalendar.setTime(date);
 
-        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), testCalendar);
-        StockQuote stockQuoteTwo = new StockQuote("APPL", new BigDecimal(100.25), testCalendar);
+        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), date);
+        StockQuote stockQuoteTwo = new StockQuote("APPL", new BigDecimal(100.25), date);
 
         assertFalse( "The two stock symbols are different",
                 stockQuote.getStockSymbol().equals(stockQuoteTwo.getStockSymbol()) );
@@ -81,11 +77,9 @@ public class TestStockQuote {
         DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
         Date date = new Date();
         dateFormat.format(date);
-        Calendar testCalendar = Calendar.getInstance();
-        testCalendar.setTime(date);
 
-        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), testCalendar);
-        StockQuote stockQuoteTwo = new StockQuote("APPL", new BigDecimal(100.25), testCalendar);
+        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), date);
+        StockQuote stockQuoteTwo = new StockQuote("APPL", new BigDecimal(100.25), date);
 
         BigDecimal stockQuoteAmazon = stockQuote.getStockPrice();
         BigDecimal stockQuoteApple  = stockQuoteTwo.getStockPrice();
@@ -106,11 +100,9 @@ public class TestStockQuote {
         DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
         Date date = new Date();
         dateFormat.format(date);
-        Calendar testCalendar = Calendar.getInstance();
-        testCalendar.setTime(date);
 
-        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), testCalendar);
-        StockQuote stockQuoteTwo = new StockQuote("APPL", new BigDecimal(223.75), testCalendar);
+        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), date);
+        StockQuote stockQuoteTwo = new StockQuote("APPL", new BigDecimal(223.75), date);
 
         BigDecimal stockQuoteAmazon = stockQuote.getStockPrice();
         BigDecimal stockQuoteApple  = stockQuoteTwo.getStockPrice();
@@ -131,12 +123,10 @@ public class TestStockQuote {
         DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
         Date date = new Date();
         dateFormat.format(date);
-        Calendar testCalendar = Calendar.getInstance();
-        testCalendar.setTime(date);
 
-        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), testCalendar);
+        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), date);
 
-        Calendar testDate = stockQuote.getDateRecorded();
+        Date testDate = stockQuote.getDateRecorded();
 
         assertNotNull("The date object is not null", testDate);
     }
@@ -153,10 +143,8 @@ public class TestStockQuote {
         DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
         Date date = new Date();
         dateFormat.format(date);
-        Calendar testCalendar = Calendar.getInstance();
-        testCalendar.setTime(date);
 
-        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), testCalendar);
+        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), date);
 
         assertNotNull("The stock object is not null", stockQuote);
     }
@@ -172,12 +160,10 @@ public class TestStockQuote {
         DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
         Date date = new Date();
         dateFormat.format(date);
-        Calendar testCalendar = Calendar.getInstance();
-        testCalendar.setTime(date);
 
         BasicStockService testStock = new BasicStockService();
 
-        StockQuote populatedStock = testStock.getQuote("APPL", testCalendar);
+        StockQuote populatedStock = testStock.getQuote("APPL", date);
 
         String stockString = populatedStock.toString();
 

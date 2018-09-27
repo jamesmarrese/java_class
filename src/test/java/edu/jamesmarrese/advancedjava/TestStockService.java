@@ -42,8 +42,8 @@ public class TestStockService {
 
         List<StockQuote> stockList = test.getQuote(mockStockSymbol, mockStartDate, mockEndDate);
 
-        assertTrue("The length of the stock list should be 5",
-                stockList.size() == 5);
+        assertTrue("The length of the stock list should be 6",
+                stockList.size() == 6);
 
     }
 
@@ -59,12 +59,10 @@ public class TestStockService {
         DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
         Date date = new Date();
         dateFormat.format(date);
-        Calendar testCalendar = Calendar.getInstance();
-        testCalendar.setTime(date);
 
-        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), testCalendar);
+        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), date);
 
-        Calendar testDate = stockQuote.getDateRecorded();
+        Date testDate = stockQuote.getDateRecorded();
 
         assertNotNull("The date object is not null", testDate);
     }

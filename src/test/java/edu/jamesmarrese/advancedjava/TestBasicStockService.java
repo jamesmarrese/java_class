@@ -2,6 +2,7 @@ package edu.jamesmarrese.advancedjava;
 
 import edu.jamesmarrese.advancedjava.model.StockQuote;
 import edu.jamesmarrese.advancedjava.service.BasicStockService;
+import edu.jamesmarrese.advancedjava.service.IntervalEnum;
 import org.junit.Test;
 
 import java.math.BigDecimal;
@@ -40,12 +41,10 @@ public class TestBasicStockService {
         DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
         Date date = new Date();
         dateFormat.format(date);
-        Calendar testCalendar = Calendar.getInstance();
-        testCalendar.setTime(date);
 
-        StockQuote newStock = new BasicStockService().getQuote("A", testCalendar);
+        StockQuote newStock = new BasicStockService().getQuote("A", date);
 
-        StockQuote anotherStock = new BasicStockService().getQuote("B", testCalendar);
+        StockQuote anotherStock = new BasicStockService().getQuote("B", date);
 
         assertTrue("The stock symbols are the same",
                 newStock.getStockSymbol().equals(anotherStock.getStockSymbol()) );
@@ -62,12 +61,10 @@ public class TestBasicStockService {
         DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
         Date date = new Date();
         dateFormat.format(date);
-        Calendar testCalendar = Calendar.getInstance();
-        testCalendar.setTime(date);
 
-        StockQuote newStock = new BasicStockService().getQuote("A", testCalendar);
+        StockQuote newStock = new BasicStockService().getQuote("A", date);
 
-        StockQuote fakeStock = new StockQuote("AMZN", new BigDecimal(45.44), testCalendar);
+        StockQuote fakeStock = new StockQuote("AMZN", new BigDecimal(45.44), date);
 
         assertFalse("The stocks symbols are different",
                 newStock.getStockSymbol() == fakeStock.getStockSymbol() );
@@ -87,12 +84,10 @@ public class TestBasicStockService {
         DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
         Date date = new Date();
         dateFormat.format(date);
-        Calendar testCalendar = Calendar.getInstance();
-        testCalendar.setTime(date);
 
-        StockQuote newStock = new BasicStockService().getQuote("A", testCalendar);
+        StockQuote newStock = new BasicStockService().getQuote("A", date);
 
-        StockQuote anotherStock = new BasicStockService().getQuote("B", testCalendar);
+        StockQuote anotherStock = new BasicStockService().getQuote("B", date);
 
         assertTrue("The stock prices are the same",
                 newStock.getStockPrice().equals(anotherStock.getStockPrice()) );
@@ -111,12 +106,10 @@ public class TestBasicStockService {
         DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
         Date date = new Date();
         dateFormat.format(date);
-        Calendar testCalendar = Calendar.getInstance();
-        testCalendar.setTime(date);
 
-        StockQuote newStock = new BasicStockService().getQuote("A", testCalendar);
+        StockQuote newStock = new BasicStockService().getQuote("A", date);
 
-        StockQuote fakeStock = new StockQuote("AMZN", new BigDecimal(45.44), testCalendar);
+        StockQuote fakeStock = new StockQuote("AMZN", new BigDecimal(45.44), date);
 
         assertFalse("The stock prices are different",
                 newStock.getStockPrice().equals(fakeStock.getStockPrice()) );
@@ -134,12 +127,10 @@ public class TestBasicStockService {
         DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
         Date date = new Date();
         dateFormat.format(date);
-        Calendar testCalendar = Calendar.getInstance();
-        testCalendar.setTime(date);
 
-        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), testCalendar);
+        StockQuote stockQuote = new StockQuote("AMZN", new BigDecimal(100.25), date);
 
-        Calendar testDate = stockQuote.getDateRecorded();
+        Date testDate = stockQuote.getDateRecorded();
 
         assertNotNull("The date object is not null", testDate);
     }
@@ -163,7 +154,7 @@ public class TestBasicStockService {
 
         List<StockQuote> stockList = new ArrayList<>();
 
-        stockList = applicationTest.getQuote("APPL", startDate, endDate);
+        stockList = applicationTest.getQuote(symbol, startDate, endDate);
 
         for (int i = 0; i < numberOfDays; ++i) {
             stockList.get(i);
@@ -171,6 +162,39 @@ public class TestBasicStockService {
 
         assertTrue("The stock symbol should be APPL",
                 stockList.get(1).getStockSymbol().equals("APPL"));
+    }
+
+
+    /**
+     * Tests that method getStockQuote returns a list of StockQuote objects
+     * according to the interval specified by testing the symbols returned
+     * by the list.
+     */
+
+    @Test
+    public void testGetListOfStockQuotesWithIntervalSpecifiedShouldReturnTrue () {
+
+        String symbol = "APPL";
+
+        Calendar startDate = new GregorianCalendar(2018,9,21);
+        Calendar endDate = new GregorianCalendar(2018,9,26);
+
+        IntervalEnum chosenInterval = IntervalEnum.DAILY;
+
+        int numberOfDays = 6;
+
+        BasicStockService applicationTest = new BasicStockService();
+
+        List<StockQuote> stockList = new ArrayList<>();
+
+        stockList = applicationTest.getQuote(symbol, startDate, endDate, chosenInterval);
+
+        for (int i = 0; i < numberOfDays - 1; ++i) {
+            stockList.get(i);
+        }
+
+        assertTrue("There should be 6 days of stock data",
+                stockList.size() == 6);
     }
 
 }

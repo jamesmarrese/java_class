@@ -6,5 +6,13 @@ package edu.jamesmarrese.advancedjava.service;
  */
 
 public enum IntervalEnum {
-    HOURLY, DAILY, WEEKLY;
+
+    /** Get one StockQuote for every daily */
+    DAILY,
+
+    /** Get one StockQuote for every week */
+    WEEKLY,
+
+    /** Get one StockQuote for every month */
+    MONTHLY;
 }

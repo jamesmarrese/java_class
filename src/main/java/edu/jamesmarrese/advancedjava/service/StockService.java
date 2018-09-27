@@ -3,6 +3,7 @@ package edu.jamesmarrese.advancedjava.service;
 import edu.jamesmarrese.advancedjava.model.StockQuote;
 
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -23,7 +24,7 @@ public interface StockService {
      * @return a <CODE>StockQuote</CODE> instance consisting of
      *         a stockSymbol (String), stockPrice (double), and date (Date).
      */
-    StockQuote getQuote(String symbol, Calendar date);
+    StockQuote getQuote(String symbol, Date date);
 
     /**
      * Get a historical list of stock quotes for the provided symbol

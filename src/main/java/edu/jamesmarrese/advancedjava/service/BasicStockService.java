@@ -24,7 +24,7 @@ public class BasicStockService implements StockService {
      * e.g., for "APPL", return Apple 100.25 09/13/2018
      */
 
-    public StockQuote getQuote(String symbol, Calendar date) {
+    public StockQuote getQuote(String symbol, Date date) {
 
         return new StockQuote("APPL", new BigDecimal(100.25), date);
     }
@@ -43,11 +43,13 @@ public class BasicStockService implements StockService {
 
         List<StockQuote> stockQuoteList = new ArrayList<>();
 
+        String stockSymbol = symbol;
         Calendar beginDate = from;
         Calendar stopDate = until;
 
-        while (beginDate.before(stopDate)) {
-            StockQuote dummyQuote = getQuote("APPL", beginDate);
+        while ( (beginDate.before(stopDate) )  ||  (beginDate.equals(stopDate)) )  {
+            Date date = beginDate.getTime();
+            StockQuote dummyQuote = getQuote(stockSymbol, date);
             stockQuoteList.add(dummyQuote);
             beginDate.add(Calendar.DAY_OF_MONTH, 1);
         }
@@ -77,29 +79,31 @@ public class BasicStockService implements StockService {
         Calendar stopDate = until;
         IntervalEnum chosenInterval = interval;
 
-        if (chosenInterval == IntervalEnum.HOURLY) {
-            while (beginDate.before((stopDate))) {
-                StockQuote dummyQuote = getQuote(stockSymbol, beginDate);
-                stockQuoteList.add(dummyQuote);
-                beginDate.add(Calendar.HOUR_OF_DAY, 1);
-            }
-
-            return stockQuoteList;
-
-        } else if (chosenInterval == IntervalEnum.DAILY) {
-            while (beginDate.before((stopDate))) {
-                StockQuote dummyQuote = getQuote(stockSymbol, beginDate);
+        if (chosenInterval == IntervalEnum.DAILY) {
+            while ( (beginDate.before(stopDate) )  ||  (beginDate.equals(stopDate)) )  {
+                Date date = beginDate.getTime();
+                StockQuote dummyQuote = getQuote(stockSymbol, date);
                 stockQuoteList.add(dummyQuote);
                 beginDate.add(Calendar.DAY_OF_MONTH, 1);
             }
-
             return stockQuoteList;
 
         } else if (chosenInterval == IntervalEnum.WEEKLY) {
-            while (beginDate.before((stopDate))) {
-                StockQuote dummyQuote = getQuote(stockSymbol, beginDate);
+            while ( (beginDate.before(stopDate) )  ||  (beginDate.equals(stopDate)) )  {
+                Date date = beginDate.getTime();
+                StockQuote dummyQuote = getQuote(stockSymbol, date);
                 stockQuoteList.add(dummyQuote);
                 beginDate.add(Calendar.WEEK_OF_MONTH, 1);
+            }
+
+            return stockQuoteList;
+
+        } else if (chosenInterval == IntervalEnum.MONTHLY) {
+            while ( (beginDate.before(stopDate) )  ||  (beginDate.equals(stopDate)) )  {
+                Date date = beginDate.getTime();
+                StockQuote dummyQuote = getQuote(stockSymbol, date);
+                stockQuoteList.add(dummyQuote);
+                beginDate.add(Calendar.MONTH, 1);
             }
 
             return stockQuoteList;
