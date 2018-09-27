@@ -8,11 +8,11 @@ package edu.jamesmarrese.advancedjava.service;
 public enum IntervalEnum {
 
     /** Get one StockQuote for every daily */
-    DAILY,
+    HOURLY,
 
     /** Get one StockQuote for every week */
-    WEEKLY,
+    DAILY,
 
     /** Get one StockQuote for every month */
-    MONTHLY;
+    WEEKLY;
 }

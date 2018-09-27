@@ -42,12 +42,12 @@ public class StockQuoteApplication {
 
         String intervalString = args[3];
 
-        if (intervalString.startsWith("DAILY")) {
+        if (intervalString.startsWith("HOURLY")) {
+            chosenInterval = IntervalEnum.HOURLY;
+        } else if (intervalString.startsWith("DAILY")) {
             chosenInterval = IntervalEnum.DAILY;
         } else if (intervalString.startsWith("WEEKLY")) {
             chosenInterval = IntervalEnum.WEEKLY;
-        } else if (intervalString.startsWith("MONTHLY")) {
-            chosenInterval = IntervalEnum.MONTHLY;
         }
 
         /**
@@ -62,15 +62,15 @@ public class StockQuoteApplication {
          */
         long dateDifference = stopDate.getTime() - beginDate.getTime();
 
-        /*Convert the difference from long to int
-          Also convert from milliseconds to days
-          long variable is currently expressed in milliseconds
-          1,000 milliseconds in a second
-          60 seconds in a minute
-          60 minutes in an hour
-          24 hours in a day
+        /*Convert from milliseconds to hours, days, and weeks.
+          The + 23 for hour conversion is to ensure StockQuotes are
+          retrieved into the final day's worth of data. E.g., for a
+          range from 9/21/2018 to 9/28/2018, the last hour of output will
+          occur on Fri Sep 28 23:00:00 EDT 2018
          */
-        int  numberOfDays = (int) dateDifference / 1000 / 60 / 60 / 24;
+        long numberOfHours = dateDifference / 1000 / 60 / 60 + 23;
+        long numberOfDays  = dateDifference / 1000 / 60 / 60 / 24;
+        long numberOfWeeks = dateDifference / 1000 / 60 / 60 / 24 / 7;
 
         StockQuote populatedStock = applicationTest.getQuote(symbol, beginDate);
 
@@ -111,10 +111,16 @@ public class StockQuoteApplication {
 
         List<StockQuote> stockListWithInterval = new ArrayList<>();
 
+        /*Clear startDate calendar object, then reset to original start date
+          Failure to do so will result in incorrect start date
+         */
         startDate.clear();;
         startDate = Calendar.getInstance();
         startDate.setTime(beginDate);
 
+        /*Clear endDate calendar object, then reset to original end date
+          Failure to do so will result in incorrect stop date
+         */
         endDate.clear();;
         endDate = Calendar.getInstance();
         endDate.setTime(stopDate);
@@ -131,14 +137,39 @@ public class StockQuoteApplication {
         System.out.println();
         System.out.println("Result of call to get a list of Stock Quotes with specified interval: ");
 
-        for (int i = 0; i <= numberOfDays; ++i) {
-            Calendar thirdFakeDate = Calendar.getInstance();
-            thirdFakeDate.setTime(stockList.get(i).getDateRecorded());
+        if (intervalString.startsWith("HOURLY")) {
+            for (int i = 0; i <= numberOfHours; ++i) {
+                Calendar thirdFakeDate = Calendar.getInstance();
+                thirdFakeDate.setTime(stockListWithInterval.get(i).getDateRecorded());
 
-            System.out.println(stockListWithInterval.get(i).getStockSymbol() + " " +
-                    stockListWithInterval.get(i).getStockPrice().toString() + " " +
-                    thirdFakeDate.getTime().toString() );
+                System.out.println(stockListWithInterval.get(i).getStockSymbol() + " " +
+                        stockListWithInterval.get(i).getStockPrice().toString() + " " +
+                        thirdFakeDate.getTime().toString() );
+            }
         }
+
+        if (intervalString.startsWith("DAILY")) {
+            for (int i = 0; i <= numberOfDays; ++i) {
+                Calendar thirdFakeDate = Calendar.getInstance();
+                thirdFakeDate.setTime(stockListWithInterval.get(i).getDateRecorded());
+
+                System.out.println(stockListWithInterval.get(i).getStockSymbol() + " " +
+                        stockListWithInterval.get(i).getStockPrice().toString() + " " +
+                        thirdFakeDate.getTime().toString() );
+            }
+        }
+
+        else if (intervalString.startsWith("WEEKLY")) {
+            for (int i = 0; i <= numberOfWeeks; ++i) {
+                Calendar thirdFakeDate = Calendar.getInstance();
+                thirdFakeDate.setTime(stockListWithInterval.get(i).getDateRecorded());
+
+                System.out.println(stockListWithInterval.get(i).getStockSymbol() + " " +
+                        stockListWithInterval.get(i).getStockPrice().toString() + " " +
+                        thirdFakeDate.getTime().toString() );
+            }
+        }
+
 
     }
 }

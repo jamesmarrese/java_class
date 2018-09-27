@@ -79,6 +79,18 @@ public class BasicStockService implements StockService {
         Calendar stopDate = until;
         IntervalEnum chosenInterval = interval;
 
+        stopDate.add(Calendar.HOUR_OF_DAY, 23);
+
+        if (chosenInterval == IntervalEnum.HOURLY) {
+            while ((beginDate.before(stopDate)) || (beginDate.equals(stopDate))) {
+                Date date = beginDate.getTime();
+                StockQuote dummyQuote = getQuote(stockSymbol, date);
+                stockQuoteList.add(dummyQuote);
+                beginDate.add(Calendar.HOUR_OF_DAY, 1);
+            }
+            return stockQuoteList;
+        }
+
         if (chosenInterval == IntervalEnum.DAILY) {
             while ( (beginDate.before(stopDate) )  ||  (beginDate.equals(stopDate)) )  {
                 Date date = beginDate.getTime();
@@ -94,16 +106,6 @@ public class BasicStockService implements StockService {
                 StockQuote dummyQuote = getQuote(stockSymbol, date);
                 stockQuoteList.add(dummyQuote);
                 beginDate.add(Calendar.WEEK_OF_MONTH, 1);
-            }
-
-            return stockQuoteList;
-
-        } else if (chosenInterval == IntervalEnum.MONTHLY) {
-            while ( (beginDate.before(stopDate) )  ||  (beginDate.equals(stopDate)) )  {
-                Date date = beginDate.getTime();
-                StockQuote dummyQuote = getQuote(stockSymbol, date);
-                stockQuoteList.add(dummyQuote);
-                beginDate.add(Calendar.MONTH, 1);
             }
 
             return stockQuoteList;

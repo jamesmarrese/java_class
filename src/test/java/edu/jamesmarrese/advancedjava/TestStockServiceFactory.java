@@ -165,12 +165,44 @@ public class TestStockServiceFactory {
 
     /**
      * Tests that method getStockQuote returns a list of StockQuote objects
-     * according to the interval specified by testing the symbols returned
-     * by the list.
+     * according to the interval specified by testing the number of hours of
+     * data that should be on the list.
      */
 
     @Test
-    public void testGetListOfStockQuotesWithIntervalSpecifiedShouldReturnTrue () {
+    public void testGetListOfStockQuotesWithIntervalSpecifiedAsHourlyShouldReturnTrue () {
+
+        String symbol = "APPL";
+
+        Calendar startDate = new GregorianCalendar(2018,9,21);
+        Calendar endDate = new GregorianCalendar(2018,9,29);
+
+        IntervalEnum chosenInterval = IntervalEnum.HOURLY;
+
+        int numberOfHours = 216;
+
+        StockServiceFactory applicationTest = new StockServiceFactory();
+
+        List<StockQuote> stockList = new ArrayList<>();
+
+        stockList = applicationTest.getQuote(symbol, startDate, endDate, chosenInterval);
+
+        for (int i = 0; i < numberOfHours - 1; ++i) {
+            stockList.get(i);
+        }
+
+        assertTrue("There should be 216 hours of stock data, outputted on an hourly basis",
+                stockList.size() == numberOfHours);
+    }
+
+    /**
+     * Tests that method getStockQuote returns a list of StockQuote objects
+     * according to the interval specified by testing the number of days of
+     * data that should be on the list.
+     */
+
+    @Test
+    public void testGetListOfStockQuotesWithIntervalSpecifiedAsDailyShouldReturnTrue () {
 
         String symbol = "APPL";
 
@@ -187,12 +219,44 @@ public class TestStockServiceFactory {
 
         stockList = applicationTest.getQuote(symbol, startDate, endDate, chosenInterval);
 
-        for (int i = 0; i < numberOfDays; ++i) {
+        for (int i = 0; i < numberOfDays - 1; ++i) {
             stockList.get(i);
         }
 
-        assertTrue("There should be 6 days of stock data",
+        assertTrue("There should be 6 days of stock data, outputted on a daily basis",
                 stockList.size() == 6);
+    }
+
+    /**
+     * Tests that method getStockQuote returns a list of StockQuote objects
+     * according to the interval specified by testing the number of weeks of
+     * data that should be on the list.
+     */
+
+    @Test
+    public void testGetListOfStockQuotesWithIntervalSpecifiedAsWeeklyShouldReturnTrue () {
+
+        String symbol = "APPL";
+
+        Calendar startDate = new GregorianCalendar(2018,9,9);
+        Calendar endDate = new GregorianCalendar(2018,10,21);
+
+        IntervalEnum chosenInterval = IntervalEnum.WEEKLY;
+
+        int numberOfWeeks = 7;
+
+        StockServiceFactory applicationTest = new StockServiceFactory();
+
+        List<StockQuote> stockList = new ArrayList<>();
+
+        stockList = applicationTest.getQuote(symbol, startDate, endDate, chosenInterval);
+
+        for (int i = 0; i < numberOfWeeks - 1; ++i) {
+            stockList.get(i);
+        }
+
+        assertTrue("There should be 7 weeks of stock data, outputted on a weekly basis",
+                stockList.size() == numberOfWeeks);
     }
 
 }
