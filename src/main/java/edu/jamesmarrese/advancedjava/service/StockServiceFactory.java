@@ -88,9 +88,14 @@ public class StockServiceFactory implements StockService {
         Calendar stopDate = until;
         IntervalEnum chosenInterval = interval;
 
-        stopDate.add(Calendar.HOUR_OF_DAY, 23);
-
         if (chosenInterval == IntervalEnum.HOURLY) {
+
+            /* For the HOURLY enum interval, 23 hours must be added to the stopDate
+               passed in (@param until), otherwise the output will terminate at midnight
+               on the end date and omit the remaining 23 hours in the day when outputting
+             */
+            stopDate.add(Calendar.HOUR_OF_DAY, 23);
+
             while ((beginDate.before(stopDate))  ||  (beginDate.equals(stopDate))) {
                 Date date = beginDate.getTime();
                 StockQuote dummyQuote = getQuote(stockSymbol, date);
