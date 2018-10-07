@@ -1,4 +1,4 @@
-package edu.jamesmarrese.advancedjava;
+/*package edu.jamesmarrese.advancedjava;
 
 import edu.jamesmarrese.advancedjava.model.StockQuote;
 import edu.jamesmarrese.advancedjava.service.BasicStockService;
@@ -24,7 +24,7 @@ import static org.junit.Assert.assertTrue;
  * @author James Marrese
  */
 
-public class TestBasicStockService {
+/*public class TestBasicStockService {
 
     /**
      * Tests BasicStockService instances according to their symbols
@@ -34,7 +34,7 @@ public class TestBasicStockService {
      * class is hard-coded, no matter the symbol.
      */
 
-    @Test
+    /*@Test
     public void testBasicStockServiceStockSymbolShouldReturnTrue () {
 
         //Create a calendar object for use in the StockQuote
@@ -54,7 +54,7 @@ public class TestBasicStockService {
      * Tests BasicStockService instances according to their symbols
      */
 
-    @Test
+    /*@Test
     public void testBasicStockServiceStockSymbolShouldReturnFalse () {
 
         //Create a calendar object for use in the StockQuote
@@ -77,7 +77,7 @@ public class TestBasicStockService {
      * includes the stock price.
      */
 
-    @Test
+    /*@Test
     public void testBasicStockServiceStockPriceShouldReturnTrue () {
 
         //Create a calendar object for use in the StockQuote
@@ -99,7 +99,7 @@ public class TestBasicStockService {
      * instance returned by the BasicStockService class is hard-coded, which
      * includes the stock price.
      */
-    @Test
+    /*@Test
     public void testBasicStockServiceStockPriceShouldReturnFalse () {
 
         //Create a calendar object for use in the StockQuote
@@ -120,7 +120,7 @@ public class TestBasicStockService {
      * returned is not null.
      */
 
-    @Test
+    /*@Test
     public void testGetStockDate () {
 
         //Create a calendar object for use in the StockQuote
@@ -140,7 +140,7 @@ public class TestBasicStockService {
      * by testing the symbols returned by the list.
      */
 
-    @Test
+    /*@Test
     public void testGetListOfStockQuotesShouldReturnTrue () {
 
         String symbol = "APPL";
@@ -170,7 +170,7 @@ public class TestBasicStockService {
      * data that should be on the list.
      */
 
-    @Test
+    /*@Test
     public void testGetListOfStockQuotesWithIntervalSpecifiedAsHourlyShouldReturnTrue () {
 
         String symbol = "APPL";
@@ -202,7 +202,7 @@ public class TestBasicStockService {
      * data that should be on the list.
      */
 
-    @Test
+    /*@Test
     public void testGetListOfStockQuotesWithIntervalSpecifiedAsDailyShouldReturnTrue () {
 
         String symbol = "APPL";
@@ -234,7 +234,7 @@ public class TestBasicStockService {
      * data that should be on the list.
      */
 
-    @Test
+    /*@Test
     public void testGetListOfStockQuotesWithIntervalSpecifiedAsWeeklyShouldReturnTrue () {
 
         String symbol = "APPL";
@@ -261,3 +261,4 @@ public class TestBasicStockService {
     }
 
 }
+*/

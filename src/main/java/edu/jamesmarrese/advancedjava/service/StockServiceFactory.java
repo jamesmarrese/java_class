@@ -1,9 +1,14 @@
 package edu.jamesmarrese.advancedjava.service;
 
 import edu.jamesmarrese.advancedjava.model.StockQuote;
+import edu.jamesmarrese.advancedjava.util.DatabaseConnectionException;
+import edu.jamesmarrese.advancedjava.util.DatabaseUtils;
 
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
+import java.sql.*;
 import java.util.*;
+import java.util.Date;
 
 /**
  * This StockServiceFactory class implements the StockService interface
@@ -24,18 +29,37 @@ public class StockServiceFactory implements StockService {
      * e.g., for "APPL", return APPL 100.25 09/13/2018
      */
 
-    public StockQuote getQuote(String symbol, Date date) {
+    public StockQuote getQuote(@NotNull String symbol, @NotNull Date date) throws StockServiceException {
 
-        if (symbol == null)
-            throw new NullPointerException();
-        if (symbol.equals("APPL"))
-            return new StockQuote("APPL", new BigDecimal(100.25), date);
-        if (symbol.equals("AMZN"))
-            return new StockQuote("AMZN", new BigDecimal(150.75), date);
-        if (symbol.equals("NFLX"))
-            return new StockQuote("NFLX", new BigDecimal(201.54), date);
+        List<StockQuote> stockQuotes = null;
 
-        else return new StockQuote("DMMY", new BigDecimal(123.45), date);
+        try {
+            Connection connection = DatabaseUtils.getConnection();
+            Statement statement = connection.createStatement();
+
+            //Use a dummy date range to get a stock quote
+            String queryString = "select * from quotes where symbol = '" + symbol + "'" +
+                    "and time between '2018-09-21' and '2018-09-30';";
+
+            ResultSet resultSet = statement.executeQuery(queryString);
+            stockQuotes = new ArrayList<>(resultSet.getFetchSize());
+
+            while(resultSet.next()) {
+                String symbolValue = resultSet.getString("symbol");
+                date = resultSet.getTimestamp("time");
+                BigDecimal price = resultSet.getBigDecimal("price");
+                stockQuotes.add(new StockQuote(symbolValue, date, price));
+            }
+
+        } catch (DatabaseConnectionException | SQLException exception) {
+            throw new StockServiceException(exception.getMessage(), exception);
+        }
+        if (stockQuotes.isEmpty()) {
+            throw new StockServiceException("There is no stock data for:" + symbol);
+        }
+
+        return stockQuotes.get(0);
+
     }
 
     /**
@@ -48,22 +72,44 @@ public class StockServiceFactory implements StockService {
      * in the date range provided.
      */
 
-    public List<StockQuote> getQuote(String symbol, Calendar from, Calendar until) {
+    public List<StockQuote> getQuote(@NotNull String symbol, @NotNull Calendar from,
+                                     @NotNull Calendar until) throws StockServiceException {
 
-        List<StockQuote> stockQuoteList = new ArrayList<>();
+        List<StockQuote> anotherStockQuoteList = null;
 
-        String stockSymbol = symbol;
-        Calendar beginDate = from;
-        Calendar stopDate = until;
+        java.sql.Timestamp sqlFromDate = new java.sql.Timestamp(from.getTimeInMillis());
+        java.sql.Timestamp sqlUntilDate = new java.sql.Timestamp(until.getTimeInMillis());
 
-        while ( (beginDate.before(stopDate) )  ||  (beginDate.equals(stopDate)) )  {
-            Date date = beginDate.getTime();
-            StockQuote dummyQuote = getQuote(stockSymbol, date);
-            stockQuoteList.add(dummyQuote);
-            beginDate.add(Calendar.DAY_OF_MONTH, 1);
+        try {
+            Connection connection = DatabaseUtils.getConnection();
+            Statement statement = connection.createStatement();
+
+            String queryString = "select distinct symbol, time, price from quotes where symbol = '" + symbol +
+                    "' and time between '" + sqlFromDate +
+                    "' and '" + sqlUntilDate +
+                    "' order by time asc;";
+
+            ResultSet rs = statement.executeQuery(queryString);
+            anotherStockQuoteList = new ArrayList<>(rs.getFetchSize());
+
+            while ((rs.next())) {
+                String symbolValue = rs.getString("symbol");
+                java.sql.Timestamp date = rs.getTimestamp("time");
+                BigDecimal price = rs.getBigDecimal("price");
+                if (symbolValue.equals(symbol)) {
+                    anotherStockQuoteList.add(new StockQuote(symbolValue, date, price));
+                }
+            }
+
+        } catch (DatabaseConnectionException | SQLException exception) {
+            throw new StockServiceException(exception.getMessage(), exception);
         }
 
-        return stockQuoteList;
+        if (anotherStockQuoteList.isEmpty()) {
+            throw new StockServiceException("There is no stock data for:" + symbol);
+        }
+
+        return anotherStockQuoteList;
     }
 
     /**
@@ -79,59 +125,82 @@ public class StockServiceFactory implements StockService {
      *         in the date range provided and at the specified interval.
      */
 
-    public List<StockQuote> getQuote(String symbol, Calendar from, Calendar until, IntervalEnum interval) {
+    public List<StockQuote> getQuote(@NotNull String symbol, @NotNull Calendar from,
+                                     @NotNull Calendar until, @NotNull IntervalEnum interval)
+                                     throws StockServiceException {
 
-        List<StockQuote> anotherStockQuoteList = new ArrayList<>();
-
-        String stockSymbol = symbol;
-        Calendar beginDate = from;
-        Calendar stopDate = until;
+        List<StockQuote> thirdStockQuoteList = null;
         IntervalEnum chosenInterval = interval;
 
-        if (chosenInterval == IntervalEnum.HOURLY) {
+        java.sql.Timestamp sqlFromDate = new java.sql.Timestamp(from.getTimeInMillis());
+        java.sql.Timestamp sqlUntilDate = new java.sql.Timestamp(until.getTimeInMillis());
 
-            /* For the HOURLY enum interval, 23 hours must be added to the stopDate
-               passed in (@param until), otherwise the output will terminate at midnight
-               on the end date and omit the remaining 23 hours in the day when outputting
-             */
-            stopDate.add(Calendar.HOUR_OF_DAY, 23);
+        try {
+            Connection connection = DatabaseUtils.getConnection();
+            Statement statement = connection.createStatement();
 
-            while ((beginDate.before(stopDate))  ||  (beginDate.equals(stopDate))) {
-                Date date = beginDate.getTime();
-                StockQuote dummyQuote = getQuote(stockSymbol, date);
-                anotherStockQuoteList.add(dummyQuote);
-                beginDate.add(Calendar.HOUR_OF_DAY, 1);
+            String queryString = "select distinct symbol, time, price from quotes where symbol = '" + symbol +
+                    "' and time between '" + sqlFromDate +
+                    "' and '" + sqlUntilDate +
+                    "' order by time asc;";
+
+
+            ResultSet rs = statement.executeQuery(queryString);
+            thirdStockQuoteList = new ArrayList<>(rs.getFetchSize());
+
+            if (chosenInterval == IntervalEnum.HOURLY) {
+                while ((rs.next())) {
+                    String symbolValue = rs.getString("symbol");
+                    java.sql.Timestamp date = rs.getTimestamp("time");
+                    BigDecimal price = rs.getBigDecimal("price");
+
+                    Calendar databaseDate = Calendar.getInstance();
+                    databaseDate.setTime(date);
+
+                    if ( (thirdStockQuoteList == null)  ||  (thirdStockQuoteList.size() == 0) ) {
+                        thirdStockQuoteList.add(new StockQuote(symbolValue, date, price));
+                    }
+
+                    for (int i = 0; i < thirdStockQuoteList.size(); i++) {
+                        int day = databaseDate.get(Calendar.DAY_OF_MONTH);
+                        int hour = databaseDate.get(Calendar.HOUR_OF_DAY);
+
+                        Date listDate = thirdStockQuoteList.get(i).getDateRecorded();
+                        Calendar listCal = Calendar.getInstance();
+                        listCal.setTime(listDate);
+
+                        if ( (day == listCal.get(Calendar.DAY_OF_MONTH))  &&
+                                (hour == listCal.get(Calendar.HOUR_OF_DAY)) ) {
+                        } else {
+                            thirdStockQuoteList.add(new StockQuote(symbolValue, date, price));
+                            break;
+                        }
+
+                            listCal.clear();
+                    }
+
+                    databaseDate.clear();
+                }
             }
 
-            return anotherStockQuoteList;
+            if (chosenInterval == IntervalEnum.DAILY) {
+                while (rs.next()) {
+                    String symbolValue = rs.getString("symbol");
+                    java.sql.Timestamp date = rs.getTimestamp("time");
+                    BigDecimal price = rs.getBigDecimal("price");
+                    thirdStockQuoteList.add(new StockQuote(symbolValue, date, price));
+                }
+            }
+
+        } catch (DatabaseConnectionException | SQLException exception) {
+            throw new StockServiceException(exception.getMessage(), exception);
         }
 
-        if (chosenInterval == IntervalEnum.DAILY) {
-            while ( (beginDate.before(stopDate) )  ||  (beginDate.equals(stopDate)) )  {
-                Date date = beginDate.getTime();
-                StockQuote dummyQuote = getQuote(stockSymbol, date);
-                anotherStockQuoteList.add(dummyQuote);
-                beginDate.add(Calendar.DAY_OF_MONTH, 1);
-            }
-
-            return anotherStockQuoteList;
-
-        } else if (chosenInterval == IntervalEnum.WEEKLY) {
-            while ( (beginDate.before(stopDate) )  ||  (beginDate.equals(stopDate)) )  {
-                Date date = beginDate.getTime();
-                StockQuote dummyQuote = getQuote(stockSymbol, date);
-                anotherStockQuoteList.add(dummyQuote);
-                beginDate.add(Calendar.WEEK_OF_MONTH, 1);
-            }
-
-            return anotherStockQuoteList;
-
+        if (thirdStockQuoteList.isEmpty()) {
+            throw new StockServiceException("There is no stock data for:" + symbol);
         }
 
-        //Return empty list if interval is not specified
-        List<StockQuote> unfilledStockQuoteList = new ArrayList<>();
-
-        return unfilledStockQuoteList;
+        return thirdStockQuoteList;
 
     }
 
