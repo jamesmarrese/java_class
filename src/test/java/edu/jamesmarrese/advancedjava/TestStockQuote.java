@@ -1,8 +1,6 @@
-/*package edu.jamesmarrese.advancedjava;
+package edu.jamesmarrese.advancedjava;
 
 import edu.jamesmarrese.advancedjava.model.StockQuote;
-import edu.jamesmarrese.advancedjava.service.BasicStockService;
-import edu.jamesmarrese.advancedjava.service.StockServiceException;
 import org.junit.Test;
 
 import java.math.BigDecimal;
@@ -23,7 +21,7 @@ import static org.junit.Assert.assertTrue;
  * @author James Marrese
  */
 
-/*public class TestStockQuote {
+public class TestStockQuote {
 
     /**
      * Tests StockQuote instances according to their symbols
@@ -50,7 +48,7 @@ import static org.junit.Assert.assertTrue;
      * and verifies that the correct symbols are returned.
      */
 
-    /*@Test
+    @Test
     public void testGetStockSymbolShouldReturnFalse () {
 
         //Create a calendar object for use in the StockQuote
@@ -70,7 +68,7 @@ import static org.junit.Assert.assertTrue;
      * and verifies that the correct prices are returned.
      */
 
-    /*@Test
+    @Test
     public void testGetStockPriceShouldReturnTrue () {
 
         //Create a calendar object for use in the StockQuote
@@ -93,7 +91,7 @@ import static org.junit.Assert.assertTrue;
      * and verifies that the correct prices are returned.
      */
 
-    /*@Test
+    @Test
     public void testGetStockPriceShouldReturnFalse () {
 
         //Create a calendar object for use in the StockQuote
@@ -116,7 +114,7 @@ import static org.junit.Assert.assertTrue;
      * returned is not null.
      */
 
-    /*@Test
+    @Test
     public void testGetStockDate () {
 
         //Create a calendar object for use in the StockQuote
@@ -136,7 +134,7 @@ import static org.junit.Assert.assertTrue;
      * returned is not null.
      */
 
-    /*Test
+    @Test
     public void testGetStockObject () {
 
         //Create a calendar object for use in the StockQuote
@@ -149,26 +147,4 @@ import static org.junit.Assert.assertTrue;
         assertNotNull("The stock object is not null", stockQuote);
     }
 
-    /**
-     * Test that a returned StockQuote object is not null.
-     */
-
-    /*@Test
-    public void testStockToString () throws StockServiceException {
-
-        //Create a calendar object for use in the StockQuote
-        DateFormat dateFormat = new SimpleDateFormat("09/13/2018");
-        Date date = new Date();
-        dateFormat.format(date);
-
-        BasicStockService testStock = new BasicStockService();
-
-        StockQuote populatedStock = testStock.getQuote("GOOG", date);
-
-        String stockString = populatedStock.toString();
-
-        assertNotNull("The stock string should not be null", stockString);
-
-    }
-
-}*/
+}

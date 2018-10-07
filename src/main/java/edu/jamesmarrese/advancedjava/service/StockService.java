@@ -10,8 +10,8 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * This StockService interface provides the interface for the StockQuote and
- * BasicStockService classes.
+ * This StockService interface provides the interface for the
+ * StockServiceFactory class.
  *
  * @author  James Marrese
  */

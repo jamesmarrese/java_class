@@ -77,6 +77,7 @@ public class StockServiceFactory implements StockService {
 
         List<StockQuote> anotherStockQuoteList = null;
 
+        //Convert Calendar date parameters to java.sql dates with timestamps
         java.sql.Timestamp sqlFromDate = new java.sql.Timestamp(from.getTimeInMillis());
         java.sql.Timestamp sqlUntilDate = new java.sql.Timestamp(until.getTimeInMillis());
 
@@ -84,6 +85,7 @@ public class StockServiceFactory implements StockService {
             Connection connection = DatabaseUtils.getConnection();
             Statement statement = connection.createStatement();
 
+            //MySQL statement to fetch data from the database
             String queryString = "select distinct symbol, time, price from quotes where symbol = '" + symbol +
                     "' and time between '" + sqlFromDate +
                     "' and '" + sqlUntilDate +
@@ -132,6 +134,7 @@ public class StockServiceFactory implements StockService {
         List<StockQuote> thirdStockQuoteList = null;
         IntervalEnum chosenInterval = interval;
 
+        //Convert Calendar date parameters to java.sql dates with timestamps
         java.sql.Timestamp sqlFromDate = new java.sql.Timestamp(from.getTimeInMillis());
         java.sql.Timestamp sqlUntilDate = new java.sql.Timestamp(until.getTimeInMillis());
 
@@ -139,6 +142,7 @@ public class StockServiceFactory implements StockService {
             Connection connection = DatabaseUtils.getConnection();
             Statement statement = connection.createStatement();
 
+            //MySQL statement to fetch data from the database
             String queryString = "select distinct symbol, time, price from quotes where symbol = '" + symbol +
                     "' and time between '" + sqlFromDate +
                     "' and '" + sqlUntilDate +
@@ -148,27 +152,46 @@ public class StockServiceFactory implements StockService {
             ResultSet rs = statement.executeQuery(queryString);
             thirdStockQuoteList = new ArrayList<>(rs.getFetchSize());
 
+            /*If a stock quote has the same date and hour as another stock quote,
+              then they occur within the same hour and only one will be added.
+             */
             if (chosenInterval == IntervalEnum.HOURLY) {
                 while ((rs.next())) {
                     String symbolValue = rs.getString("symbol");
                     java.sql.Timestamp date = rs.getTimestamp("time");
                     BigDecimal price = rs.getBigDecimal("price");
 
+                    /*Convert the java.sql date retrieved from the database
+                      to a Calendar object.
+                     */
                     Calendar databaseDate = Calendar.getInstance();
                     databaseDate.setTime(date);
 
+                    /*Add the "first" stock quote fetched from the database to the list,
+                      whether the list is null or has a size of zero. This is necessary
+                      in order to ensure there is something to which the "second" stock
+                      quote retrieved from the database can be compared.
+                     */
                     if ( (thirdStockQuoteList == null)  ||  (thirdStockQuoteList.size() == 0) ) {
                         thirdStockQuoteList.add(new StockQuote(symbolValue, date, price));
                     }
 
                     for (int i = 0; i < thirdStockQuoteList.size(); i++) {
+
+                        //Get the day and hour of the date retrieved from the database
                         int day = databaseDate.get(Calendar.DAY_OF_MONTH);
                         int hour = databaseDate.get(Calendar.HOUR_OF_DAY);
 
+                        /*Get the date of "this" stock quote from the list
+                         and convert it to a Calendar object.
+                         */
                         Date listDate = thirdStockQuoteList.get(i).getDateRecorded();
                         Calendar listCal = Calendar.getInstance();
                         listCal.setTime(listDate);
 
+                        /*If the day and hour match another stock quote, do not
+                          add it to the list. Otherwise, add it to the list.
+                         */
                         if ( (day == listCal.get(Calendar.DAY_OF_MONTH))  &&
                                 (hour == listCal.get(Calendar.HOUR_OF_DAY)) ) {
                         } else {
@@ -176,9 +199,15 @@ public class StockServiceFactory implements StockService {
                             break;
                         }
 
-                            listCal.clear();
+                        /*Clear the Calendar object retrieved from the list in order
+                          to prep for the next for loop iteration
+                         */
+                        listCal.clear();
                     }
 
+                    /*Clear the Calendar object retrieved from the database  in order
+                          to prep for the next while loop iteration
+                         */
                     databaseDate.clear();
                 }
             }

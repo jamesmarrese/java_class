@@ -1,12 +1,9 @@
-/*package edu.jamesmarrese.advancedjava;
+package edu.jamesmarrese.advancedjava;
 
-import edu.jamesmarrese.advancedjava.util.DatabaseConnectionException;
 import edu.jamesmarrese.advancedjava.util.DatabaseUtils;
 import org.junit.Test;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.sql.Statement;
 
 import static org.junit.Assert.assertNotNull;
@@ -20,7 +17,7 @@ import static org.junit.Assert.assertTrue;
  * @author James Marrese
  */
 
-/*public class TestDatabaseUtils {
+public class TestDatabaseUtils {
 
     @Test
     public void testDatabaseConnection () throws Exception {
@@ -37,4 +34,4 @@ import static org.junit.Assert.assertTrue;
         assertTrue("verify that we can execute a statement",execute);
     }
 
-}*/
+}

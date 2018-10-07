@@ -1,4 +1,4 @@
-/*package edu.jamesmarrese.advancedjava;
+package edu.jamesmarrese.advancedjava;
 
 import edu.jamesmarrese.advancedjava.service.StockServiceException;
 import edu.jamesmarrese.advancedjava.ui.StockQuoteApplication;
@@ -13,13 +13,13 @@ import java.text.ParseException;
  * @author  James Marrese
  */
 
-/*public class TestStockQuoteApplication {
+public class TestStockQuoteApplication {
 
     /**
      * Tests whether main method throws NullPointerException
      * when passed args of null.
      */
-   /*@Test(expected = NullPointerException.class)
+   @Test(expected = NullPointerException.class)
 
     public void testMainNegative() throws ParseException, StockServiceException {
         StockQuoteApplication.main(null);
@@ -29,7 +29,7 @@ import java.text.ParseException;
      * Tests whether main method returns expected output when
      * passed valid args, including  an Interval enum value.
      */
-   /* @Test
+    @Test
     public void testMainShouldReturnValidResultTestingIntervalEnum ()
             throws ParseException, StockServiceException {
 
@@ -42,4 +42,4 @@ import java.text.ParseException;
         StockQuoteApplication.main(argString);
     }
 
-}*/
+}

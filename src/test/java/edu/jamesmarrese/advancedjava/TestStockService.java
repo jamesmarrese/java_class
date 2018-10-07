@@ -1,4 +1,4 @@
-/*package edu.jamesmarrese.advancedjava;
+package edu.jamesmarrese.advancedjava;
 
 import edu.jamesmarrese.advancedjava.model.StockQuote;
 import edu.jamesmarrese.advancedjava.service.StockServiceException;
@@ -11,7 +11,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.List;
 
 import static junit.framework.Assert.assertNotNull;
@@ -25,14 +24,14 @@ import static org.junit.Assert.assertTrue;
  * @author  James Marrese
  */
 
-/*public class TestStockService {
+public class TestStockService {
 
     /**
      * Tests StockQuote instances to verify that the
      * correct stock symbols are returned.
      */
 
-    /*@Test
+    @Test
     public void testStockServiceStockListSizeShouldBeFive ()
             throws ParseException, StockServiceException {
 
@@ -54,8 +53,8 @@ import static org.junit.Assert.assertTrue;
 
         List<StockQuote> stockList = test.getQuote(mockStockSymbol, startDate, endDate);
 
-        assertTrue("The length of the stock list should be 6",
-                stockList.size() == 6);
+        assertTrue("The length of the stock list should be 13",
+                stockList.size() == 13);
 
     }
 
@@ -64,7 +63,7 @@ import static org.junit.Assert.assertTrue;
      * returned is not null.
      */
 
-    /*@Test
+    @Test
     public void testGetStockDate () {
 
         //Create a calendar object for use in the StockQuote
@@ -79,4 +78,4 @@ import static org.junit.Assert.assertTrue;
         assertNotNull("The date object is not null", testDate);
     }
 
-}*/
+}

@@ -2,36 +2,21 @@ package edu.jamesmarrese.advancedjava;
 
 import edu.jamesmarrese.advancedjava.model.StockQuote;
 import edu.jamesmarrese.advancedjava.service.IntervalEnum;
-import edu.jamesmarrese.advancedjava.service.StockService;
 import edu.jamesmarrese.advancedjava.service.StockServiceException;
 import edu.jamesmarrese.advancedjava.service.StockServiceFactory;
-import edu.jamesmarrese.advancedjava.util.DatabaseUtils;
-import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.runners.MockitoJUnitRunner;
 
 import java.math.BigDecimal;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.List;
 
-import static java.util.jar.Pack200.Packer.PASS;
 import static junit.framework.Assert.assertNotNull;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Matchers.any;
-import static org.mockito.Mockito.when;
 
 /**
  * This TestStockServiceFactory class tests StockServiceFactory instances.

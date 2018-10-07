@@ -75,13 +75,10 @@ public class StockQuoteApplication {
 
     public static void main(String[] args) throws ParseException, StockServiceException {
 
-        // be optimistic init to positive values
-        ProgramTerminationStatusEnum exitStatus = ProgramTerminationStatusEnum.NORMAL;
-        String programTerminationMessage = "Normal program termination.";
         if (args.length != 4) {
             exit(ProgramTerminationStatusEnum.ABNORMAL,
                     "Please supply 4 arguments a stock symbol, " +
-                            "a start date (yyyy/MM/dd) and end date (yyyy/MM/dd)" +
+                            "a start date (yyyy-MM-dd) and end date (yyyy-MM-dd)" +
                             " and an interval at which stock quotes will be returned.");
         }
 
