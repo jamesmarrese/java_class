@@ -134,6 +134,9 @@ public class StockServiceFactory implements StockService {
         List<StockQuote> thirdStockQuoteList = null;
         IntervalEnum chosenInterval = interval;
 
+        until.add(Calendar.HOUR_OF_DAY, 23);
+        until.add(Calendar.MINUTE, 59);
+
         //Convert Calendar date parameters to java.sql dates with timestamps
         java.sql.Timestamp sqlFromDate = new java.sql.Timestamp(from.getTimeInMillis());
         java.sql.Timestamp sqlUntilDate = new java.sql.Timestamp(until.getTimeInMillis());
