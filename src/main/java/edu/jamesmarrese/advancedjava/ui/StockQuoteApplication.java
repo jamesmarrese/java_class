@@ -4,6 +4,8 @@ import edu.jamesmarrese.advancedjava.model.StockQuote;
 import edu.jamesmarrese.advancedjava.service.IntervalEnum;
 import edu.jamesmarrese.advancedjava.service.StockServiceException;
 import edu.jamesmarrese.advancedjava.service.StockServiceFactory;
+import edu.jamesmarrese.advancedjava.util.DatabaseInitializationException;
+import edu.jamesmarrese.advancedjava.util.DatabaseUtils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -73,7 +75,8 @@ public class StockQuoteApplication {
         System.exit(statusCode.getStatusCode());
     }
 
-    public static void main(String[] args) throws ParseException, StockServiceException {
+    public static void main(String[] args) throws ParseException, StockServiceException,
+            DatabaseInitializationException {
 
         if (args.length != 4) {
             exit(ProgramTerminationStatusEnum.ABNORMAL,
@@ -81,6 +84,8 @@ public class StockQuoteApplication {
                             "a start date (yyyy-MM-dd) and end date (yyyy-MM-dd)" +
                             " and an interval at which stock quotes will be returned.");
         }
+
+        DatabaseUtils.initializeDatabase(DatabaseUtils.initializationFile);
 
         StockServiceFactory applicationTest = new StockServiceFactory();
 
@@ -126,13 +131,6 @@ public class StockQuoteApplication {
             System.err.println("Unknown interval enum supplied");
             System.exit(-1);
         }
-
-        StockQuote simpleStockQuote = applicationTest.getQuote(symbol, beginDate);
-
-        //Print out one StockQuote
-        System.out.println("Result of call to get a Stock Quote: ");
-        System.out.println(simpleStockQuote);
-
 
         List<StockQuote> stockList = applicationTest.getQuote(symbol, startDate, endDate);
 

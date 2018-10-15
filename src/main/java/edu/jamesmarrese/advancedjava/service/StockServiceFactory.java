@@ -2,6 +2,7 @@ package edu.jamesmarrese.advancedjava.service;
 
 import edu.jamesmarrese.advancedjava.model.StockQuote;
 import edu.jamesmarrese.advancedjava.util.DatabaseConnectionException;
+import edu.jamesmarrese.advancedjava.util.DatabaseInitializationException;
 import edu.jamesmarrese.advancedjava.util.DatabaseUtils;
 
 import javax.validation.constraints.NotNull;
@@ -29,17 +30,19 @@ public class StockServiceFactory implements StockService {
      * e.g., for "APPL", return APPL 100.25 09/13/2018
      */
 
-    public StockQuote getQuote(@NotNull String symbol, @NotNull Date date) throws StockServiceException {
+    public StockQuote getQuote(@NotNull String symbol, @NotNull Date date)
+            throws StockServiceException, DatabaseInitializationException {
 
-        List<StockQuote> stockQuotes = null;
+        DatabaseUtils.initializeDatabase(DatabaseUtils.initializationFile);
+
+        List<StockQuote> stockQuotes = new ArrayList<>();
 
         try {
             Connection connection = DatabaseUtils.getConnection();
             Statement statement = connection.createStatement();
 
             //Use a dummy date range to get a stock quote
-            String queryString = "select * from quotes where symbol = '" + symbol + "'" +
-                    "and time between '2018-09-21' and '2018-09-30';";
+            String queryString = "select * from quotes where symbol = '" + symbol + "';";
 
             ResultSet resultSet = statement.executeQuery(queryString);
             stockQuotes = new ArrayList<>(resultSet.getFetchSize());
@@ -73,9 +76,12 @@ public class StockServiceFactory implements StockService {
      */
 
     public List<StockQuote> getQuote(@NotNull String symbol, @NotNull Calendar from,
-                                     @NotNull Calendar until) throws StockServiceException {
+                                     @NotNull Calendar until)
+            throws StockServiceException, DatabaseInitializationException {
 
-        List<StockQuote> anotherStockQuoteList = null;
+        DatabaseUtils.initializeDatabase(DatabaseUtils.initializationFile);
+
+        List<StockQuote> anotherStockQuoteList = new ArrayList<>();
 
         //Convert Calendar date parameters to java.sql dates with timestamps
         java.sql.Timestamp sqlFromDate = new java.sql.Timestamp(from.getTimeInMillis());
@@ -129,9 +135,11 @@ public class StockServiceFactory implements StockService {
 
     public List<StockQuote> getQuote(@NotNull String symbol, @NotNull Calendar from,
                                      @NotNull Calendar until, @NotNull IntervalEnum interval)
-                                     throws StockServiceException {
+                                     throws StockServiceException, DatabaseInitializationException {
 
-        List<StockQuote> thirdStockQuoteList = null;
+        DatabaseUtils.initializeDatabase(DatabaseUtils.initializationFile);
+
+        List<StockQuote> thirdStockQuoteList = new ArrayList<>();
         IntervalEnum chosenInterval = interval;
 
         until.add(Calendar.HOUR_OF_DAY, 23);

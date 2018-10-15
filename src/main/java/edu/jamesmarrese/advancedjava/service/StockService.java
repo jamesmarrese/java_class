@@ -1,10 +1,9 @@
 package edu.jamesmarrese.advancedjava.service;
 
 import edu.jamesmarrese.advancedjava.model.StockQuote;
-import edu.jamesmarrese.advancedjava.util.DatabaseConnectionException;
+import edu.jamesmarrese.advancedjava.util.DatabaseInitializationException;
 
 import javax.validation.constraints.NotNull;
-import java.sql.SQLException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -27,7 +26,8 @@ public interface StockService {
      * @return a <CODE>StockQuote</CODE> instance consisting of
      *         a stockSymbol (String), stockPrice (double), and date (Date).
      */
-    StockQuote getQuote(@NotNull String symbol, @NotNull Date date) throws StockServiceException;
+    StockQuote getQuote(@NotNull String symbol, @NotNull Date date)
+            throws StockServiceException, DatabaseInitializationException;
 
     /**
      * Get a historical list of stock quotes for the provided symbol
@@ -40,7 +40,7 @@ public interface StockService {
      *         one for each day in the range specified
      */
     List<StockQuote> getQuote (@NotNull String symbol, @NotNull Calendar from, @NotNull Calendar until)
-            throws StockServiceException;
+            throws StockServiceException, DatabaseInitializationException;
 
     /**
      * Get a historical list of stock quotes for the provided symbol
@@ -60,6 +60,6 @@ public interface StockService {
 
     List<StockQuote> getQuote (@NotNull String symbol, @NotNull Calendar from,
                                @NotNull Calendar until, @NotNull IntervalEnum interval)
-            throws StockServiceException;
+            throws StockServiceException, DatabaseInitializationException;
 
 }
