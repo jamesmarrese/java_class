@@ -1,14 +1,17 @@
 package edu.jamesmarrese.advancedjava.service;
 
 import edu.jamesmarrese.advancedjava.model.StockQuote;
+import edu.jamesmarrese.advancedjava.util.DatabaseConnectionException;
 
+import javax.validation.constraints.NotNull;
+import java.sql.SQLException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
 /**
- * This StockService interface provides the interface for the StockQuote and
- * BasicStockService classes.
+ * This StockService interface provides the interface for the
+ * StockServiceFactory class.
  *
  * @author  James Marrese
  */
@@ -24,7 +27,7 @@ public interface StockService {
      * @return a <CODE>StockQuote</CODE> instance consisting of
      *         a stockSymbol (String), stockPrice (double), and date (Date).
      */
-    StockQuote getQuote(String symbol, Date date);
+    StockQuote getQuote(@NotNull String symbol, @NotNull Date date) throws StockServiceException;
 
     /**
      * Get a historical list of stock quotes for the provided symbol
@@ -36,7 +39,8 @@ public interface StockService {
      * @return a list of StockQuote instances,
      *         one for each day in the range specified
      */
-    List<StockQuote> getQuote (String symbol, Calendar from, Calendar until);
+    List<StockQuote> getQuote (@NotNull String symbol, @NotNull Calendar from, @NotNull Calendar until)
+            throws StockServiceException;
 
     /**
      * Get a historical list of stock quotes for the provided symbol
@@ -54,6 +58,8 @@ public interface StockService {
      * @return a list of StockQuote instances, one for each interval specified
      */
 
-    List<StockQuote> getQuote (String symbol, Calendar from, Calendar until, IntervalEnum interval);
+    List<StockQuote> getQuote (@NotNull String symbol, @NotNull Calendar from,
+                               @NotNull Calendar until, @NotNull IntervalEnum interval)
+            throws StockServiceException;
 
 }

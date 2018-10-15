@@ -28,18 +28,17 @@ public class StockQuote {
      * @param date  the date the stock info was recorded
      */
 
-    @NotNull
-    public StockQuote (String stockName, BigDecimal stockValue, Date date) {
+    public StockQuote (@NotNull String stockName, @NotNull Date date, @NotNull BigDecimal stockValue) {
         this.stockSymbol = stockName;
-        this.stockPrice = stockValue;
         this.dateRecorded = date;
+        this.stockPrice = stockValue;
     }
 
     /**
      * @return the symbol that represents the company whose stock this is.
      * e.g. AMZN for Amazon
      */
-    @NotNull
+
     public String getStockSymbol() {
         return stockSymbol;
     }
@@ -47,7 +46,7 @@ public class StockQuote {
     /**
      * @return The price of one share of stock.
      */
-    @NotNull
+
     public BigDecimal getStockPrice() {
         return stockPrice;
     }
@@ -55,7 +54,7 @@ public class StockQuote {
     /**
      * @return the date of the stock price.
      */
-    @NotNull
+
     public Date getDateRecorded() {
         return dateRecorded;
     }
@@ -65,6 +64,6 @@ public class StockQuote {
      * @return the StockQuote object as a readable String
      */
     public String toString () {
-        return getStockSymbol() + " " + getStockPrice() + " " + getDateRecorded();
+        return getStockSymbol() + " " + getDateRecorded() + " " + getStockPrice();
     }
 }
