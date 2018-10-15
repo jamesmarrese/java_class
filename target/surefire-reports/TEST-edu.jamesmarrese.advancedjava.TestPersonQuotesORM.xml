@@ -67,6 +67,6 @@
   </properties>
   <testcase classname="edu.jamesmarrese.advancedjava.TestPersonQuotesORM" name="testEqualsNegativeDifferentPerson" time="0"/>
   <testcase classname="edu.jamesmarrese.advancedjava.TestPersonQuotesORM" name="testPersonQuotesGetterAndSetters" time="0"/>
-  <testcase classname="edu.jamesmarrese.advancedjava.TestPersonQuotesORM" name="testToString" time="0"/>
   <testcase classname="edu.jamesmarrese.advancedjava.TestPersonQuotesORM" name="testEquals" time="0"/>
+  <testcase classname="edu.jamesmarrese.advancedjava.TestPersonQuotesORM" name="testToString" time="0"/>
 </testsuite>
