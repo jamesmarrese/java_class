@@ -7,69 +7,42 @@ jobs:
   build:
     docker:
     # specify the version you desire here
-    #- image: circleci/openjdk:8-jdk
+    - image: circleci/openjdk:8-jdk
 
     # Specify service dependencies here if necessary
     # CircleCI maintains a library of pre-built images
     # documented at https://circleci.com/docs/2.0/circleci-images/
     # - image: circleci/postgres:9.4
+    - image: circleci/mysql:latest-ram
+      environment:
+      - MYSQL_ROOT_PASSWORD: vw49pwQuick$et430
+      - MYSQL_DATABASE: stocks
+      - MYSQL_USER: bob
+      - MYSQL_PASSWORD: some_pass
 
-    - image: circleci/mysql:8.0
+    working_directory: ~/repo
 
-environment:
+    environment:
+      # Customize the JVM maximum heap limit
+      MAVEN_OPTS: -Xmx3200m
 
-- MYSQL_ROOT_PASSWORD: vw49pwQuick$et430
+    steps:
+    - checkout
+    - run: sudo apt install -y mysql-client
 
-- MYSQL_DATABASE: stocks
+    # Download and cache dependencies
+    - restore_cache:
+        keys:
+        - v1-dependencies-{{ checksum "pom.xml" }}
+        # fallback to using the latest cache if no exact match is found
+        - v1-dependencies-
 
-- MYSQL_USER: bob
+    - run: mvn dependency:go-offline
 
-- MYSQL_PASSWORD: some_pass
+    - save_cache:
+        paths:
+        - ~/.m2
+        key: v1-dependencies-{{ checksum "pom.xml" }}
 
-- MAVEN_OPTS: -Xmx3200m
-
-working_directory: ~/repo
-
-
-
-steps:
-
-- checkout
-
-
-
-- run: sudo apt install -y mysql-client
-
-
-
-# Download and cache dependencies
-
-- restore_cache:
-
-keys:
-
-- v1-dependencies-{{ checksum "pom.xml" }}
-
-  # fallback to using the latest cache if no exact match is found
-
-- v1-dependencies-
-
-
-
-- run: mvn dependency:go-offline
-
-
-
-- save_cache:
-
-paths:
-
-- ~/.m2
-
-key: v1-dependencies-{{ checksum "pom.xml" }}
-
-
-
-# run tests!
-
-- run: mvn integration-test
+    # run tests!
+    - run: mvn integration test
