@@ -9,9 +9,10 @@
         <!-- HibernateUtils class.  Applications should place this file in  -->
         <!-- the root of their class path with appropriate production values. -->
         <!-- ?autoReconnect=true&amp;useSSL=false -->
+        <!-- ?allowPublicKeyRetrieval=true&useSSL=false; -->
 
         <!-- Tug database connection URL and credentials -->
-        <property name="connection.url">jdbc:mysql://localhost:3306/stocks?useSSL=false</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/stocks?allowPublicKeyRetrieval=true&amp;useSSL=false</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 
