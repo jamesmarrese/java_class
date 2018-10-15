@@ -25,7 +25,7 @@ CREATE TABLE stocks.quotes
 /** A list of people and their quotes */
 CREATE TABLE stocks.person_quotes
 (
-  person_quote_ID INT PRIMARY KEY NOT NULL,
+  person_quotes_ID INT PRIMARY KEY NOT NULL,
   person_id INT NOT NULL,
   quotes_id INT NOT NULL,
   FOREIGN KEY (person_id) REFERENCES person (person_ID),
@@ -69,3 +69,5 @@ INSERT INTO person_quotes (person_quotes_ID, person_id, quotes_id) VALUES (4, 3,
 INSERT INTO person_quotes (person_quotes_ID, person_id, quotes_id) VALUES (5, 3, 3);
 INSERT INTO person_quotes (person_quotes_ID, person_id, quotes_id) VALUES (6, 3, 4);
 INSERT INTO person_quotes (person_quotes_ID, person_id, quotes_id) VALUES (7, 4, 7);
+
+select * from quotes;
