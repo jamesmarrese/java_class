@@ -68,7 +68,7 @@ public class Quotes {
      * @return the quote's timestamp
      */
     @Basic
-    @Column(name = "time", nullable = false, insertable = true, updatable = true)
+    @Column(name = "quote_time", nullable = false, insertable = true, updatable = true)
     public Timestamp getTime () {return time;}
 
     /**
@@ -111,7 +111,7 @@ public class Quotes {
                 "quotes_ID=" + ID +
                 ", price='" + price + '\'' +
                 ", symbol='" + symbol + '\'' +
-                ", time=" + time +
+                ", quote_time=" + time +
                 '}';
     }
 
