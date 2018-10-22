@@ -70,4 +70,15 @@ INSERT INTO person_quotes (person_quotes_ID, person_id, quotes_id) VALUES (5, 3,
 INSERT INTO person_quotes (person_quotes_ID, person_id, quotes_id) VALUES (6, 3, 4);
 INSERT INTO person_quotes (person_quotes_ID, person_id, quotes_id) VALUES (7, 4, 7);
 
-select * from quotes;
+
+/* delete table if it exists already - ensuring a clean db */
+DROP TABLE IF EXISTS stocks.stock CASCADE;
+
+/* creates a table to store a list of stocks */
+CREATE TABLE stocks.stock
+(
+  stock_ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  symbol VARCHAR(256) NOT NULL,
+  stock_time DATETIME NOT NULL,
+  price DECIMAL NOT NULL
+);

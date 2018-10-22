@@ -1,5 +1,5 @@
 edu\jamesmarrese\advancedjava\TestPersonORM.class
-edu\jamesmarrese\advancedjava\TestDatabaseUtils.class
 edu\jamesmarrese\advancedjava\TestPersonQuotesORM.class
-edu\jamesmarrese\advancedjava\TestDatabasePersonService.class
 edu\jamesmarrese\advancedjava\TestQuotesORM.class
+edu\jamesmarrese\advancedjava\TestDatabaseUtils.class
+edu\jamesmarrese\advancedjava\TestDatabasePersonService.class
