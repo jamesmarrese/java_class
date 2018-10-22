@@ -1,7 +1,12 @@
+C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\util\XMLUtils.java
+C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\xml\Stocks.java
 C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\service\StockServiceFactory.java
+C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\util\InvalidXMLException.java
+C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\service\XMLDataPersistence.java
 C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\service\StockService.java
 C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\service\PersonService.java
 C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\service\PersonServiceException.java
+C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\model\StockORM.java
 C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\model\PersonQuotes.java
 C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\util\DatabaseInitializationException.java
 C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\model\Person.java
@@ -10,6 +15,9 @@ C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedja
 C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\service\StockServiceException.java
 C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\service\IntervalEnum.java
 C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\model\Quotes.java
+C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\xml\OutputXML.java
 C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\util\DatabaseUtils.java
+C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\xml\Stock.java
+C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\xml\XMLDomainObject.java
 C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\util\DatabaseConnectionException.java
 C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\service\DatabasePersonService.java
