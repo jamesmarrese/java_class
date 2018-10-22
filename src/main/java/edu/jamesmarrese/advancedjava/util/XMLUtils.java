@@ -17,7 +17,7 @@ import java.io.InputStream;
 import java.io.StringReader;
 
 /**
- * A collection of helper method for marshaling and unmarshaling XML instances.
+ * A collection of helper methods for marshaling and unmarshaling XML instances.
  */
 public class XMLUtils {
 

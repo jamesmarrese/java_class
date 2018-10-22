@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5029f06d-57fe-4e07-b9a8-acb695f9775d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/Quotes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/Quotes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/sql/db_initialization.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/sql/db_initialization.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/model/Quotes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/model/Quotes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestDatabasePersonService.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestDatabasePersonService.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestDatabaseUtils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestDatabaseUtils.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestPersonORM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestPersonORM.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestPersonQuotesORM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestPersonQuotesORM.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestQuotesORM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestQuotesORM.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestDatabasePersonService.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestDatabasePersonService.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestDatabaseUtils.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestDatabaseUtils.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestPersonQuotesORM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestPersonQuotesORM.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestQuotesORM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestQuotesORM.txt" afterDir="false" />
-    </list>
+    <list default="true" id="5029f06d-57fe-4e07-b9a8-acb695f9775d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,7 +79,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="70" />
-          <entry key="java" value="6874" />
+          <entry key="java" value="6875" />
           <entry key="sql" value="4160" />
           <entry key="xml" value="253" />
           <entry key="yml" value="285" />
@@ -109,7 +88,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="DBN-SQL" value="4160" />
-          <entry key="JAVA" value="6874" />
+          <entry key="JAVA" value="6875" />
           <entry key="PLAIN_TEXT" value="70" />
           <entry key="XML" value="253" />
           <entry key="YAML" value="285" />
@@ -141,7 +120,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/util/XMLUtils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -407,7 +386,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540175574029" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540175649921" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ORM_Example(1)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -875,7 +854,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/util/XMLUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
         </state>
       </provider>
     </entry>
