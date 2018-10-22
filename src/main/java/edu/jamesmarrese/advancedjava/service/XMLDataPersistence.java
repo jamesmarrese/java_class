@@ -126,7 +126,7 @@ public class XMLDataPersistence {
     }
 
     /**
-     * Get the number of nodes in the XML file
+     * Get the number of nodes in the XML file.
      * @return numberOfNodes, an int value describing the number of nodes
      *         in the XML file being read.
      */
