@@ -22,6 +22,11 @@ public class StockORM {
     private BigDecimal price;
 
     /**
+     * Empty constructor
+     */
+    public StockORM() {}
+
+    /**
      * Primary Key - Unique ID for a particular row in the person table.
      *
      * @return an integer value

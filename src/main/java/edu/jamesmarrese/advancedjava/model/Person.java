@@ -21,6 +21,11 @@ public class Person {
     private Timestamp birthDate;
 
     /**
+     * Empty constructor
+     */
+    public Person() {}
+
+    /**
      * Primary Key - Unique ID for a particular row in the person table.
      *
      * @return an integer value

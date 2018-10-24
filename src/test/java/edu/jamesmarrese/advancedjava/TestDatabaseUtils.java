@@ -34,6 +34,7 @@ public class TestDatabaseUtils {
     public void testGetConnection() throws Exception{
         Connection connection = DatabaseUtils.getConnection();
         assertNotNull("verify that we can get a connection ok",connection);
+        connection.close();
     }
 
     @Test
@@ -43,6 +44,7 @@ public class TestDatabaseUtils {
         Statement statement = connection.createStatement();
         boolean execute = statement.execute("select * from person");
         assertTrue("verify that we can execute a statement",execute);
+        connection.close();
     }
 
 }

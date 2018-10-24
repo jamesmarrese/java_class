@@ -56,12 +56,16 @@ public class Stocks implements XMLDomainObject {
     @Override
     public String toString() {
 
-        String output = "Stocks{";
+        return "Stocks{" +
+                "stock=" + stock +
+                "}";
+
+        /*String output = "Stocks{";
         for (Stock stocks : stock) {
             output += "stock" + stocks;
         }
         output += '}';
-        return output;
+        return output;*/
     }
 
 }

@@ -23,6 +23,11 @@ public class Quotes {
     private Timestamp time;
 
     /**
+     * Empty constructor
+     */
+    public Quotes() {}
+
+    /**
      * Primary Key - Unique ID for a particular row in the quotes table.
      *
      * @return an integer value
