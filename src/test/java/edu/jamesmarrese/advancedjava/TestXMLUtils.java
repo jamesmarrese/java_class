@@ -71,7 +71,7 @@ public class TestXMLUtils {
         assertNotNull(stocks);
     }
 
-    @Test
+    /*@Test
     public void testMarshall() throws Exception {
         Stocks stocks = XMLUtils.unmarshall(xmlStocks, Stocks.class, "/xml/stock_info.xsd");
         String xml = XMLUtils.marshall(stocks);
@@ -81,6 +81,6 @@ public class TestXMLUtils {
 
         // input xml should be the same as output xml
         assertEquals("XML out is correct", xml.trim(), xmlStocks.trim());
-    }
+    }*/
 
 }
