@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5029f06d-57fe-4e07-b9a8-acb695f9775d" name="Default Changelist" comment="" />
+    <list default="true" id="5029f06d-57fe-4e07-b9a8-acb695f9775d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xml/stock_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xml/stock_info.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestDatabasePersonService.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestDatabasePersonService.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestDatabaseUtils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestDatabaseUtils.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestPersonORM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestPersonORM.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestPersonQuotesORM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestPersonQuotesORM.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestQuotesORM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestQuotesORM.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestStockORM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestStockORM.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestStockXML.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestStockXML.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestXMLDataPersistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestXMLUtils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestXMLUtils.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestDatabasePersonService.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestDatabasePersonService.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestDatabaseUtils.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestDatabaseUtils.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestPersonQuotesORM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestPersonQuotesORM.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestQuotesORM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestQuotesORM.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestStockORM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestStockORM.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestStockXML.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestStockXML.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestXMLDataPersistence.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestXMLUtils.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestXMLUtils.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/jamesmarrese/advancedjava/TestXMLUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/jamesmarrese/advancedjava/TestXMLUtils.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,59 +76,61 @@
     <session id="1545217261">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.3" value="4" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="118" />
+          <entry key="java" value="122" />
           <entry key="sql" value="6" />
-          <entry key="xml" value="12" />
-          <entry key="yml" value="5" />
+          <entry key="xml" value="15" />
+          <entry key="xsd" value="1" />
+          <entry key="yml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="DBN-SQL" value="6" />
-          <entry key="JAVA" value="118" />
-          <entry key="XML" value="12" />
-          <entry key="YAML" value="5" />
+          <entry key="JAVA" value="122" />
+          <entry key="XML" value="16" />
+          <entry key="YAML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="70" />
-          <entry key="java" value="6875" />
+          <entry key="java" value="6974" />
           <entry key="sql" value="4160" />
-          <entry key="xml" value="253" />
-          <entry key="yml" value="285" />
+          <entry key="xml" value="289" />
+          <entry key="yml" value="358" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="DBN-SQL" value="4160" />
-          <entry key="JAVA" value="6875" />
+          <entry key="JAVA" value="6974" />
           <entry key="PLAIN_TEXT" value="70" />
-          <entry key="XML" value="253" />
-          <entry key="YAML" value="285" />
+          <entry key="XML" value="289" />
+          <entry key="YAML" value="358" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/XMLDataPersistence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1897">
+            <state relative-caret-position="68">
               <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
             </state>
           </provider>
@@ -110,17 +139,72 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestXMLUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-571">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="1139">
+              <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resources/xml/stock_info.xsd">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resources/xml/stock_info.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/util/XMLUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="969">
+              <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/util/DatabaseUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="901">
+              <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabaseUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-238">
+              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/util/XMLUtils.java">
+        <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            <state relative-caret-position="238">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -144,6 +228,7 @@
       <find>envi</find>
       <find>time</find>
       <find>(ID</find>
+      <find>url</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -178,7 +263,6 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockService.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabasePersonService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabaseUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockQuoteApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/Quotes.java" />
@@ -188,11 +272,13 @@
         <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockQuote.java" />
         <option value="$USER_HOME$/Desktop/java_class/java_class/.circleci/other_config.yml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/.circleci/config.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/sql/db_initialization.sql" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestXMLUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/util/XMLUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabaseUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestXMLUtils.java" />
+        <option value="C:/Program Files/Apache Software Foundation/Tomcat 8.5/webapps/HelloServlet/WEB-INF/src/mypkg/HelloServlet.java" />
+        <option value="$PROJECT_DIR$/.circleci/config.yml" />
       </list>
     </option>
   </component>
@@ -219,17 +305,17 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="948" />
-    <option name="width" value="981" />
-    <option name="height" value="1032" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-24" />
+    <option name="width" value="1944" />
+    <option name="height" value="1011" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -240,6 +326,11 @@
             <path>
               <item name="java_class" type="b2602c69:ProjectViewProjectNode" />
               <item name="java_class" type="462c0819:PsiDirectoryNode" />
+              <item name=".circleci" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_class" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_class" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -281,50 +372,6 @@
               <item name="edu" type="462c0819:PsiDirectoryNode" />
               <item name="jamesmarrese" type="462c0819:PsiDirectoryNode" />
               <item name="advancedjava" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java_class" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java_class" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="jamesmarrese" type="462c0819:PsiDirectoryNode" />
-              <item name="advancedjava" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java_class" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java_class" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="jamesmarrese" type="462c0819:PsiDirectoryNode" />
-              <item name="advancedjava" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java_class" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java_class" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="jamesmarrese" type="462c0819:PsiDirectoryNode" />
-              <item name="advancedjava" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java_class" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java_class" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="jamesmarrese" type="462c0819:PsiDirectoryNode" />
-              <item name="advancedjava" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java_class" type="b2602c69:ProjectViewProjectNode" />
@@ -336,6 +383,34 @@
               <item name="jamesmarrese" type="462c0819:PsiDirectoryNode" />
               <item name="advancedjava" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_class" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_class" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="jamesmarrese" type="462c0819:PsiDirectoryNode" />
+              <item name="advancedjava" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_class" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_class" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_class" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_class" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java_class" type="b2602c69:ProjectViewProjectNode" />
@@ -381,16 +456,18 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540175649921" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ORM_Example(1)" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540309600088" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AssignmentEight" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.48990434" />
+    <property name="project.structure.side.proportion" value="0.2584378" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.splitter.proportion" value="0.23770492" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -418,7 +495,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestXMLUtils">
+  <component name="RunManager" selected="JUnit.TestXMLUtils.testMarshall">
     <configuration name="Unnamed" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="edu.jamesmarrese.advancedjava.ui.StockQuoteApplication" />
       <module name="StockService" />
@@ -437,34 +514,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="edu.jamesmarrese.advancedjava" />
       <option name="MAIN_CLASS_NAME" value="edu.jamesmarrese.advancedjava.TestDatabaseUtils" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestPersonQuotesORM" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="StockService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.jamesmarrese.advancedjava.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.jamesmarrese.advancedjava" />
-      <option name="MAIN_CLASS_NAME" value="edu.jamesmarrese.advancedjava.TestPersonQuotesORM" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestQuotesORM" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="StockService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.jamesmarrese.advancedjava.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.jamesmarrese.advancedjava" />
-      <option name="MAIN_CLASS_NAME" value="edu.jamesmarrese.advancedjava.TestQuotesORM" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -497,21 +546,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestXMLUtils.testMarshall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StockService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.jamesmarrese.advancedjava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.jamesmarrese.advancedjava" />
+      <option name="MAIN_CLASS_NAME" value="edu.jamesmarrese.advancedjava.TestXMLUtils" />
+      <option name="METHOD_NAME" value="testMarshall" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestXMLUtils.testUnmarshall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StockService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.jamesmarrese.advancedjava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.jamesmarrese.advancedjava" />
+      <option name="MAIN_CLASS_NAME" value="edu.jamesmarrese.advancedjava.TestXMLUtils" />
+      <option name="METHOD_NAME" value="testUnmarshall" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
       <item itemvalue="JUnit.TestDatabaseUtils" />
-      <item itemvalue="JUnit.TestPersonQuotesORM" />
-      <item itemvalue="JUnit.TestQuotesORM" />
       <item itemvalue="JUnit.TestStockQuote" />
       <item itemvalue="JUnit.TestXMLUtils" />
+      <item itemvalue="JUnit.TestXMLUtils.testMarshall" />
+      <item itemvalue="JUnit.TestXMLUtils.testUnmarshall" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestXMLUtils.testMarshall" />
         <item itemvalue="JUnit.TestXMLUtils" />
+        <item itemvalue="JUnit.TestXMLUtils.testUnmarshall" />
         <item itemvalue="JUnit.TestDatabaseUtils" />
         <item itemvalue="JUnit.TestStockQuote" />
-        <item itemvalue="JUnit.TestQuotesORM" />
-        <item itemvalue="JUnit.TestPersonQuotesORM" />
       </list>
     </recent_temporary>
   </component>
@@ -529,35 +610,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestDatabaseUtils - 2018.10.14 at 20h 38m 19s.xml">
-      <configuration name="TestDatabaseUtils" configurationId="JUnit" />
+    <history-entry file="TestXMLUtils_testMarshall - 2018.10.23 at 16h 42m 44s.xml">
+      <configuration name="TestXMLUtils.testMarshall" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDatabaseUtils - 2018.10.14 at 22h 44m 33s.xml">
-      <configuration name="TestDatabaseUtils" configurationId="JUnit" />
+    <history-entry file="TestXMLUtils_testMarshall - 2018.10.23 at 16h 43m 32s.xml">
+      <configuration name="TestXMLUtils.testMarshall" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDatabaseUtils - 2018.10.14 at 22h 46m 42s.xml">
-      <configuration name="TestDatabaseUtils" configurationId="JUnit" />
+    <history-entry file="TestXMLUtils_testMarshall - 2018.10.23 at 16h 44m 37s.xml">
+      <configuration name="TestXMLUtils.testMarshall" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDatabaseUtils - 2018.10.14 at 22h 47m 40s.xml">
-      <configuration name="TestDatabaseUtils" configurationId="JUnit" />
+    <history-entry file="TestXMLUtils_testMarshall - 2018.10.23 at 16h 44m 49s.xml">
+      <configuration name="TestXMLUtils.testMarshall" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDatabaseUtils - 2018.10.14 at 22h 48m 05s.xml">
-      <configuration name="TestDatabaseUtils" configurationId="JUnit" />
+    <history-entry file="TestXMLUtils_testMarshall - 2018.10.23 at 16h 45m 10s.xml">
+      <configuration name="TestXMLUtils.testMarshall" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDatabaseUtils - 2018.10.14 at 22h 48m 33s.xml">
-      <configuration name="TestDatabaseUtils" configurationId="JUnit" />
+    <history-entry file="TestXMLUtils_testMarshall - 2018.10.23 at 16h 45m 24s.xml">
+      <configuration name="TestXMLUtils.testMarshall" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDatabaseUtils - 2018.10.14 at 22h 49m 20s.xml">
-      <configuration name="TestDatabaseUtils" configurationId="JUnit" />
+    <history-entry file="TestXMLUtils_testMarshall - 2018.10.23 at 16h 45m 37s.xml">
+      <configuration name="TestXMLUtils.testMarshall" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDatabaseUtils - 2018.10.14 at 22h 50m 00s.xml">
-      <configuration name="TestDatabaseUtils" configurationId="JUnit" />
+    <history-entry file="TestXMLUtils_testMarshall - 2018.10.23 at 16h 45m 46s.xml">
+      <configuration name="TestXMLUtils.testMarshall" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDatabaseUtils - 2018.10.14 at 22h 50m 20s.xml">
-      <configuration name="TestDatabaseUtils" configurationId="JUnit" />
+    <history-entry file="TestXMLUtils_testMarshall - 2018.10.23 at 16h 49m 50s.xml">
+      <configuration name="TestXMLUtils.testMarshall" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestXMLUtils - 2018.10.21 at 22h 24m 03s.xml">
-      <configuration name="TestXMLUtils" configurationId="JUnit" />
+    <history-entry file="TestXMLUtils_testMarshall - 2018.10.23 at 16h 58m 44s.xml">
+      <configuration name="TestXMLUtils.testMarshall" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -570,10 +651,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="439" y="29" width="1296" height="674" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3165992" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16019417" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -583,7 +664,7 @@
       <window_info id="DB Browser" order="7" weight="0.28502023" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4430605" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36823106" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3985765" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -764,13 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/util/DatabaseUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="66" column="42" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabasePersonService.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -802,17 +876,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockQuote.java" />
     <entry file="file://$USER_HOME$/Desktop/java_class/java_class/.circleci/other_config.yml" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/sql/db_initialization.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="540">
+          <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+    <entry file="file://C:/Program Files/Apache Software Foundation/Tomcat 8.5/webapps/HelloServlet/WEB-INF/src/mypkg/HelloServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="26" column="151" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="151" />
+        <state relative-caret-position="208">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/XMLDataPersistence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestXMLUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/xml/stock_info.xsd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/xml/stock_info.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/util/XMLUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/util/DatabaseUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -825,36 +933,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabaseUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
+        <state relative-caret-position="238">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/sql/db_initialization.sql">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+        <state relative-caret-position="-238">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/XMLDataPersistence.java">
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1897">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestXMLUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-571">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/util/XMLUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="238">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -867,7 +961,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.2584378" />
               </list>
             </option>
           </splitter-proportions>
@@ -879,7 +973,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.2584378" />
               </list>
             </option>
           </splitter-proportions>
@@ -891,7 +985,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.2584378" />
               </list>
             </option>
           </splitter-proportions>
@@ -903,7 +997,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.2584378" />
               </list>
             </option>
           </splitter-proportions>
@@ -915,8 +1009,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.48990434" />
-                <option value="0.6" />
+                <option value="0.2584378" />
               </list>
             </option>
           </splitter-proportions>
@@ -940,7 +1033,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.48990434" />
+                <option value="0.2584378" />
               </list>
             </option>
           </splitter-proportions>

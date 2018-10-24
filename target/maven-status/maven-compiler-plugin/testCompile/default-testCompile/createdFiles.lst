@@ -1,5 +1,8 @@
 edu\jamesmarrese\advancedjava\TestPersonORM.class
 edu\jamesmarrese\advancedjava\TestPersonQuotesORM.class
+edu\jamesmarrese\advancedjava\TestXMLUtils.class
 edu\jamesmarrese\advancedjava\TestQuotesORM.class
+edu\jamesmarrese\advancedjava\TestStockORM.class
 edu\jamesmarrese\advancedjava\TestDatabaseUtils.class
+edu\jamesmarrese\advancedjava\TestStockXML.class
 edu\jamesmarrese\advancedjava\TestDatabasePersonService.class
