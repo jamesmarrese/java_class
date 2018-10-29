@@ -2,31 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5029f06d-57fe-4e07-b9a8-acb695f9775d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/StockQuote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/StockQuote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/IntervalEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/IntervalEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestXMLUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestXMLUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/model/StockQuote.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/model/StockQuote.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/service/IntervalEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/service/IntervalEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/service/StockService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/service/StockService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/service/StockServiceFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/service/StockServiceFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestDatabasePersonService.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestDatabasePersonService.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestDatabaseUtils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestDatabaseUtils.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestPersonORM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestPersonORM.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestPersonQuotesORM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestPersonQuotesORM.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestQuotesORM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestQuotesORM.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestStockORM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestStockORM.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestStockServiceFactory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestStockServiceFactory.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestStockXML.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestStockXML.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestXMLUtils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestXMLUtils.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestDatabasePersonService.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestDatabasePersonService.txt" afterDir="false" />
@@ -35,6 +19,8 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestPersonQuotesORM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestPersonQuotesORM.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestQuotesORM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestQuotesORM.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestStockORM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestStockORM.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestStockServiceFactory.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestStockServiceFactory.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestStockXML.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestStockXML.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestXMLUtils.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestXMLUtils.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -86,7 +72,7 @@
         <counts>
           <entry key="project.closed" value="23" />
           <entry key="project.open.time.1" value="3" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="2" />
@@ -97,7 +83,7 @@
           <entry key="project.open.time.3" value="5" />
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="23" />
+          <entry key="project.opened" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -105,9 +91,9 @@
           <entry key="class" value="1" />
           <entry key="java" value="148" />
           <entry key="sql" value="7" />
-          <entry key="xml" value="21" />
+          <entry key="xml" value="22" />
           <entry key="xsd" value="2" />
-          <entry key="yml" value="8" />
+          <entry key="yml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -115,8 +101,8 @@
           <entry key="CLASS" value="1" />
           <entry key="DBN-SQL" value="7" />
           <entry key="JAVA" value="148" />
-          <entry key="XML" value="23" />
-          <entry key="YAML" value="8" />
+          <entry key="XML" value="24" />
+          <entry key="YAML" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -145,20 +131,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/StockQuote.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="663">
               <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="84" column="12" lean-forward="true" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
+              <caret line="84" column="12" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2756#2768#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="70" lean-forward="true" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="110" selection-start-line="15" selection-start-column="110" selection-end-line="15" selection-end-column="110" />
+              <folding>
+                <element signature="e#856#861#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,8 +173,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="85">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,7 +194,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
+            <state relative-caret-position="2533">
               <caret line="164" column="8" selection-start-line="164" selection-start-column="8" selection-end-line="164" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -271,10 +277,10 @@
         <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/service/StockServiceFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/IntervalEnum.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml" />
       </list>
     </option>
   </component>
@@ -312,12 +318,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="java_class" type="b2602c69:ProjectViewProjectNode" />
               <item name="java_class" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_class" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_class" type="462c0819:PsiDirectoryNode" />
+              <item name=".circleci" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java_class" type="b2602c69:ProjectViewProjectNode" />
@@ -493,7 +505,6 @@
       </pane>
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -700,8 +711,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26639676" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27125505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -923,13 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/xml/Stock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -1014,24 +1019,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/sun/net/www/protocol/http/HttpURLConnection.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+        <state relative-caret-position="102">
+          <caret line="1410" column="5" lean-forward="true" selection-start-line="1410" selection-start-column="5" selection-end-line="1410" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/StockQuote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="663">
           <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/sun/net/www/protocol/http/HttpURLConnection.class">
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="1410" column="5" lean-forward="true" selection-start-line="1410" selection-start-column="5" selection-end-line="1410" selection-end-column="5" />
+        <state relative-caret-position="85">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1042,19 +1050,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
+        <state relative-caret-position="2533">
           <caret line="164" column="8" selection-start-line="164" selection-start-column="8" selection-end-line="164" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1065,10 +1063,26 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="84" column="12" lean-forward="true" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
+          <caret line="84" column="12" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2756#2768#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="70" lean-forward="true" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="110" selection-start-line="15" selection-start-column="110" selection-end-line="15" selection-end-column="110" />
+          <folding>
+            <element signature="e#856#861#0" expanded="true" />
           </folding>
         </state>
       </provider>
