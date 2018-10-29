@@ -22,7 +22,7 @@
         <!-- <property name="autoReconnect" value="true" /> -->
 
 
-        <property name="hibernate.connection.username">monty</property>
+        <property name="hibernate.connection.username">bob</property>
         <property name="hibernate.connection.password">some_pass</property>
 
         <mapping class="edu.jamesmarrese.advancedjava.model.Person"/>

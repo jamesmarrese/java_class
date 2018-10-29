@@ -1,65 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5029f06d-57fe-4e07-b9a8-acb695f9775d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StockService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StockService.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/PersonQuotes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/PersonQuotes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/Quotes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/Quotes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/StockORM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/StockORM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/StockQuote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/StockQuote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/IntervalEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/IntervalEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/XMLDataPersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/XMLDataPersistence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/sql/db_initialization.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/sql/db_initialization.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/util/DatabaseConnectionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/util/DatabaseConnectionException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/util/DatabaseInitializationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/util/DatabaseInitializationException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/util/DatabaseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/util/DatabaseUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/xml/OutputXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/xml/OutputXML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/xml/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/xml/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/xml/Stocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/xml/Stocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabasePersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabasePersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabaseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabaseUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestPersonORM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestPersonORM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestPersonQuotesORM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestPersonQuotesORM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestQuotesORM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestQuotesORM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockORM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockORM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockXML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestXMLUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestXMLUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/service/StockService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/service/StockService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/service/StockServiceFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/service/StockServiceFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication$ProgramTerminationStatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication$ProgramTerminationStatusEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestDatabasePersonService.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestDatabasePersonService.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestDatabaseUtils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestDatabaseUtils.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestPersonORM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestPersonORM.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestPersonQuotesORM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestPersonQuotesORM.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestQuotesORM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestQuotesORM.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestStockORM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestStockORM.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestStockServiceFactory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestStockServiceFactory.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestStockXML.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestStockXML.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestXMLUtils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestXMLUtils.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestDatabasePersonService.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestDatabasePersonService.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestDatabaseUtils.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestDatabaseUtils.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestPersonORM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestPersonORM.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestPersonQuotesORM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestPersonQuotesORM.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestQuotesORM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestQuotesORM.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestStockORM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestStockORM.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestStockServiceFactory.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestStockServiceFactory.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestStockXML.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestStockXML.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestXMLUtils.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestXMLUtils.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/jamesmarrese/advancedjava/TestDatabasePersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/jamesmarrese/advancedjava/TestDatabasePersonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/jamesmarrese/advancedjava/TestDatabaseUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/jamesmarrese/advancedjava/TestDatabaseUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/jamesmarrese/advancedjava/TestStockServiceFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/jamesmarrese/advancedjava/TestStockServiceFactory.class" afterDir="false" />
-    </list>
+    <list default="true" id="5029f06d-57fe-4e07-b9a8-acb695f9775d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -130,7 +72,7 @@
           <entry key="class" value="1" />
           <entry key="java" value="155" />
           <entry key="sql" value="7" />
-          <entry key="xml" value="22" />
+          <entry key="xml" value="23" />
           <entry key="xsd" value="2" />
           <entry key="yml" value="9" />
         </counts>
@@ -140,16 +82,16 @@
           <entry key="CLASS" value="1" />
           <entry key="DBN-SQL" value="7" />
           <entry key="JAVA" value="155" />
-          <entry key="XML" value="24" />
+          <entry key="XML" value="25" />
           <entry key="YAML" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="70" />
-          <entry key="java" value="13959" />
+          <entry key="java" value="13965" />
           <entry key="sql" value="4160" />
-          <entry key="xml" value="442" />
+          <entry key="xml" value="445" />
           <entry key="xsd" value="11" />
           <entry key="yml" value="358" />
         </counts>
@@ -157,9 +99,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="DBN-SQL" value="4160" />
-          <entry key="JAVA" value="13959" />
+          <entry key="JAVA" value="13965" />
           <entry key="PLAIN_TEXT" value="70" />
-          <entry key="XML" value="453" />
+          <entry key="XML" value="456" />
           <entry key="YAML" value="358" />
         </counts>
       </usages-collector>
@@ -167,7 +109,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="412">
@@ -193,11 +135,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="163" column="30" selection-start-line="163" selection-start-column="30" selection-end-line="163" selection-end-column="30" />
+            <state relative-caret-position="806">
+              <caret line="164" column="12" selection-start-line="164" selection-start-column="12" selection-end-line="164" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -294,14 +245,14 @@
         <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/service/StockServiceFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/IntervalEnum.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabasePersonService.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabaseUtils.java" />
         <option value="$USER_HOME$/Desktop/java_class/java_class/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactoryWORKING.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockService.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml" />
       </list>
     </option>
   </component>
@@ -529,7 +480,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540835119475" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540835608173" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/com/yahoofinance/api/YahooFinanceAPI/3.14.0" />
@@ -734,7 +685,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24129555" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24129555" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -1008,13 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabaseUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1062,16 +1006,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="163" column="30" selection-start-line="163" selection-start-column="30" selection-end-line="163" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
@@ -1081,6 +1015,23 @@
             <element signature="e#2867#2879#0" expanded="true" />
             <element signature="e#6751#6763#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="164" column="12" selection-start-line="164" selection-start-column="12" selection-end-line="164" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
         </state>
       </provider>
     </entry>
