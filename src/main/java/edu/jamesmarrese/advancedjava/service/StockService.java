@@ -26,8 +26,8 @@ public interface StockService {
      * @return a <CODE>StockQuote</CODE> instance consisting of
      *         a stockSymbol (String), stockPrice (double), and date (Date).
      */
-    StockQuote getQuote(@NotNull String symbol, @NotNull Date date)
-            throws StockServiceException, DatabaseInitializationException;
+    StockQuote getQuote(@NotNull String symbol, @NotNull Calendar date)
+            throws StockServiceException;
 
     /**
      * Get a historical list of stock quotes for the provided symbol
@@ -40,7 +40,7 @@ public interface StockService {
      *         one for each day in the range specified
      */
     List<StockQuote> getQuote (@NotNull String symbol, @NotNull Calendar from, @NotNull Calendar until)
-            throws StockServiceException, DatabaseInitializationException;
+            throws StockServiceException;
 
     /**
      * Get a historical list of stock quotes for the provided symbol
@@ -60,6 +60,6 @@ public interface StockService {
 
     List<StockQuote> getQuote (@NotNull String symbol, @NotNull Calendar from,
                                @NotNull Calendar until, @NotNull IntervalEnum interval)
-            throws StockServiceException, DatabaseInitializationException;
+            throws StockServiceException;
 
 }

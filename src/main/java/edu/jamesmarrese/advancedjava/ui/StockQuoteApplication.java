@@ -122,15 +122,30 @@ public class StockQuoteApplication {
 
         String intervalString = args[3];
 
-        //Assign the correct interval enum
+        /* Assign the correct interval enum. HOURLY interval will become DAILY, as the Yahoo API
+           offers DAILY as the lowest interval. DAILY and WEEKLY intervals are accepted. All other
+           intervals default to DAILY (the API will not return a date range of stock quotes unless
+           an interval is specified).
+         */
         if (intervalString.startsWith("HOURLY")) {
-            chosenInterval = IntervalEnum.HOURLY;
+            chosenInterval = IntervalEnum.DAILY;
         } else if (intervalString.startsWith("DAILY")) {
             chosenInterval = IntervalEnum.DAILY;
+        } else if (intervalString.startsWith("WEEKLY")) {
+            chosenInterval = IntervalEnum.WEEKLY;
         } else {
-            System.err.println("Unknown interval enum supplied");
-            System.exit(-1);
+            chosenInterval = IntervalEnum.DAILY;
         }
+
+        StockQuote stock = applicationTest.getQuote(symbol, startDate);
+
+        /*Print out a single stock quote.
+         */
+        System.out.println();
+        System.out.println("Result of call to get a single Stock Quote: ");
+        System.out.println(stock.getStockSymbol() + " " +
+                stock.getStockPrice().toString() + " " +
+                stock.getDateRecorded().getTime().toString());
 
         List<StockQuote> stockList = applicationTest.getQuote(symbol, startDate, endDate);
 
@@ -141,7 +156,9 @@ public class StockQuoteApplication {
         System.out.println("Result of call to get a list of Stock Quotes: ");
 
         for (StockQuote stockQuote : stockList) {
-            System.out.println(stockQuote);
+            System.out.println(stockQuote.getStockSymbol() + " " +
+                    stockQuote.getStockPrice().toString() + " " +
+                    stockQuote.getDateRecorded().getTime().toString());
         }
 
 
@@ -154,7 +171,9 @@ public class StockQuoteApplication {
         System.out.println("Result of call to get a list of Stock Quotes with specified interval: ");
 
         for (StockQuote stockQuote : stockListWithInterval) {
-            System.out.println(stockQuote);
+            System.out.println(stockQuote.getStockSymbol() + " " +
+                    stockQuote.getStockPrice().toString() + " " +
+                    stockQuote.getDateRecorded().getTime().toString());
         }
 
     }

@@ -13,4 +13,7 @@ public enum IntervalEnum {
     /** Get one StockQuote for every day */
     DAILY,
 
+    /** Get one StockQuote for every day */
+    WEEKLY,
+
 }

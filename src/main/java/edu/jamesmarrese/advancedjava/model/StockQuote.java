@@ -19,7 +19,7 @@ public class StockQuote {
 
     private String stockSymbol;
     private BigDecimal stockPrice;
-    private Date dateRecorded;
+    private Calendar dateRecorded;
 
     /**
      * Create a new StockQuote instance
@@ -28,7 +28,7 @@ public class StockQuote {
      * @param date  the date the stock info was recorded
      */
 
-    public StockQuote (@NotNull String stockName, @NotNull Date date, @NotNull BigDecimal stockValue) {
+    public StockQuote (@NotNull String stockName, @NotNull Calendar date, @NotNull BigDecimal stockValue) {
         this.stockSymbol = stockName;
         this.dateRecorded = date;
         this.stockPrice = stockValue;
@@ -55,7 +55,7 @@ public class StockQuote {
      * @return the date of the stock price.
      */
 
-    public Date getDateRecorded() {
+    public Calendar getDateRecorded() {
         return dateRecorded;
     }
 

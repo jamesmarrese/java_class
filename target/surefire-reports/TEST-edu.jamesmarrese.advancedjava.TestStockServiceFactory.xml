@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="edu.jamesmarrese.advancedjava.TestDatabaseUtils" time="0.644" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="edu.jamesmarrese.advancedjava.TestStockServiceFactory" time="2.704" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2018.2.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,8 +62,14 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="edu.jamesmarrese.advancedjava.TestDatabaseUtils" name="testGoodInitFile" time="0.374"/>
-  <testcase classname="edu.jamesmarrese.advancedjava.TestDatabaseUtils" name="testBadInitFile" time="0"/>
-  <testcase classname="edu.jamesmarrese.advancedjava.TestDatabaseUtils" name="testGetConnection" time="0"/>
-  <testcase classname="edu.jamesmarrese.advancedjava.TestDatabaseUtils" name="testGetConnectionWorks" time="0.27"/>
+  <testcase classname="edu.jamesmarrese.advancedjava.TestStockServiceFactory" name="testListOfStockQuotesGetDate" time="1.906"/>
+  <testcase classname="edu.jamesmarrese.advancedjava.TestStockServiceFactory" name="testListOfStockQuotesGetPrice" time="0.1"/>
+  <testcase classname="edu.jamesmarrese.advancedjava.TestStockServiceFactory" name="testListOfStockQuotesGetSymbol" time="0.14"/>
+  <testcase classname="edu.jamesmarrese.advancedjava.TestStockServiceFactory" name="testListOfStockQuotesWithIntervalHourly" time="0.073"/>
+  <testcase classname="edu.jamesmarrese.advancedjava.TestStockServiceFactory" name="testYahooFinanceStockServiceFactoryGetDate" time="0.075"/>
+  <testcase classname="edu.jamesmarrese.advancedjava.TestStockServiceFactory" name="testYahooFinanceStockServiceFactoryGetPrice" time="0.077"/>
+  <testcase classname="edu.jamesmarrese.advancedjava.TestStockServiceFactory" name="testYahooFinanceStockServiceFactoryGetSymbol" time="0.089"/>
+  <testcase classname="edu.jamesmarrese.advancedjava.TestStockServiceFactory" name="testListOfStockQuotesWithIntervalGetDate" time="0.083"/>
+  <testcase classname="edu.jamesmarrese.advancedjava.TestStockServiceFactory" name="testListOfStockQuotesWithIntervalGetSymbol" time="0.08"/>
+  <testcase classname="edu.jamesmarrese.advancedjava.TestStockServiceFactory" name="testListOfStockQuotesWithIntervalMonthly" time="0.081"/>
 </testsuite>

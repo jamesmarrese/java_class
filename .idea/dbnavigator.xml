@@ -23,11 +23,7 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="false" />
-    <loaded-nodes>
-      <connection connection-id="a94e9187-7bd2-4524-8c6e-0863bb898828">
-        <schema name="stocks" object-types="column, table" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="a94e9187-7bd2-4524-8c6e-0863bb898828">
@@ -83,7 +79,7 @@
           <database value="stocks" />
           <os-authentication value="false" />
           <empty-password value="false" />
-          <user value="bob" />
+          <user value="monty" />
           <password value="c29tZV9wYXNz" />
         </database>
         <properties>
