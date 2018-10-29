@@ -4,6 +4,7 @@ import edu.jamesmarrese.advancedjava.model.StockQuote;
 import edu.jamesmarrese.advancedjava.util.DatabaseInitializationException;
 
 import javax.validation.constraints.NotNull;
+import java.io.IOException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -40,7 +41,7 @@ public interface StockService {
      *         one for each day in the range specified
      */
     List<StockQuote> getQuote (@NotNull String symbol, @NotNull Calendar from, @NotNull Calendar until)
-            throws StockServiceException;
+            throws StockServiceException, IOException;
 
     /**
      * Get a historical list of stock quotes for the provided symbol
@@ -60,6 +61,6 @@ public interface StockService {
 
     List<StockQuote> getQuote (@NotNull String symbol, @NotNull Calendar from,
                                @NotNull Calendar until, @NotNull IntervalEnum interval)
-            throws StockServiceException;
+            throws StockServiceException, IOException;
 
 }

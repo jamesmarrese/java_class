@@ -7,6 +7,7 @@ import edu.jamesmarrese.advancedjava.service.StockServiceFactory;
 import edu.jamesmarrese.advancedjava.util.DatabaseInitializationException;
 import edu.jamesmarrese.advancedjava.util.DatabaseUtils;
 
+import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -76,7 +77,7 @@ public class StockQuoteApplication {
     }
 
     public static void main(String[] args) throws ParseException, StockServiceException,
-            DatabaseInitializationException {
+            DatabaseInitializationException, IOException {
 
         if (args.length != 4) {
             exit(ProgramTerminationStatusEnum.ABNORMAL,

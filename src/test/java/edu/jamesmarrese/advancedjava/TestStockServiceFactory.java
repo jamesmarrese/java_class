@@ -4,12 +4,16 @@ import edu.jamesmarrese.advancedjava.model.StockQuote;
 import edu.jamesmarrese.advancedjava.service.IntervalEnum;
 import edu.jamesmarrese.advancedjava.service.StockServiceException;
 import edu.jamesmarrese.advancedjava.service.StockServiceFactory;
+import edu.jamesmarrese.advancedjava.ui.StockQuoteApplication;
+import edu.jamesmarrese.advancedjava.util.DatabaseInitializationException;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+import java.io.IOException;
 import java.math.BigDecimal;
+import java.text.ParseException;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.List;
@@ -34,7 +38,7 @@ public class TestStockServiceFactory {
      * @throws StockServiceException
      */
     @Test
-    public void testYahooFinanceStockServiceFactoryGetSymbol() throws StockServiceException {
+    public void testYahooFinanceStockServiceFactoryGetSymbol() throws Exception {
 
         StockServiceFactory stockQuote = new StockServiceFactory();
         StockQuote stockTest = stockQuote.getQuote("AMZN", startCalendar);
@@ -44,7 +48,7 @@ public class TestStockServiceFactory {
     }
 
     @Test
-    public void testYahooFinanceStockServiceFactoryGetDate() throws StockServiceException {
+    public void testYahooFinanceStockServiceFactoryGetDate() throws Exception {
 
         StockServiceFactory stockQuote = new StockServiceFactory();
         StockQuote stockTest = stockQuote.getQuote("AMZN", startCalendar);
@@ -54,7 +58,7 @@ public class TestStockServiceFactory {
     }
 
     @Test
-    public void testYahooFinanceStockServiceFactoryGetPrice() throws StockServiceException {
+    public void testYahooFinanceStockServiceFactoryGetPrice() throws Exception {
 
         StockServiceFactory stockQuote = new StockServiceFactory();
         StockQuote stockTest = stockQuote.getQuote("AMZN", startCalendar);
@@ -70,7 +74,7 @@ public class TestStockServiceFactory {
      * @throws StockServiceException
      */
     @Test
-    public void testListOfStockQuotesGetSymbol() throws StockServiceException {
+    public void testListOfStockQuotesGetSymbol() throws Exception {
 
         StockServiceFactory stockQuote = new StockServiceFactory();
         List<StockQuote> listOfQuotes = stockQuote.getQuote(testSymbol, startCalendar, endCalendar);
@@ -82,7 +86,7 @@ public class TestStockServiceFactory {
     }
 
     @Test
-    public void testListOfStockQuotesGetPrice() throws StockServiceException {
+    public void testListOfStockQuotesGetPrice() throws Exception {
 
         StockServiceFactory stockQuote = new StockServiceFactory();
         List<StockQuote> listOfQuotes = stockQuote.getQuote(testSymbol, startCalendar, endCalendar);
@@ -93,7 +97,7 @@ public class TestStockServiceFactory {
     }
 
     @Test
-    public void testListOfStockQuotesGetDate() throws StockServiceException {
+    public void testListOfStockQuotesGetDate() throws Exception {
 
         StockServiceFactory stockQuote = new StockServiceFactory();
         List<StockQuote> listOfQuotes = stockQuote.getQuote(testSymbol, startCalendar, endCalendar);
@@ -109,7 +113,7 @@ public class TestStockServiceFactory {
      * @throws StockServiceException
      */
     @Test
-    public void testListOfStockQuotesWithIntervalGetSymbol() throws StockServiceException {
+    public void testListOfStockQuotesWithIntervalGetSymbol() throws Exception {
 
         StockServiceFactory stockQuote = new StockServiceFactory();
         List<StockQuote> listOfQuotes = stockQuote.getQuote(testSymbol, startCalendar, endCalendar, IntervalEnum.DAILY);
@@ -121,7 +125,7 @@ public class TestStockServiceFactory {
     }
 
     @Test
-    public void testListOfStockQuotesWithIntervalGetDate() throws StockServiceException {
+    public void testListOfStockQuotesWithIntervalGetDate() throws Exception {
 
         StockServiceFactory stockQuote = new StockServiceFactory();
         List<StockQuote> listOfQuotes = stockQuote.getQuote(testSymbol, startCalendar, endCalendar, IntervalEnum.DAILY);
@@ -133,7 +137,7 @@ public class TestStockServiceFactory {
     }
 
     @Test
-    public void testListOfStockQuotesWithIntervalHourly() throws StockServiceException {
+    public void testListOfStockQuotesWithIntervalHourly() throws Exception {
 
         StockServiceFactory stockQuote = new StockServiceFactory();
         List<StockQuote> listOfQuotes = stockQuote.getQuote(testSymbol, startCalendar, endCalendar, IntervalEnum.HOURLY);
@@ -145,7 +149,7 @@ public class TestStockServiceFactory {
     }
 
     @Test
-    public void testListOfStockQuotesWithIntervalMonthly() throws StockServiceException {
+    public void testListOfStockQuotesWithIntervalMonthly() throws Exception {
 
         StockServiceFactory stockQuote = new StockServiceFactory();
         List<StockQuote> listOfQuotes = stockQuote.getQuote(testSymbol, startCalendar, endCalendar, IntervalEnum.WEEKLY);
@@ -154,6 +158,19 @@ public class TestStockServiceFactory {
 
         assertFalse("The Interval enum WEEKLY works", retrievedDate.equals(testCal));
 
+    }
+
+    @Test
+    public void testMainMethodShouldReturnValidResult () throws ParseException,
+            DatabaseInitializationException, IOException, StockServiceException {
+
+        String[] argString = new String [4];
+        argString[0] = "AMZN";
+        argString[1] = "2018-09-17";
+        argString[2] = "2018-09-20";
+        argString[3] = "DAILY";
+
+        StockQuoteApplication.main(argString);
     }
 
 }

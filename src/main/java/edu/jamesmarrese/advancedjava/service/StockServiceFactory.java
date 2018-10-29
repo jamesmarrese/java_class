@@ -3,12 +3,17 @@ package edu.jamesmarrese.advancedjava.service;
 import edu.jamesmarrese.advancedjava.model.StockQuote;
 
 import javax.validation.constraints.NotNull;
+
+import edu.jamesmarrese.advancedjava.service.IntervalEnum;
+import edu.jamesmarrese.advancedjava.service.StockService;
+import edu.jamesmarrese.advancedjava.service.StockServiceException;
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
 import yahoofinance.histquotes.HistoricalQuote;
 import yahoofinance.histquotes.Interval;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.*;
 
 /**
@@ -17,6 +22,10 @@ import java.util.*;
  * stock symbol (String), stock price (double), and date (Calendar).
  *
  * @author  James Marrese
+ */
+
+/**
+ * THIS CODE WAS AN ATTEMPT TO FIX THE LIST METHODS IN ASSIGNMENT #8
  */
 
 public class StockServiceFactory implements StockService {
@@ -30,14 +39,16 @@ public class StockServiceFactory implements StockService {
      * e.g., for "APPL", return APPL 100.25 09/13/2018
      */
 
-    public StockQuote getQuote (@NotNull String symbol, @NotNull Calendar date) throws StockServiceException {
+    public StockQuote getQuote (@NotNull String symbol, @NotNull Calendar date)
+            throws StockServiceException {
 
         StockQuote stockQuote = null;
 
         try {
-            Stock yahooStock = YahooFinance.get(symbol, date);
-            stockQuote = new StockQuote(yahooStock.getQuote().getSymbol(), yahooStock.getQuote().getLastTradeTime(),
-                    yahooStock.getQuote().getPrice());
+            Stock yahooStock = YahooFinance.get(symbol);
+            BigDecimal stockPrice = yahooStock.getQuote().getPrice();
+
+            stockQuote = new StockQuote(symbol, date, stockPrice);
 
             if (yahooStock.getQuote().getSymbol() == null) {
                 throw new StockServiceException("Stock symbol " + symbol + " does not exist. " +
@@ -69,45 +80,44 @@ public class StockServiceFactory implements StockService {
      */
 
     public List<StockQuote> getQuote(@NotNull String symbol, @NotNull Calendar from,
-                                     @NotNull Calendar until) throws StockServiceException {
+                                     @NotNull Calendar until) throws StockServiceException, IOException {
 
-        List<StockQuote> listOfQuotes = new ArrayList<StockQuote>();
+        //This is a list of locally defined stocks
+        List<StockQuote> listOfLocalStocks = new ArrayList<StockQuote>();
 
         try {
-            Stock yahooStock = YahooFinance.get(symbol);
+            Stock stock = YahooFinance.get(symbol);
 
-            /*"Dummy" yahoo finance "Interval" is set to daily to make HistoricalQuote method work.
-              API method requires a specified interval, will not work without one.
+            /*Yahoo finance "Interval" is set to daily. The API will not return a range of stocks
+              without an interval present.
              */
+            List<HistoricalQuote> stockHistoricalQuote = stock.getHistory(from, until, Interval.DAILY);
 
-            List<HistoricalQuote> listOfHistoricalQuotes = yahooStock.getHistory(from, until, Interval.DAILY);
-
-            if (yahooStock.getQuote().getSymbol() == null) {
-                throw new StockServiceException("Stock symbol " + symbol + " does not exist. " +
-                        "Please select another stock symbol.");
-            }
-
-            for (HistoricalQuote historicalQuote : listOfHistoricalQuotes) {
-                listOfQuotes.add(new StockQuote(historicalQuote.getSymbol(), historicalQuote.getDate(), historicalQuote.getAdjClose()));
-            }
-
-            for (int i = 0; i < listOfHistoricalQuotes.size(); ++i) {
-                if (listOfHistoricalQuotes.get(i).getDate() == null) {
-                    throw new StockServiceException("Date " + listOfHistoricalQuotes.get(i).getDate().toString() +
+            for (HistoricalQuote historicalQuote : stockHistoricalQuote) {
+                if (historicalQuote.getSymbol() == null) {
+                    throw new StockServiceException("Stock symbol " + symbol + " does not exist. " +
+                            "Please select another stock symbol.");
+                }
+                if (historicalQuote.getDate() == null) {
+                    throw new StockServiceException("Date " + historicalQuote.getDate().getTime().toString() +
                             " is not valid. Please select another date.");
-                } if (listOfHistoricalQuotes.get(i).getAdjClose() == null) {
+                }
+                if (historicalQuote.getClose() == null) {
                     throw new StockServiceException("Price not found. Check if stock symbol " +
                             "or date are invalid.");
                 }
+            }
+
+            for (HistoricalQuote quote : stockHistoricalQuote) {
+                listOfLocalStocks.add(new StockQuote(symbol, quote.getDate(), quote.getClose()));
             }
 
         } catch (IOException e) {
             throw new StockServiceException(e.getMessage(), e);
         }
 
-        return listOfQuotes;
+        return listOfLocalStocks;
     }
-
 
     /**
      *
@@ -124,9 +134,11 @@ public class StockServiceFactory implements StockService {
 
     public List<StockQuote> getQuote(@NotNull String symbol, @NotNull Calendar from,
                                      @NotNull Calendar until, @NotNull IntervalEnum interval)
-            throws StockServiceException {
+            throws StockServiceException, IOException {
 
-        List<StockQuote> listOfQuotes = new ArrayList<StockQuote>();
+        //This is a list of locally defined stocks
+        List<StockQuote> listOfLocalStocks = new ArrayList<StockQuote>();
+
         yahoofinance.histquotes.Interval yahooQuoteInterval = null;
 
         /* convert Interval ENUM to yahoo finance interval.
@@ -144,33 +156,37 @@ public class StockServiceFactory implements StockService {
         }
 
         try {
-            Stock yahooStock = YahooFinance.get(symbol);
-            List<HistoricalQuote> listOfHistoricalQuotes = yahooStock.getHistory(from, until, yahooQuoteInterval);
+            Stock stock = YahooFinance.get(symbol);
 
-            if (yahooStock.getQuote().getSymbol() == null) {
-                throw new StockServiceException("Stock symbol " + symbol + " does not exist. " +
-                        "Please select another stock symbol.");
-            }
+            /*Yahoo finance "Interval" is set to daily. The API will not return a range of stocks
+              without an interval present.
+             */
+            List<HistoricalQuote> stockHistoricalQuote = stock.getHistory(from, until, yahooQuoteInterval);
 
-            for (HistoricalQuote historicalQuote : listOfHistoricalQuotes) {
-                listOfQuotes.add(new StockQuote(historicalQuote.getSymbol(), historicalQuote.getDate(), historicalQuote.getAdjClose()));
-            }
-
-            for (int i = 0; i < listOfHistoricalQuotes.size(); ++i) {
-                if (listOfHistoricalQuotes.get(i).getDate() == null) {
-                    throw new StockServiceException("Date " + listOfHistoricalQuotes.get(i).getDate().toString() +
+            for (HistoricalQuote historicalQuote : stockHistoricalQuote) {
+                if (historicalQuote.getSymbol() == null) {
+                    throw new StockServiceException("Stock symbol " + symbol + " does not exist. " +
+                            "Please select another stock symbol.");
+                }
+                if (historicalQuote.getDate() == null) {
+                    throw new StockServiceException("Date " + historicalQuote.getDate().getTime().toString() +
                             " is not valid. Please select another date.");
-                } if (listOfHistoricalQuotes.get(i).getAdjClose() == null) {
+                }
+                if (historicalQuote.getClose() == null) {
                     throw new StockServiceException("Price not found. Check if stock symbol " +
                             "or date are invalid.");
                 }
+            }
+
+            for (HistoricalQuote quote : stockHistoricalQuote) {
+                listOfLocalStocks.add(new StockQuote(symbol, quote.getDate(), quote.getClose()));
             }
 
         } catch (IOException e) {
             throw new StockServiceException(e.getMessage(), e);
         }
 
-        return listOfQuotes;
+        return listOfLocalStocks;
 
     }
 
