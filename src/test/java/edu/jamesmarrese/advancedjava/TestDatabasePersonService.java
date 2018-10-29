@@ -12,7 +12,7 @@ import static org.junit.Assert.assertTrue;
 
 public class TestDatabasePersonService {
 
-    @Test
+    /*@Test
     public void testGetListOfPersons () throws DatabaseConnectionException, java.sql.SQLException,
             DatabaseInitializationException {
 
@@ -22,6 +22,6 @@ public class TestDatabasePersonService {
         Statement statement = connection.createStatement();
         boolean execute = statement.execute("select * from person");
         assertTrue("verify that we can execute a statement",execute);
-    }
+    }*/
 
 }
