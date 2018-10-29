@@ -98,11 +98,6 @@
             <version>1.8.0-beta2</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>com.yahoofinance-api</groupId>
-            <artifactId>YahooFinanceAPI</artifactId>
-            <version>3.13.0</version>
-        </dependency>
     </dependencies>
 
 </project>
