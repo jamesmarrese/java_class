@@ -160,7 +160,7 @@ public class TestStockServiceFactory {
 
     }
 
-    @Test
+    /*@Test
     public void testMainMethodShouldReturnValidResult () throws ParseException,
             DatabaseInitializationException, IOException, StockServiceException {
 
@@ -171,6 +171,6 @@ public class TestStockServiceFactory {
         argString[3] = "DAILY";
 
         StockQuoteApplication.main(argString);
-    }
+    }*/
 
 }
