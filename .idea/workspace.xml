@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5029f06d-57fe-4e07-b9a8-acb695f9775d" name="Default Changelist" comment="" />
+    <list default="true" id="5029f06d-57fe-4e07-b9a8-acb695f9775d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,7 +93,7 @@
           <entry key="dummy" value="70" />
           <entry key="java" value="13965" />
           <entry key="sql" value="4160" />
-          <entry key="xml" value="445" />
+          <entry key="xml" value="450" />
           <entry key="xsd" value="11" />
           <entry key="yml" value="358" />
         </counts>
@@ -101,7 +103,7 @@
           <entry key="DBN-SQL" value="4160" />
           <entry key="JAVA" value="13965" />
           <entry key="PLAIN_TEXT" value="70" />
-          <entry key="XML" value="456" />
+          <entry key="XML" value="461" />
           <entry key="YAML" value="358" />
         </counts>
       </usages-collector>
@@ -135,8 +137,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
-              <caret line="164" column="12" selection-start-line="164" selection-start-column="12" selection-end-line="164" selection-end-column="12" />
+            <state relative-caret-position="160">
+              <caret line="162" column="3" lean-forward="true" selection-start-line="162" selection-start-column="3" selection-end-line="162" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,8 +149,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+            <state relative-caret-position="255">
+              <caret line="15" column="110" selection-start-line="15" selection-start-column="110" selection-end-line="15" selection-end-column="110" />
+              <folding>
+                <element signature="e#856#861#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -480,7 +485,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540835608173" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540835947123" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/com/yahoofinance/api/YahooFinanceAPI/3.14.0" />
@@ -715,7 +720,7 @@
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.1951417" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26639676" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24129555" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -725,7 +730,7 @@
       <window_info id="DB Browser" order="7" weight="0.28502023" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.519573" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.52491105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3985765" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1020,8 +1025,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="164" column="12" selection-start-line="164" selection-start-column="12" selection-end-line="164" selection-end-column="12" />
+        <state relative-caret-position="160">
+          <caret line="162" column="3" lean-forward="true" selection-start-line="162" selection-start-column="3" selection-end-line="162" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1030,8 +1035,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+        <state relative-caret-position="255">
+          <caret line="15" column="110" selection-start-line="15" selection-start-column="110" selection-end-line="15" selection-end-column="110" />
+          <folding>
+            <element signature="e#856#861#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
