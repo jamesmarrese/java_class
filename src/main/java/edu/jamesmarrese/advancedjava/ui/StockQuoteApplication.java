@@ -142,7 +142,9 @@ public class StockQuoteApplication {
 
         //Today's date
         Calendar today = Calendar.getInstance();
-        today.set(Calendar.HOUR_OF_DAY, 0);
+        today.set(Calendar.HOUR_OF_DAY, 16);
+        today.set(Calendar.MINUTE, 0);
+        today.set(Calendar.SECOND, 1);
 
         /*Print out a single stock quote.
          */

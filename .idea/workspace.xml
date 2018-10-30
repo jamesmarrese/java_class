@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5029f06d-57fe-4e07-b9a8-acb695f9775d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/jamesmarrese/advancedjava/TestStockServiceFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/jamesmarrese/advancedjava/TestStockServiceFactory.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,12 +55,12 @@
     <session id="1545217261">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="31" />
+          <entry key="project.closed" value="33" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="3" />
-          <entry key="project.open.time.14" value="3" />
+          <entry key="project.open.time.13" value="4" />
+          <entry key="project.open.time.14" value="4" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.19" value="1" />
@@ -67,7 +71,7 @@
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="32" />
+          <entry key="project.opened" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -78,7 +82,7 @@
           <entry key="sql" value="7" />
           <entry key="xml" value="24" />
           <entry key="xsd" value="2" />
-          <entry key="yml" value="9" />
+          <entry key="yml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -88,43 +92,34 @@
           <entry key="JAVA" value="157" />
           <entry key="JSP" value="4" />
           <entry key="XML" value="26" />
-          <entry key="YAML" value="9" />
+          <entry key="YAML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="70" />
-          <entry key="java" value="14062" />
+          <entry key="java" value="14110" />
           <entry key="jsp" value="177" />
           <entry key="sql" value="4160" />
           <entry key="xml" value="452" />
           <entry key="xsd" value="11" />
-          <entry key="yml" value="358" />
+          <entry key="yml" value="359" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="DBN-SQL" value="4160" />
-          <entry key="JAVA" value="14062" />
+          <entry key="JAVA" value="14110" />
           <entry key="JSP" value="177" />
           <entry key="PLAIN_TEXT" value="70" />
           <entry key="XML" value="463" />
-          <entry key="YAML" value="358" />
+          <entry key="YAML" value="359" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/stockquote.jsp">
           <provider selected="true" editor-type-id="text-editor" />
@@ -144,14 +139,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="162" column="6" selection-start-line="162" selection-start-column="4" selection-end-line="162" selection-end-column="6" />
+            <state relative-caret-position="481">
+              <caret line="166" column="13" selection-start-line="166" selection-start-column="13" selection-end-line="166" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -189,8 +193,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="152" column="16" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
+            <state relative-caret-position="88">
+              <caret line="144" column="42" selection-start-line="144" selection-start-column="42" selection-end-line="144" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -201,11 +205,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-612">
-              <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-              <folding>
-                <element signature="e#3091#3103#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -268,7 +269,6 @@
         <option value="$USER_HOME$/Desktop/java_class/java_class/.circleci/other_config.yml" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/sql/db_initialization.sql" />
         <option value="C:/Program Files/Apache Software Foundation/Tomcat 8.5/webapps/HelloServlet/WEB-INF/src/mypkg/HelloServlet.java" />
-        <option value="$PROJECT_DIR$/.circleci/config.yml" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/Quotes.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/StockORM.java" />
@@ -289,8 +289,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/stockquote.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java" />
+        <option value="$PROJECT_DIR$/.circleci/config.yml" />
       </list>
     </option>
   </component>
@@ -538,13 +539,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540931150009" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540942114585" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ExampleWebAppJames" />
@@ -587,7 +588,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestStockServiceFactory.testMainMethodShouldReturnValidResult">
+  <component name="RunManager" selected="Application.Unnamed">
     <configuration name="Unnamed" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="edu.jamesmarrese.advancedjava.ui.StockQuoteApplication" />
       <module name="StockService" />
@@ -684,9 +685,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestStockServiceFactory" />
         <item itemvalue="JUnit.TestStockServiceFactory.testMainMethodShouldReturnValidResult" />
         <item itemvalue="JUnit.TestStockServiceFactory.testMainShouldReturnValidResultTestingIntervalEnum" />
-        <item itemvalue="JUnit.TestStockServiceFactory" />
         <item itemvalue="JUnit.TestStockServiceFactory.testListOfStockQuotesGetPrice" />
         <item itemvalue="JUnit.TestStockServiceFactory.testYahooFinanceStockServiceFactoryGetPrice" />
       </list>
@@ -706,9 +707,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestStockServiceFactory - 2018.10.29 at 11h 05m 27s.xml">
-      <configuration name="TestStockServiceFactory" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestStockServiceFactory - 2018.10.29 at 11h 59m 51s.xml">
       <configuration name="TestStockServiceFactory" configurationId="JUnit" />
     </history-entry>
@@ -736,6 +734,9 @@
     <history-entry file="TestStockServiceFactory_testMainMethodShouldReturnValidResult - 2018.10.30 at 16h 23m 23s.xml">
       <configuration name="TestStockServiceFactory.testMainMethodShouldReturnValidResult" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestStockServiceFactory - 2018.10.30 at 18h 00m 09s.xml">
+      <configuration name="TestStockServiceFactory" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -750,7 +751,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2574899" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26639676" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -760,7 +761,7 @@
       <window_info id="DB Browser" order="7" weight="0.28502023" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.54626334" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40569395" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3985765" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -990,13 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabaseUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1031,6 +1025,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/stockquote.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/stockquoteResults.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
@@ -1062,36 +1059,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/stockquoteResults.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        <state relative-caret-position="102">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="166" column="13" selection-start-line="166" selection-start-column="13" selection-end-line="166" selection-end-column="13" />
           <folding>
-            <element signature="e#3091#3103#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="152" column="16" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
+        <state relative-caret-position="88">
+          <caret line="144" column="42" selection-start-line="144" selection-start-column="42" selection-end-line="144" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java">
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="162" column="6" selection-start-line="162" selection-start-column="4" selection-end-line="162" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
         </state>
       </provider>
     </entry>

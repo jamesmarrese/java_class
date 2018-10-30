@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="edu.jamesmarrese.advancedjava.TestDatabaseUtils" time="1.103" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="edu.jamesmarrese.advancedjava.TestDatabaseUtils" time="0.791" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2018.2.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,5 +62,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="edu.jamesmarrese.advancedjava.TestDatabaseUtils" name="testBadInitFile" time="1.103"/>
+  <testcase classname="edu.jamesmarrese.advancedjava.TestDatabaseUtils" name="testBadInitFile" time="0.791"/>
 </testsuite>
