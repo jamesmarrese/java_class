@@ -140,13 +140,17 @@ public class StockQuoteApplication {
 
         StockQuote stock = applicationTest.getQuote(symbol, startDate);
 
+        //Today's date
+        Calendar today = Calendar.getInstance();
+        today.set(Calendar.HOUR_OF_DAY, 0);
+
         /*Print out a single stock quote.
          */
         System.out.println();
-        System.out.println("Result of call to get a single Stock Quote: ");
+        System.out.println("Result of call to get a single Stock Quote for today: ");
         System.out.println(stock.getStockSymbol() + " " +
                 stock.getStockPrice().toString() + " " +
-                stock.getDateRecorded().getTime().toString());
+                today.getTime().toString());
 
         List<StockQuote> stockList = applicationTest.getQuote(symbol, startDate, endDate);
 

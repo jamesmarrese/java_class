@@ -4,9 +4,6 @@ import edu.jamesmarrese.advancedjava.model.StockQuote;
 
 import javax.validation.constraints.NotNull;
 
-import edu.jamesmarrese.advancedjava.service.IntervalEnum;
-import edu.jamesmarrese.advancedjava.service.StockService;
-import edu.jamesmarrese.advancedjava.service.StockServiceException;
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
 import yahoofinance.histquotes.HistoricalQuote;
