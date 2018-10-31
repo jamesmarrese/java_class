@@ -86,8 +86,6 @@ public class StockQuoteApplication {
                             " and an interval at which stock quotes will be returned.");
         }
 
-        DatabaseUtils.initializeDatabase(DatabaseUtils.initializationFile);
-
         StockServiceFactory applicationTest = new StockServiceFactory();
 
         //The stock symbol
