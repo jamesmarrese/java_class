@@ -65,6 +65,11 @@ public class TestStockQuoteServlet {
         when(servletContext.getRequestDispatcher("/stockquoteResults.jsp")).thenReturn(requestDispatcher);
         requestDispatcher.forward(request, response);
 
+        /* This commented out code was causing CircleCI to fail, which doesn't make any sense, as I have a test
+           in another class that tests the main method and calls the Yahoo Finance API. That test passes in
+           CircleCI. The commented out code below does the
+
+         */
         /*StockQuoteSearch stockQuoteSearch = new StockQuoteSearch(stockSymbol, beginDate, endDate, interval);
 
         try {

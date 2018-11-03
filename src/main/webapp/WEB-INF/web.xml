@@ -6,13 +6,13 @@
     <display-name>Archetype Created Web Application</display-name>
 
     <servlet>
-        <servlet-name>StockSearchServlet</servlet-name>
+        <servlet-name>StockQuoteServlet</servlet-name>
         <servlet-class>edu.jamesmarrese.advancedjava.servlet.StockQuoteServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>StockSearchServlet</servlet-name>
-        <url-pattern>/servlets/StockSearchServlet/*</url-pattern>
+        <servlet-name>StockQuoteServlet</servlet-name>
+        <url-pattern>/servlets/StockQuoteServlet/*</url-pattern>
     </servlet-mapping>
 
 </web-app>
