@@ -12,7 +12,7 @@
 
     <servlet-mapping>
         <servlet-name>StockQuoteServlet</servlet-name>
-        <url-pattern>/servlets/StockQuoteServlet/*</url-pattern>
+        <url-pattern>/servlet/StockQuoteServlet/*</url-pattern>
     </servlet-mapping>
 
 </web-app>

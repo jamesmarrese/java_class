@@ -69,10 +69,10 @@ public class TestStockQuoteServlet {
            in another class that tests the main method and calls the Yahoo Finance API. That test passes in
            CircleCI. The commented out code below is where CircleCI appears to be failing, during the call to
            the Yahoo Finance API, which, again, is odd given that the same call to the Yahoo Finance API works
-           when I test out the main method. 
+           when I test out the main method.
 
          */
-        /*StockQuoteSearch stockQuoteSearch = new StockQuoteSearch(stockSymbol, beginDate, endDate, interval);
+        StockQuoteSearch stockQuoteSearch = new StockQuoteSearch(stockSymbol, beginDate, endDate, interval);
 
         try {
             stockQuoteSearch.getStockData();
@@ -80,7 +80,7 @@ public class TestStockQuoteServlet {
             throw new RuntimeException(e.getMessage());
         }
 
-        session.setAttribute("stockQuoteSearch", stockQuoteSearch);*/
+        session.setAttribute("stockQuoteSearch", stockQuoteSearch);
 
     }
 
