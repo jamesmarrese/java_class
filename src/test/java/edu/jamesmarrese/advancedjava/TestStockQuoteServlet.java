@@ -47,8 +47,8 @@ public class TestStockQuoteServlet {
         response = mock(HttpServletResponse.class);
 
         when(request.getParameter("stockSymbol")).thenReturn("AMZN");
-        when(request.getParameter("beginDate")).thenReturn("2018-09-17");
-        when(request.getParameter("endDate")).thenReturn("2018-09-20");
+        when(request.getParameter("beginDate")).thenReturn("2018-10-17");
+        when(request.getParameter("endDate")).thenReturn("2018-10-19");
         when(request.getParameter("interval")).thenReturn("DAILY");
 
         String stockSymbol = request.getParameter(STOCK_SYMBOL_PARAMETER_KEY);
@@ -67,7 +67,8 @@ public class TestStockQuoteServlet {
 
         /* This commented out code was causing CircleCI to fail, which doesn't make any sense, as I have a test
            in another class that tests the main method and calls the Yahoo Finance API. That test passes in
-           CircleCI. The commented out code below does the
+           CircleCI. The commented out code below is where CircleCI appears to be failing, during the call to
+           the
 
          */
         StockQuoteSearch stockQuoteSearch = new StockQuoteSearch(stockSymbol, beginDate, endDate, interval);
@@ -85,16 +86,16 @@ public class TestStockQuoteServlet {
     @Test
     public void testStockQuoteSearchServletGetParameterUsingString() {
         assertTrue("String stockSymbol should be AMZN", request.getParameter("stockSymbol").equals("AMZN"));
-        assertTrue("String beginDate should be 2018-09-17", request.getParameter("beginDate").equals("2018-09-17"));
-        assertTrue("String endDate should be 2018-09-17", request.getParameter("endDate").equals("2018-09-20"));
+        assertTrue("String beginDate should be 2018-10-17", request.getParameter("beginDate").equals("2018-10-17"));
+        assertTrue("String endDate should be 2018-10-19", request.getParameter("endDate").equals("2018-10-19"));
         assertTrue("String interval should be DAILY", request.getParameter("interval").equals("DAILY"));
     }
 
     @Test
     public void testStockQuoteSearchServletGetParameterUsingParameterKey() {
         assertTrue("STOCK_SYMBOL_PARAMETER_KEY should be AMZN", request.getParameter(STOCK_SYMBOL_PARAMETER_KEY).equals("AMZN"));
-        assertTrue("BEGIN_DATE_PARAMETER_KEY should be 2018-09-17", request.getParameter(BEGIN_DATE_PARAMETER_KEY).equals("2018-09-17"));
-        assertTrue("END_DATE_PARAMETER_KEY should be 2018-09-17", request.getParameter(END_DATE_PARAMETER_KEY).equals("2018-09-20"));
+        assertTrue("BEGIN_DATE_PARAMETER_KEY should be 2018-10-17", request.getParameter(BEGIN_DATE_PARAMETER_KEY).equals("2018-10-17"));
+        assertTrue("END_DATE_PARAMETER_KEY should be 2018-10-19", request.getParameter(END_DATE_PARAMETER_KEY).equals("2018-10-19"));
         assertTrue("INTERVAL_PARAMETER_KEY should be DAILY", request.getParameter(INTERVAL_PARAMETER_KEY).equals("DAILY"));
     }
 
