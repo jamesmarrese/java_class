@@ -76,8 +76,7 @@ public class StockQuoteApplication {
         System.exit(statusCode.getStatusCode());
     }
 
-    public static void main(String[] args) throws ParseException, StockServiceException,
-            DatabaseInitializationException, IOException {
+    public static void main(String[] args) throws ParseException, StockServiceException, IOException {
 
         if (args.length != 4) {
             exit(ProgramTerminationStatusEnum.ABNORMAL,

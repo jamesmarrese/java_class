@@ -2,9 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5029f06d-57fe-4e07-b9a8-acb695f9775d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/servlet/StockQuoteServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/servlet/StockSearchServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/stockquote.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/stockquote.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/stockquoteResults.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/stockquoteResults.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabasePersonService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabaseUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestXMLUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/servlet/StockSearchServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xml/stock_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xml/stock_info.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestDatabaseUtils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestDatabaseUtils.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestPersonQuotesORM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestPersonQuotesORM.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestStockServiceFactory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestStockServiceFactory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestXMLUtils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.jamesmarrese.advancedjava.TestXMLUtils.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestDatabaseUtils.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestDatabaseUtils.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestPersonORM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestPersonORM.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestStockServiceFactory.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestStockServiceFactory.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestXMLUtils.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.jamesmarrese.advancedjava.TestXMLUtils.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/jamesmarrese/advancedjava/TestDatabasePersonService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/jamesmarrese/advancedjava/TestDatabaseUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/jamesmarrese/advancedjava/TestXMLUtils.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,53 +80,57 @@
     <session id="1545217261">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="33" />
+          <entry key="project.closed" value="49" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="4" />
-          <entry key="project.open.time.14" value="4" />
+          <entry key="project.open.time.13" value="7" />
+          <entry key="project.open.time.14" value="5" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.2" value="5" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.3" value="6" />
-          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.3" value="7" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.5" value="6" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="34" />
+          <entry key="project.opened" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="157" />
-          <entry key="jsp" value="4" />
+          <entry key="class" value="3" />
+          <entry key="java" value="184" />
+          <entry key="jsp" value="11" />
           <entry key="sql" value="7" />
-          <entry key="xml" value="24" />
+          <entry key="xml" value="29" />
           <entry key="xsd" value="2" />
           <entry key="yml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
+          <entry key="CLASS" value="3" />
           <entry key="DBN-SQL" value="7" />
-          <entry key="JAVA" value="157" />
-          <entry key="JSP" value="4" />
-          <entry key="XML" value="26" />
+          <entry key="JAVA" value="184" />
+          <entry key="JSP" value="11" />
+          <entry key="XML" value="31" />
           <entry key="YAML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="70" />
-          <entry key="java" value="14117" />
-          <entry key="jsp" value="177" />
+          <entry key="dummy" value="98" />
+          <entry key="java" value="21323" />
+          <entry key="jsp" value="1207" />
           <entry key="sql" value="4160" />
-          <entry key="xml" value="452" />
+          <entry key="xml" value="536" />
           <entry key="xsd" value="11" />
           <entry key="yml" value="359" />
         </counts>
@@ -107,10 +138,10 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="DBN-SQL" value="4160" />
-          <entry key="JAVA" value="14117" />
-          <entry key="JSP" value="177" />
-          <entry key="PLAIN_TEXT" value="70" />
-          <entry key="XML" value="463" />
+          <entry key="JAVA" value="21323" />
+          <entry key="JSP" value="1207" />
+          <entry key="PLAIN_TEXT" value="98" />
+          <entry key="XML" value="547" />
           <entry key="YAML" value="359" />
         </counts>
       </usages-collector>
@@ -119,29 +150,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/stockquote.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/stockquoteResults.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockService.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockQuoteSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="63" column="53" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="173" column="5" selection-start-line="173" selection-start-column="5" selection-end-line="173" selection-end-column="5" />
+            <state relative-caret-position="51">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,19 +162,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/StockQuoteSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1700">
-              <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/IntervalEnum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+            <state relative-caret-position="255">
+              <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -170,8 +176,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="88" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="1343">
+              <caret line="95" column="6" selection-start-line="95" selection-start-column="6" selection-end-line="97" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,10 +186,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/servlet/StockQuoteServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockQuoteServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactory.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="47" column="66" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceException.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -210,6 +249,13 @@
       <find>(ID</find>
       <find>url</find>
       <find>data</find>
+      <find>serv</find>
+      <find>StockService</find>
+      <find>try</find>
+      <find>setatt</find>
+      <find>servletContext</find>
+      <find>//</find>
+      <find>response</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -222,10 +268,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/DatabaseStockService.java" />
-        <option value="a94e9187-7bd2-4524-8c6e-0863bb898828/consoles/Connection" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/ActivitiesServiceException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/DatabaseActivitiesService.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/ActivitiesService.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/PersonServiceException.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestPerson.java" />
@@ -263,13 +305,20 @@
         <option value="$USER_HOME$/Desktop/java_class/java_class/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactoryWORKING.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockService.java" />
         <option value="$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/stockquote.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactory.java" />
         <option value="$PROJECT_DIR$/.circleci/config.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/servlet/StockSearchServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/stockquote.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/stockquoteResults.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/StockQuoteSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/servlet/StockQuoteServlet.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockQuoteSearch.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockQuoteServlet.java" />
       </list>
     </option>
   </component>
@@ -517,19 +566,20 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540946207186" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541206998344" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ExampleWebAppJames" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ANOTHER_ASSIGNMENT_NINE" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.32786885" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="settings.editor.splitter.proportion" value="0.23770492" />
   </component>
@@ -537,21 +587,21 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="edu.jamesmarrese.advancedjava.service" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\James\IdeaProjects\java_class\src\main\java" />
-      <recent name="C:\Users\James\IdeaProjects\java_class\src" />
-      <recent name="C:\Users\James\IdeaProjects\java_class\src\main\java\resources" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="edu.jamesmarrese.advancedjava" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\James\IdeaProjects\java_class\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\service" />
       <recent name="C:\Users\James\IdeaProjects\java_class\src\main\java\edu\jamesmarrese\advancedjava\model" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\James\IdeaProjects\java_class\src\main\java" />
+      <recent name="C:\Users\James\IdeaProjects\java_class\src" />
+      <recent name="C:\Users\James\IdeaProjects\java_class\src\main\java\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -566,7 +616,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestStockServiceFactory.testMainMethodShouldReturnValidResult">
+  <component name="RunManager" selected="JUnit.TestStockQuoteServlet">
     <configuration name="Unnamed" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="edu.jamesmarrese.advancedjava.ui.StockQuoteApplication" />
       <module name="StockService" />
@@ -575,7 +625,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStockServiceFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestStockQuoteSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StockService" />
       <extension name="coverage">
         <pattern>
@@ -584,12 +634,12 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.jamesmarrese.advancedjava" />
-      <option name="MAIN_CLASS_NAME" value="edu.jamesmarrese.advancedjava.TestStockServiceFactory" />
+      <option name="MAIN_CLASS_NAME" value="edu.jamesmarrese.advancedjava.TestStockQuoteSearch" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStockServiceFactory.testListOfStockQuotesGetPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestStockQuoteServlet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StockService" />
       <extension name="coverage">
         <pattern>
@@ -598,14 +648,28 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.jamesmarrese.advancedjava" />
-      <option name="MAIN_CLASS_NAME" value="edu.jamesmarrese.advancedjava.TestStockServiceFactory" />
-      <option name="METHOD_NAME" value="testListOfStockQuotesGetPrice" />
+      <option name="MAIN_CLASS_NAME" value="edu.jamesmarrese.advancedjava.TestStockQuoteServlet" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStockQuoteServlet.testSomething" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StockService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.jamesmarrese.advancedjava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.jamesmarrese.advancedjava" />
+      <option name="MAIN_CLASS_NAME" value="edu.jamesmarrese.advancedjava.TestStockQuoteServlet" />
+      <option name="METHOD_NAME" value="testSomething" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStockServiceFactory.testMainMethodShouldReturnValidResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestStockQuoteServlet.testStockQuoteSearchServlet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StockService" />
       <extension name="coverage">
         <pattern>
@@ -614,14 +678,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.jamesmarrese.advancedjava" />
-      <option name="MAIN_CLASS_NAME" value="edu.jamesmarrese.advancedjava.TestStockServiceFactory" />
-      <option name="METHOD_NAME" value="testMainMethodShouldReturnValidResult" />
+      <option name="MAIN_CLASS_NAME" value="edu.jamesmarrese.advancedjava.TestStockQuoteServlet" />
+      <option name="METHOD_NAME" value="testStockQuoteSearchServlet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStockServiceFactory.testMainShouldReturnValidResultTestingIntervalEnum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestStockQuoteServlet.testStockQuoteSearchServletRequestAndResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StockService" />
       <extension name="coverage">
         <pattern>
@@ -630,24 +694,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.jamesmarrese.advancedjava" />
-      <option name="MAIN_CLASS_NAME" value="edu.jamesmarrese.advancedjava.TestStockServiceFactory" />
-      <option name="METHOD_NAME" value="testMainShouldReturnValidResultTestingIntervalEnum" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestStockServiceFactory.testYahooFinanceStockServiceFactoryGetPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="StockService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.jamesmarrese.advancedjava.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.jamesmarrese.advancedjava" />
-      <option name="MAIN_CLASS_NAME" value="edu.jamesmarrese.advancedjava.TestStockServiceFactory" />
-      <option name="METHOD_NAME" value="testYahooFinanceStockServiceFactoryGetPrice" />
+      <option name="MAIN_CLASS_NAME" value="edu.jamesmarrese.advancedjava.TestStockQuoteServlet" />
+      <option name="METHOD_NAME" value="testStockQuoteSearchServletRequestAndResponse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -655,19 +703,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
-      <item itemvalue="JUnit.TestStockServiceFactory" />
-      <item itemvalue="JUnit.TestStockServiceFactory.testYahooFinanceStockServiceFactoryGetPrice" />
-      <item itemvalue="JUnit.TestStockServiceFactory.testListOfStockQuotesGetPrice" />
-      <item itemvalue="JUnit.TestStockServiceFactory.testMainShouldReturnValidResultTestingIntervalEnum" />
-      <item itemvalue="JUnit.TestStockServiceFactory.testMainMethodShouldReturnValidResult" />
+      <item itemvalue="JUnit.TestStockQuoteServlet" />
+      <item itemvalue="JUnit.TestStockQuoteSearch" />
+      <item itemvalue="JUnit.TestStockQuoteServlet.testSomething" />
+      <item itemvalue="JUnit.TestStockQuoteServlet.testStockQuoteSearchServlet" />
+      <item itemvalue="JUnit.TestStockQuoteServlet.testStockQuoteSearchServletRequestAndResponse" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestStockServiceFactory.testMainMethodShouldReturnValidResult" />
-        <item itemvalue="JUnit.TestStockServiceFactory" />
-        <item itemvalue="JUnit.TestStockServiceFactory.testMainShouldReturnValidResultTestingIntervalEnum" />
-        <item itemvalue="JUnit.TestStockServiceFactory.testListOfStockQuotesGetPrice" />
-        <item itemvalue="JUnit.TestStockServiceFactory.testYahooFinanceStockServiceFactoryGetPrice" />
+        <item itemvalue="JUnit.TestStockQuoteServlet" />
+        <item itemvalue="JUnit.TestStockQuoteServlet.testStockQuoteSearchServlet" />
+        <item itemvalue="JUnit.TestStockQuoteServlet.testStockQuoteSearchServletRequestAndResponse" />
+        <item itemvalue="JUnit.TestStockQuoteSearch" />
+        <item itemvalue="JUnit.TestStockQuoteServlet.testSomething" />
       </list>
     </recent_temporary>
   </component>
@@ -685,35 +733,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestStockServiceFactory_testYahooFinanceStockServiceFactoryGetSymbol - 2018.10.29 at 12h 21m 11s.xml">
-      <configuration name="TestStockServiceFactory.testYahooFinanceStockServiceFactoryGetSymbol" configurationId="JUnit" />
+    <history-entry file="TestStockQuoteServlet_testStockQuoteSearchServlet - 2018.11.02 at 20h 30m 08s.xml">
+      <configuration name="TestStockQuoteServlet.testStockQuoteSearchServlet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStockServiceFactory_testYahooFinanceStockServiceFactoryGetDate - 2018.10.29 at 12h 21m 18s.xml">
-      <configuration name="TestStockServiceFactory.testYahooFinanceStockServiceFactoryGetDate" configurationId="JUnit" />
+    <history-entry file="TestStockQuoteServlet - 2018.11.02 at 20h 32m 51s.xml">
+      <configuration name="TestStockQuoteServlet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStockServiceFactory_testYahooFinanceStockServiceFactoryGetPrice - 2018.10.29 at 12h 21m 25s.xml">
-      <configuration name="TestStockServiceFactory.testYahooFinanceStockServiceFactoryGetPrice" configurationId="JUnit" />
+    <history-entry file="TestStockQuoteServlet - 2018.11.02 at 20h 35m 20s.xml">
+      <configuration name="TestStockQuoteServlet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStockServiceFactory_testListOfStockQuotesGetPrice - 2018.10.29 at 13h 11m 27s.xml">
-      <configuration name="TestStockServiceFactory.testListOfStockQuotesGetPrice" configurationId="JUnit" />
+    <history-entry file="TestStockQuoteServlet - 2018.11.02 at 20h 35m 37s.xml">
+      <configuration name="TestStockQuoteServlet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStockServiceFactory - 2018.10.29 at 13h 31m 42s.xml">
-      <configuration name="TestStockServiceFactory" configurationId="JUnit" />
+    <history-entry file="TestStockQuoteServlet - 2018.11.02 at 20h 38m 26s.xml">
+      <configuration name="TestStockQuoteServlet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStockServiceFactory_testMainShouldReturnValidResultTestingIntervalEnum - 2018.10.29 at 13h 34m 16s.xml">
-      <configuration name="TestStockServiceFactory.testMainShouldReturnValidResultTestingIntervalEnum" configurationId="JUnit" />
+    <history-entry file="TestStockQuoteServlet_testStockQuoteSearchServletRequestAndResponse - 2018.11.02 at 20h 57m 47s.xml">
+      <configuration name="TestStockQuoteServlet.testStockQuoteSearchServletRequestAndResponse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStockServiceFactory_testMainShouldReturnValidResultTestingIntervalEnum - 2018.10.29 at 13h 35m 08s.xml">
-      <configuration name="TestStockServiceFactory.testMainShouldReturnValidResultTestingIntervalEnum" configurationId="JUnit" />
+    <history-entry file="TestStockQuoteServlet_testStockQuoteSearchServletRequestAndResponse - 2018.11.02 at 20h 59m 18s.xml">
+      <configuration name="TestStockQuoteServlet.testStockQuoteSearchServletRequestAndResponse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStockServiceFactory_testMainMethodShouldReturnValidResult - 2018.10.30 at 16h 23m 23s.xml">
-      <configuration name="TestStockServiceFactory.testMainMethodShouldReturnValidResult" configurationId="JUnit" />
+    <history-entry file="TestStockQuoteServlet_testStockQuoteSearchServlet - 2018.11.02 at 21h 00m 18s.xml">
+      <configuration name="TestStockQuoteServlet.testStockQuoteSearchServlet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStockServiceFactory - 2018.10.30 at 18h 00m 09s.xml">
-      <configuration name="TestStockServiceFactory" configurationId="JUnit" />
+    <history-entry file="TestStockQuoteServlet - 2018.11.02 at 21h 01m 11s.xml">
+      <configuration name="TestStockQuoteServlet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStockServiceFactory_testMainMethodShouldReturnValidResult - 2018.10.30 at 20h 36m 44s.xml">
-      <configuration name="TestStockServiceFactory.testMainMethodShouldReturnValidResult" configurationId="JUnit" />
+    <history-entry file="TestStockQuoteServlet - 2018.11.02 at 21h 03m 13s.xml">
+      <configuration name="TestStockQuoteServlet" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -727,9 +775,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26639676" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26882592" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -738,8 +785,8 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="DB Browser" order="7" weight="0.28502023" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.40569395" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.5053381" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29893237" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3985765" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -749,6 +796,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3291815" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32851985" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3291815" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.5498221" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -793,67 +841,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/RetrievePersonQuotes.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/PersonServiceException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/DatabasePersonService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="78" column="96" selection-start-line="78" selection-start-column="96" selection-end-line="78" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/PersonService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockService.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockQuoteApplication.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestPersonORM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestPersonQuotesORM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestQuotesORM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="44" column="51" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockQuote.java" />
-    <entry file="file://$USER_HOME$/Desktop/java_class/java_class/.circleci/other_config.yml" />
-    <entry file="file://C:/Program Files/Apache Software Foundation/Tomcat 8.5/webapps/HelloServlet/WEB-INF/src/mypkg/HelloServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Program Files/Apache Software Foundation/Tomcat 8.5/webapps/HelloServlet/WEB-INF/src/mypkg/HelloServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/util/DatabaseUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
@@ -924,12 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/xml/stock_info.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestXMLUtils.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/java_class/java_class/src/main/java/edu/jamesmarrese/advancedjava/service/BasicStockService2.java" />
     <entry file="file://$USER_HOME$/Desktop/java_class/java_class/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication2.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/util/XMLUtils.java">
@@ -962,85 +944,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/StockQuote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabaseUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabasePersonService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/java_class/java_class/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactory2.java" />
     <entry file="file://$USER_HOME$/Desktop/java_class/java_class/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactoryWORKING.java" />
     <entry file="file://$USER_HOME$/Desktop/java_class/java_class/src/test/java/edu/jamesmarrese/advancedjava/TestStockQuoteApplication2.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/servlet/StockSearchServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/stockquote.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/stockquoteResults.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="63" column="53" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="110" selection-start-line="15" selection-start-column="110" selection-end-line="15" selection-end-column="110" />
-          <folding>
-            <element signature="e#856#861#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/IntervalEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1051,23 +961,182 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="153">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="63" column="53" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/IntervalEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/StockQuote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar!/javax/servlet/http/HttpServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/Test.java" />
+    <entry file="jar://C:/Program Files/Apache Software Foundation/Tomcat 7.0/lib/servlet-api.jar!/javax/servlet/GenericServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabaseUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestDatabasePersonService.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestXMLUtils.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestPersonQuotesORM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2516">
+          <caret line="164" column="81" selection-start-line="164" selection-start-column="81" selection-end-line="164" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockServiceFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestQuotesORM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="173" column="5" selection-start-line="173" selection-start-column="5" selection-end-line="173" selection-end-column="5" />
+        <state relative-caret-position="119">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockORM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/xml/stock_info.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/stockquote.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/stockquoteResults.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/ui/StockQuoteApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="95" column="6" selection-start-line="95" selection-start-column="6" selection-end-line="97" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="47" column="66" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/service/StockServiceException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/servlet/StockQuoteServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/jamesmarrese/advancedjava/model/StockQuoteSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestPersonORM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockQuoteSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/jamesmarrese/advancedjava/TestStockQuoteServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1129,7 +1198,6 @@
             <option name="proportions">
               <list>
                 <option value="0.32786885" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
