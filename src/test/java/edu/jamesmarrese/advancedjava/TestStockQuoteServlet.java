@@ -65,7 +65,7 @@ public class TestStockQuoteServlet {
         when(servletContext.getRequestDispatcher("/stockquoteResults.jsp")).thenReturn(requestDispatcher);
         requestDispatcher.forward(request, response);
 
-        /*StockQuoteSearch stockQuoteSearch = new StockQuoteSearch(stockSymbol, beginDate, endDate, interval);
+        StockQuoteSearch stockQuoteSearch = new StockQuoteSearch(stockSymbol, beginDate, endDate, interval);
 
         try {
             stockQuoteSearch.getStockData();
@@ -73,7 +73,7 @@ public class TestStockQuoteServlet {
             throw new RuntimeException(e.getMessage());
         }
 
-        session.setAttribute("stockQuoteSearch", stockQuoteSearch);*/
+        session.setAttribute("stockQuoteSearch", stockQuoteSearch);
 
     }
 
