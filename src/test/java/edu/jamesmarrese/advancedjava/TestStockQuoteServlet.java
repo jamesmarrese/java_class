@@ -70,7 +70,7 @@ public class TestStockQuoteServlet {
            CircleCI. The commented out code below does the
 
          */
-        /*StockQuoteSearch stockQuoteSearch = new StockQuoteSearch(stockSymbol, beginDate, endDate, interval);
+        StockQuoteSearch stockQuoteSearch = new StockQuoteSearch(stockSymbol, beginDate, endDate, interval);
 
         try {
             stockQuoteSearch.getStockData();
@@ -78,7 +78,7 @@ public class TestStockQuoteServlet {
             throw new RuntimeException(e.getMessage());
         }
 
-        session.setAttribute("stockQuoteSearch", stockQuoteSearch);*/
+        session.setAttribute("stockQuoteSearch", stockQuoteSearch);
 
     }
 
