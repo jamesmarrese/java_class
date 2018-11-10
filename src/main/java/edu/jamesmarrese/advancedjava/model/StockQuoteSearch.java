@@ -5,10 +5,11 @@ import edu.jamesmarrese.advancedjava.service.StockServiceException;
 import edu.jamesmarrese.advancedjava.service.StockServiceFactory;
 import org.joda.time.DateTime;
 
-import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * This class used for processing form data.
@@ -45,6 +46,7 @@ public class StockQuoteSearch {
 
     /**
      * Getter for stock symbol
+     *
      * @return stockSymbol a string for the stock symbol
      */
     public String getStockSymbol() {
@@ -53,6 +55,7 @@ public class StockQuoteSearch {
 
     /**
      * Setter for the stockSymbol
+     *
      * @param stockSymbol a string for the stock symbol
      */
     public void setStockSymbol(String stockSymbol) {
@@ -61,6 +64,7 @@ public class StockQuoteSearch {
 
     /**
      * Getter for the begin date
+     *
      * @return beginDate a string for the start date in the stock quote search
      */
     public String getBeginDate() {
@@ -69,6 +73,7 @@ public class StockQuoteSearch {
 
     /**
      * Setter for the begin date
+     *
      * @param beginDate a string for the begin date in the stock quote search
      */
     public void setBeginDate(String beginDate) {
@@ -77,6 +82,7 @@ public class StockQuoteSearch {
 
     /**
      * Getter for the end date
+     *
      * @return endDate a string for the end date in the stock quote search
      */
     public String getEndDate() {
@@ -85,6 +91,7 @@ public class StockQuoteSearch {
 
     /**
      * Setter for the end date
+     *
      * @param endDate a string for the end date in the stock quote search
      */
     public void setEndDate(String endDate) {
@@ -93,6 +100,7 @@ public class StockQuoteSearch {
 
     /**
      * Getter for the interval
+     *
      * @return interval a string for the frequency with which stock quotes will be returned
      */
     public String getInterval() {
@@ -101,9 +109,10 @@ public class StockQuoteSearch {
 
     /**
      * Setter for the interval
+     *
      * @param interval a string for the frequency with which stock quotes will be returned
      */
-    public void setInterval(String interval) {
+    public IntervalEnum setInterval(String interval) {
 
         String intervalUpper = interval.toUpperCase();
 
@@ -114,31 +123,36 @@ public class StockQuoteSearch {
         } else {
             this.interval = IntervalEnum.DAILY; //default to DAILY
         }
+
+        return this.interval;
     }
 
     /**
      * Get a list of stock quotes and append to string builder
      *
      * @throws StockServiceException
-     * @throws IOException
+     * @throws ParseException
      */
-    public void getStockData () throws StockServiceException, IOException {
+    public String getStockData(String symbol, String startOn, String endOn, String interval)
+            throws StockServiceException, ParseException {
 
-        //convert JODA time to Date, then convert to Calendar for use in getQuote call
-        Date start = beginDate.toDate();
-        Calendar calStart = Calendar.getInstance();
-        calStart.setTime(start);
+        IntervalEnum frequency = setInterval(interval);
 
-        //convert JODA time to Date, then convert to Calendar for use in getQuote call
-        Date end = beginDate.toDate();
-        Calendar calEnd = Calendar.getInstance();
-        calEnd.setTime(end);
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
+
+        //Convert String to Calendar object
+        Calendar startCalendar = Calendar.getInstance();
+        startCalendar.setTime(simpleDateFormat.parse(startOn));
+
+        //Convert String to Calendar object
+        Calendar endCalendar = Calendar.getInstance();
+        endCalendar.setTime(simpleDateFormat.parse(endOn));
 
         List<StockQuote> stockList = null;
 
         //Get the list of stock quotes and add them to the string builder
         StockServiceFactory stockServiceFactory = new StockServiceFactory();
-        stockList = stockServiceFactory.getQuote(stockSymbol, calStart, calEnd, interval);
+        stockList = stockServiceFactory.getQuote(symbol, startCalendar, endCalendar, frequency);
         StringBuilder builder = new StringBuilder();
 
         for (StockQuote q : stockList) {
@@ -146,6 +160,8 @@ public class StockQuoteSearch {
         }
 
         this.stockQuoteString = builder.toString();
+
+        return this.stockQuoteString;
 
     }
 

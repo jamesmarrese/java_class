@@ -6,8 +6,8 @@ import edu.jamesmarrese.advancedjava.service.StockServiceException;
 import edu.jamesmarrese.advancedjava.service.StockServiceFactory;
 import edu.jamesmarrese.advancedjava.util.DatabaseInitializationException;
 import edu.jamesmarrese.advancedjava.util.DatabaseUtils;
+import edu.jamesmarrese.advancedjava.util.MainMethodHelper;
 
-import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -16,8 +16,7 @@ import java.util.List;
 
 /**
  * This StockQuoteApplication class instantiates a StockServiceFactory
- * class and calls the three getStockQuote methods in the class titled
- * StockServiceFactory.
+ * class and calls the methods in the class titled StockServiceFactory.
  */
 
 public class StockQuoteApplication {
@@ -76,14 +75,19 @@ public class StockQuoteApplication {
         System.exit(statusCode.getStatusCode());
     }
 
-    public static void main(String[] args) throws ParseException, StockServiceException, IOException {
+    public static void main(String[] args) throws ParseException, StockServiceException,
+            DatabaseInitializationException {
 
-        if (args.length != 4) {
+        if (args.length != 5) {
             exit(ProgramTerminationStatusEnum.ABNORMAL,
-                    "Please supply 4 arguments a stock symbol, " +
-                            "a start date (yyyy-MM-dd) and end date (yyyy-MM-dd)" +
-                            " and an interval at which stock quotes will be returned.");
+                    "Please supply 5 arguments: a stock symbol, " +
+                            "a start date (yyyy-MM-dd), an end date (yyyy-MM-dd), " +
+                            "an interval at which stock quotes will be returned, " +
+                            "and a service type (YAHOO or DATABASE)");
         }
+
+        //Initialize database
+        DatabaseUtils.initializeDatabase(DatabaseUtils.initializationFile);
 
         StockServiceFactory applicationTest = new StockServiceFactory();
 
@@ -106,7 +110,7 @@ public class StockQuoteApplication {
          * @throws NullPointerException if startDate or endDate are null
          */
         if (startDate == null  ||  endDate == null) {
-            throw new NullPointerException();
+            throw new NullPointerException("The start date cannot be before the end date");
         }
 
         /**
@@ -135,49 +139,34 @@ public class StockQuoteApplication {
             chosenInterval = IntervalEnum.DAILY;
         }
 
-        StockQuote stock = applicationTest.getQuote(symbol, startDate);
+        String serviceType = args[4];
 
-        //Today's date
-        Calendar today = Calendar.getInstance();
-        today.set(Calendar.HOUR_OF_DAY, 16);
-        today.set(Calendar.MINUTE, 0);
-        today.set(Calendar.SECOND, 1);
-
-        /*Print out a single stock quote.
+        /**
+         * @throws AssertionError if serviceType is not YAHOO or DATABASE
          */
-        System.out.println();
-        System.out.println("Result of call to get a single Stock Quote for today: ");
-        System.out.println(stock.getStockSymbol() + " " +
-                stock.getStockPrice().toString() + " " +
-                today.getTime().toString());
-
-        List<StockQuote> stockList = applicationTest.getQuote(symbol, startDate, endDate);
-
-        /*Print out a list of StockQuotes within the specified date range,
-          ignoring the specified interval for now.
-         */
-        System.out.println();
-        System.out.println("Result of call to get a list of Stock Quotes: ");
-
-        for (StockQuote stockQuote : stockList) {
-            System.out.println(stockQuote.getStockSymbol() + " " +
-                    stockQuote.getStockPrice().toString() + " " +
-                    stockQuote.getDateRecorded().getTime().toString());
+        if (!(serviceType.equals("YAHOO")  ||  (serviceType.equals("DATABASE")))) {
+            throw new AssertionError("The service type must be YAHOO or DATABASE.");
         }
 
+        if (serviceType.equals("YAHOO")) {
+            StockQuote stock = applicationTest.getQuote(symbol, startDate);
+            MainMethodHelper.printOneStockQuote(stock);
 
-        List<StockQuote> stockListWithInterval = applicationTest.getQuote(symbol, startDate, endDate, chosenInterval);
+            List<StockQuote> stockList = applicationTest.getQuote(symbol, startDate, endDate);
+            MainMethodHelper.printListOfStockQuotesWithoutInterval(stockList);
 
-        /*Print out a list of StockQuotes within the specified date range
-          and according to the specified interval.
-         */
-        System.out.println();
-        System.out.println("Result of call to get a list of Stock Quotes with specified interval: ");
+            List<StockQuote> stockListWithInterval = applicationTest.getQuote(symbol, startDate, endDate, chosenInterval);
+            MainMethodHelper.printListOfStockQuotesWithtInterval(stockListWithInterval);
 
-        for (StockQuote stockQuote : stockListWithInterval) {
-            System.out.println(stockQuote.getStockSymbol() + " " +
-                    stockQuote.getStockPrice().toString() + " " +
-                    stockQuote.getDateRecorded().getTime().toString());
+        } else if (serviceType.equals("DATABASE")) {
+            StockQuote databaseStock = applicationTest.getDatabaseQuote(symbol, startDate);
+            MainMethodHelper.printOneStockQuote(databaseStock);
+
+            List<StockQuote> databaseStockList = applicationTest.getDatabaseQuote(symbol, startDate, endDate);
+            MainMethodHelper.printListOfStockQuotesWithoutInterval(databaseStockList);
+
+            List<StockQuote> databaseStockListWithInterval = applicationTest.getDatabaseQuote(symbol, startDate, endDate, chosenInterval);
+            MainMethodHelper.printListOfStockQuotesWithtInterval(databaseStockListWithInterval);
         }
 
     }

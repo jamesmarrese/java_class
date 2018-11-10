@@ -52,6 +52,7 @@ public class Quotes {
 
     /**
      * Specify the quote's price
+     *
      * @param price a BigDecimal value
      */
     public void setPrice (BigDecimal price) {this.price = price;}
@@ -65,6 +66,7 @@ public class Quotes {
 
     /**
      * Specify the quote's symbol
+     *
      * @param symbol a String value, max 4 chars
      */
     public void setSymbol (String symbol) {this.symbol = symbol;}
@@ -78,11 +80,18 @@ public class Quotes {
 
     /**
      * Specify the quote's timestamp
+     *
      * @param time  the time the quote was inserted into the databse.
      */
 
     public void setTime (Timestamp time) {this.time = time;}
 
+    /**
+     * Override the equals method to work with ORM
+     *
+     * @param o the object being tested
+     * @return true is the object if a Quotes object
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -101,6 +110,11 @@ public class Quotes {
         return true;
     }
 
+    /**
+     * Override the hashCode method to support the overridden equals method
+     *
+     * @return result the result of the hascode method
+     */
     @Override
     public int hashCode() {
         int result = ID;
@@ -110,6 +124,9 @@ public class Quotes {
         return result;
     }
 
+    /**
+     * @return a Quote string consisting of ID, price, symbol, and quote time
+     */
     @Override
     public String toString() {
         return "Quotes{" +
@@ -119,9 +136,5 @@ public class Quotes {
                 ", quote_time=" + time +
                 '}';
     }
-
-
-
-
 
 }

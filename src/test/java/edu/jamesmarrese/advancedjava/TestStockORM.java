@@ -8,6 +8,7 @@ import java.sql.Timestamp;
 import java.util.Calendar;
 
 import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertTrue;
 
 /**
  * Tests for the Stock ORM class
@@ -47,7 +48,7 @@ public class TestStockORM {
         assertEquals("time matches", timestamp, stockORM.getStockTime());
         assertEquals("price matches", price, stockORM.getPrice());
         assertEquals("id matches", id, stockORM.getStockID());
-
+        assertTrue("the toString method works", stockORM.toString().equals(stockORM.toString()));
     }
 
 }

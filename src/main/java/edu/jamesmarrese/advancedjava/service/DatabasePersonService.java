@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * Methods for getting a list of people and their quotes from a SQL database
  */
 public class DatabasePersonService implements PersonService {
 
@@ -58,7 +58,7 @@ public class DatabasePersonService implements PersonService {
      */
     @Override
     @SuppressWarnings("unchecked")
-    public List<Quotes> getQuotes(Person person) throws PersonServiceException {
+    public List<Quotes> getPersonQuotes(Person person) throws PersonServiceException {
         Session session =  DatabaseUtils.getSessionFactory().openSession();
         Transaction transaction = null;
         List<Quotes> quotes = new ArrayList<>();

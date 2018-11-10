@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.text.ParseException;
 
 /**
  * Servlet for accessing form data
@@ -44,8 +45,10 @@ public class StockQuoteServlet extends HttpServlet {
         StockQuoteSearch stockQuoteSearch = new StockQuoteSearch(stockSymbol, beginDate, endDate, interval);
 
         try {
-            stockQuoteSearch.getStockData();
+            stockQuoteSearch.getStockData(stockSymbol, beginDate, endDate, interval);
         } catch (StockServiceException e) {
+            throw new RuntimeException(e.getMessage());
+        } catch (ParseException e) {
             throw new RuntimeException(e.getMessage());
         }
 

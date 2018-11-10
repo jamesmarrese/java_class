@@ -26,7 +26,7 @@ public class DatabaseUtils {
     private static SessionFactory sessionFactory;
     private static Configuration configuration;
 
-    /*
+    /**
      * @return SessionFactory for use with database transactions
      */
     public static SessionFactory getSessionFactory() {
@@ -64,6 +64,12 @@ public class DatabaseUtils {
         return configuration;
     }
 
+    /**
+     * Get a connection to the database
+     *
+     * @return connection a Connection object to connect to the database
+     * @throws DatabaseConnectionException
+     */
     public static Connection getConnection() throws DatabaseConnectionException {
         Connection connection = null;
         Configuration configuration = getConfiguration();

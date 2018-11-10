@@ -1,12 +1,10 @@
 package edu.jamesmarrese.advancedjava.service;
 
 import edu.jamesmarrese.advancedjava.model.StockQuote;
-import edu.jamesmarrese.advancedjava.util.DatabaseInitializationException;
 
 import javax.validation.constraints.NotNull;
 import java.io.IOException;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -15,7 +13,6 @@ import java.util.List;
  *
  * @author  James Marrese
  */
-
 public interface StockService {
     /**
      * Return the current price for a share of stock for the given symbol
@@ -58,7 +55,6 @@ public interface StockService {
      *
      * @return a list of StockQuote instances, one for each interval specified
      */
-
     List<StockQuote> getQuote (@NotNull String symbol, @NotNull Calendar from,
                                @NotNull Calendar until, @NotNull IntervalEnum interval)
             throws StockServiceException, IOException;

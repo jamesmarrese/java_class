@@ -1,10 +1,7 @@
 package edu.jamesmarrese.advancedjava.service;
 
 import edu.jamesmarrese.advancedjava.model.Person;
-import edu.jamesmarrese.advancedjava.model.PersonQuotes;
 import edu.jamesmarrese.advancedjava.model.Quotes;
-import edu.jamesmarrese.advancedjava.util.DatabaseConnectionException;
-import edu.jamesmarrese.advancedjava.util.DatabaseInitializationException;
 
 import java.util.List;
 
@@ -30,6 +27,6 @@ public interface PersonService {
      * @throws PersonServiceException if a service can not read or write the requested data
      *                                    or otherwise perform the requested operation.
      */
-    List<Quotes> getQuotes (Person person) throws PersonServiceException;
+    List<Quotes> getPersonQuotes (Person person) throws PersonServiceException;
 
 }

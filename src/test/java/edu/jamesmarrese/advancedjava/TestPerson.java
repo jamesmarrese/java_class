@@ -7,11 +7,12 @@ import java.sql.Timestamp;
 import java.util.Calendar;
 
 import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertTrue;
 
 /**
  * Tests for the Person ORM class
  */
-public class TestPersonORM {
+public class TestPerson {
 
     public  static final Calendar birthday = Calendar.getInstance();
 
@@ -45,6 +46,7 @@ public class TestPersonORM {
         assertEquals("last name matches", lastName, person.getLastName());
         assertEquals("birthday matches", birthDate, person.getBirthDate());
         assertEquals("id matches", id, person.getId());
+        assertTrue("the toString method works", person.toString().equals(person.toString()));
 
     }
 

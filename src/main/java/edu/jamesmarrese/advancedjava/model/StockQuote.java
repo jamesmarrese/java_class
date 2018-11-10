@@ -5,7 +5,6 @@ import jdk.nashorn.internal.ir.annotations.Immutable;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.util.Calendar;
-import java.util.Date;
 
 /**
  * This StockQuote class creates StockQuote instances consisting of
@@ -23,11 +22,11 @@ public class StockQuote {
 
     /**
      * Create a new StockQuote instance
+     *
      * @param stockName the stock symbol, e.g. AMZN for Amazon
      * @param stockValue the price of the stock for the provided date
      * @param date  the date the stock info was recorded
      */
-
     public StockQuote (@NotNull String stockName, @NotNull Calendar date, @NotNull BigDecimal stockValue) {
         this.stockSymbol = stockName;
         this.dateRecorded = date;
@@ -35,10 +34,8 @@ public class StockQuote {
     }
 
     /**
-     * @return the symbol that represents the company whose stock this is.
-     * e.g. AMZN for Amazon
+     * @return the symbol that represents the company whose stock this is, e.g. AMZN for Amazon
      */
-
     public String getStockSymbol() {
         return stockSymbol;
     }
@@ -46,7 +43,6 @@ public class StockQuote {
     /**
      * @return The price of one share of stock.
      */
-
     public BigDecimal getStockPrice() {
         return stockPrice;
     }
@@ -54,7 +50,6 @@ public class StockQuote {
     /**
      * @return the date of the stock price.
      */
-
     public Calendar getDateRecorded() {
         return dateRecorded;
     }

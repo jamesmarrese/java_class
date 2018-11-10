@@ -2,7 +2,11 @@ package edu.jamesmarrese.advancedjava;
 
 
 import edu.jamesmarrese.advancedjava.model.StockQuoteSearch;
+import edu.jamesmarrese.advancedjava.service.StockServiceException;
 import org.junit.Test;
+
+import java.io.IOException;
+import java.text.ParseException;
 
 import static junit.framework.Assert.assertEquals;
 
@@ -13,7 +17,7 @@ public class TestStockQuoteSearch {
 
     private String stockSymbol = "AAPL";
     private String beginDate = "2018-01-01T00:00:00.000-04:00";
-    private String endDate = "2018-01-01T00:00:00.000-04:00";
+    private String endDate = "2018-02-01T00:00:00.000-04:00";
     private String interval = "DAILY";
 
     public StockQuoteSearch createStockQuoteSearch() {
@@ -21,9 +25,6 @@ public class TestStockQuoteSearch {
         return stockQuoteSearch;
     }
 
-    /**
-     * Test getters and setters
-     */
     @Test
     public void testStockQuoteSearchGettersAndSetters() {
         StockQuoteSearch search = createStockQuoteSearch();
@@ -33,6 +34,12 @@ public class TestStockQuoteSearch {
         assertEquals("end date matches", endDate, search.getEndDate());
         assertEquals("interval matches", interval, search.getInterval());
 
+    }
+
+    @Test
+    public void testGetStockData() throws StockServiceException, ParseException {
+        StockQuoteSearch secondSearch = createStockQuoteSearch();
+        secondSearch.getStockData(stockSymbol, beginDate, endDate, interval);
     }
 
 }

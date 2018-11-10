@@ -4,18 +4,14 @@ import edu.jamesmarrese.advancedjava.model.Quotes;
 import org.junit.Test;
 
 import java.math.BigDecimal;
-import java.sql.Time;
 import java.sql.Timestamp;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import static junit.framework.Assert.assertEquals;
 
 /**
  * Tests for the Quotes ORM class
  */
-public class TestQuotesORM {
+public class TestQuotes {
 
     public static final BigDecimal price = new BigDecimal(100.25);
     public static final String symbol = "APPL";

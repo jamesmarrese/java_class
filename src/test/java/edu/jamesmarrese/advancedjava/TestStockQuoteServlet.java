@@ -1,8 +1,5 @@
 package edu.jamesmarrese.advancedjava;
 
-import edu.jamesmarrese.advancedjava.model.StockQuoteSearch;
-import edu.jamesmarrese.advancedjava.service.StockServiceException;
-import edu.jamesmarrese.advancedjava.servlet.StockQuoteServlet;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -31,8 +28,6 @@ public class TestStockQuoteServlet {
 
     private static HttpServletRequest request;
     private static HttpServletResponse response;
-
-    private static StockQuoteServlet servlet;
 
     /**
      * Use mocks for the server request and response
@@ -64,23 +59,6 @@ public class TestStockQuoteServlet {
 
         when(servletContext.getRequestDispatcher("/stockquoteResults.jsp")).thenReturn(requestDispatcher);
         requestDispatcher.forward(request, response);
-
-        /* This commented out code was causing CircleCI to fail, which doesn't make any sense, as I have a test
-           in another class that tests the main method and calls the Yahoo Finance API. That test passes in
-           CircleCI. The commented out code below is where CircleCI appears to be failing, during the call to
-           the Yahoo Finance API, which, again, is odd given that the same call to the Yahoo Finance API works
-           when I test out the main method.
-
-         */
-        /*StockQuoteSearch stockQuoteSearch = new StockQuoteSearch(stockSymbol, beginDate, endDate, interval);
-
-        try {
-            stockQuoteSearch.getStockData();
-        } catch (StockServiceException e) {
-            throw new RuntimeException(e.getMessage());
-        }
-
-        session.setAttribute("stockQuoteSearch", stockQuoteSearch);*/
 
     }
 

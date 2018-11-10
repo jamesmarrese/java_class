@@ -55,7 +55,6 @@ public class PersonQuotes {
     }
 
     /**
-     *
      * @return get the Person associated with this quote
      */
     @ManyToOne
@@ -92,6 +91,12 @@ public class PersonQuotes {
         this.quote = quote;
     }
 
+    /**
+     * Override the equals method to work with ORM
+     *
+     * @param o the object being tested
+     * @return true if this object is a PersonQuotes object
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -104,6 +109,11 @@ public class PersonQuotes {
         return true;
     }
 
+    /**
+     * Override the hashCode method to support the overridden equals method
+     *
+     * @return result the result of the hascode method
+     */
     @Override
     public int hashCode() {
         int result = ID;
@@ -112,6 +122,9 @@ public class PersonQuotes {
         return result;
     }
 
+    /**
+     * @return a PersonQuote string consisting of ID, person, and quote
+     */
     @Override
     public String toString() {
         return "PersonQuotes{" +

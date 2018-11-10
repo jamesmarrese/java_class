@@ -50,6 +50,7 @@ public class Person {
 
     /**
      * Specify the person's first name
+     *
      * @param firstName a String value
      */
     public void setFirstName (String firstName) {this.firstName = firstName;}
@@ -63,6 +64,7 @@ public class Person {
 
     /**
      * Specify the person's last name
+     *
      * @param lastName a String value
      */
     public void setLastName (String lastName) {this.lastName = lastName;}
@@ -76,11 +78,18 @@ public class Person {
 
     /**
      * Specify the person's date of birth.
+     *
      * @param birthDate  the time the person was born.
      */
 
     public void setBirthDate (Timestamp birthDate) {this.birthDate = birthDate;}
 
+    /**
+     * Override the equals method to work with ORM
+     *
+     * @param o the object being tested
+     * @return true if this object is a Person object
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -99,6 +108,11 @@ public class Person {
         return true;
     }
 
+    /**
+     * Override the hashCode method to support the overridden equals method
+     *
+     * @return result the result of the hascode method
+     */
     @Override
     public int hashCode() {
         int result = ID;
@@ -108,6 +122,9 @@ public class Person {
         return result;
     }
 
+    /**
+     * @return a Person string consisting of ID, first name, last name, and birthdate
+     */
     @Override
     public String toString() {
         return "Person{" +

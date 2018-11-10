@@ -50,7 +50,8 @@ public class StockORM {
     public String getSymbol() {return symbol;}
 
     /**
-     * Specify the srtock's symbol
+     * Specify the stock's symbol
+     *
      * @param symbol a String value
      */
     public void setSymbol(String symbol) {this.symbol = symbol;}
@@ -64,6 +65,7 @@ public class StockORM {
 
     /**
      * Specify the stock's symbol
+     *
      * @param stockTime a String value
      */
     public void setStockTime (Timestamp stockTime) {this.stockTime = stockTime;}
@@ -77,10 +79,17 @@ public class StockORM {
 
     /**
      * Specify the stock's price
+     *
      * @param price a String value
      */
     public void setPrice (BigDecimal price) {this.price = price;}
 
+    /**
+     * Override the equals method to work with ORM
+     *
+     * @param o the object being tested
+     * @return true is the object if a StockORM object
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -99,6 +108,11 @@ public class StockORM {
         return true;
     }
 
+    /**
+     * Override the hashCode method to support the overridden equals method
+     *
+     * @return result the result of the hascode method
+     */
     @Override
     public int hashCode() {
         int result = stockID;
@@ -108,6 +122,9 @@ public class StockORM {
         return result;
     }
 
+    /**
+     * @return a StockORM string consisting of stock ID, symbol, time, and price
+     */
     @Override
     public String toString() {
         return "StockORM{" +
@@ -117,13 +134,5 @@ public class StockORM {
                 ", price=" + price +
                 '}';
     }
-
-
-
-
-
-
-
-
 
 }
